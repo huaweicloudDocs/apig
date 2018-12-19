@@ -27,7 +27,6 @@
         -   [注册API](注册API.md)
         -   [修改API](修改API.md)
         -   [删除API](删除API.md)
-        -   [批量删除API](批量删除API.md)
         -   [发布API](发布API.md)
         -   [下线API](下线API.md)
         -   [查看API详情](查看API详情.md)
