@@ -108,6 +108,15 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p58989058"><a name="p58989058"></a><a name="p58989058"></a>页码，默认值：1</p>
 </td>
 </tr>
+<tr id="row1797011282498"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p297092819498"><a name="p297092819498"></a><a name="p297092819498"></a>precise_search</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p397092812491"><a name="p397092812491"></a><a name="p397092812491"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p49701728194913"><a name="p49701728194913"></a><a name="p49701728194913"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p19970928194911"><a name="p19970928194911"></a><a name="p19970928194911"></a>指定需要精确匹配查找的资源名称</p>
+</td>
+</tr>
 </tbody>
 </table>
 

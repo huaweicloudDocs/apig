@@ -62,36 +62,37 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p82741042143312"><a name="p82741042143312"></a><a name="p82741042143312"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p139319318333"><a name="p139319318333"></a><a name="p139319318333"></a>VPC通道的类型。</p>
-<p id="p1116050104015"><a name="p1116050104015"></a><a name="p1116050104015"></a>2：API网关内置支持负载均衡功能的快速通道类型。</p>
+<a name="ul4250115615505"></a><a name="ul4250115615505"></a><ul id="ul4250115615505"><li>1：私网ELB通道</li><li>2：API网关内置支持负载均衡功能的快速通道类型</li></ul>
 </td>
 </tr>
 <tr id="row1612192923111"><td class="cellrowborder" valign="top" width="15.46154615461546%" headers="mcps1.2.5.1.1 "><p id="p49099023"><a name="p49099023"></a><a name="p49099023"></a>port</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p17597936"><a name="p17597936"></a><a name="p17597936"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p17597936"><a name="p17597936"></a><a name="p17597936"></a>type = 2时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p929014217338"><a name="p929014217338"></a><a name="p929014217338"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p49461931193318"><a name="p49461931193318"></a><a name="p49461931193318"></a>VPC通道中主机的端口号。</p>
-<p id="p97191632173515"><a name="p97191632173515"></a><a name="p97191632173515"></a>取值范围1 ~ 65535。</p>
+<p id="p97191632173515"><a name="p97191632173515"></a><a name="p97191632173515"></a>取值范围1 ~ 65535，仅VPC通道类型为2时有效。</p>
 </td>
 </tr>
 <tr id="row17121132912318"><td class="cellrowborder" valign="top" width="15.46154615461546%" headers="mcps1.2.5.1.1 "><p id="p192983401416"><a name="p192983401416"></a><a name="p192983401416"></a>balance_strategy</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p182985416144"><a name="p182985416144"></a><a name="p182985416144"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p182985416144"><a name="p182985416144"></a><a name="p182985416144"></a>type = 2时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p6290114214331"><a name="p6290114214331"></a><a name="p6290114214331"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p5946153116333"><a name="p5946153116333"></a><a name="p5946153116333"></a>分发算法。</p>
-<a name="ul5946193183312"></a><a name="ul5946193183312"></a><ul id="ul5946193183312"><li>1：加权轮询（wrr）</li><li>2：加权最少连接（wleastconn）</li><li>3：源地址哈希（source）</li><li>4：URI哈希（uri）</li></ul>
+<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p13616155945512"><a name="p13616155945512"></a><a name="p13616155945512"></a>分发算法。</p>
+<a name="ul46161059145520"></a><a name="ul46161059145520"></a><ul id="ul46161059145520"><li>1：加权轮询（wrr）</li><li>2：加权最少连接（wleastconn）</li><li>3：源地址哈希（source）</li><li>4：URI哈希（uri）</li></ul>
+<p id="p5946153116333"><a name="p5946153116333"></a><a name="p5946153116333"></a>仅VPC通道类型为2时有效，缺省为1。</p>
 </td>
 </tr>
 <tr id="row91212298312"><td class="cellrowborder" valign="top" width="15.46154615461546%" headers="mcps1.2.5.1.1 "><p id="p8845107161418"><a name="p8845107161418"></a><a name="p8845107161418"></a>vpc_health_config</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p188451179141"><a name="p188451179141"></a><a name="p188451179141"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p188451179141"><a name="p188451179141"></a><a name="p188451179141"></a>type = 2时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p122908425332"><a name="p122908425332"></a><a name="p122908425332"></a>字典数据类型</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p8946531183318"><a name="p8946531183318"></a><a name="p8946531183318"></a>健康检查详情。</p>
+<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p8946531183318"><a name="p8946531183318"></a><a name="p8946531183318"></a>健康检查详情，仅VPC通道类型为2时有效。</p>
 </td>
 </tr>
 <tr id="row1949584023816"><td class="cellrowborder" valign="top" width="15.46154615461546%" headers="mcps1.2.5.1.1 "><p id="p54951240193817"><a name="p54951240193817"></a><a name="p54951240193817"></a>vpc_instances</p>
@@ -100,7 +101,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p7495134011385"><a name="p7495134011385"></a><a name="p7495134011385"></a>字典数据类型</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p14959403387"><a name="p14959403387"></a><a name="p14959403387"></a>后端实例列表。</p>
+<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p14959403387"><a name="p14959403387"></a><a name="p14959403387"></a>后端实例列表，VPC通道类型为1时，有且仅有1个后端实例。</p>
 </td>
 </tr>
 </tbody>
@@ -200,7 +201,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="58.58585858585859%" headers="mcps1.2.5.1.4 "><p id="p15281310185519"><a name="p15281310185519"></a><a name="p15281310185519"></a>检查目标HTTP响应时，判断成功使用的HTTP响应码。</p>
 <p id="p1144417511111"><a name="p1144417511111"></a><a name="p1144417511111"></a>取值范围为100到599之前的任意整数值，支持如下三种格式：</p>
-<a name="ul343965120114"></a><a name="ul343965120114"></a><ul id="ul343965120114"><li>多个值，如：200,201,202</li><li>一系列值，如：200 ~ 299</li><li>组合值，如：201,202,210 ~ 299</li></ul>
+<a name="ul343965120114"></a><a name="ul343965120114"></a><ul id="ul343965120114"><li>多个值，如：200,201,202</li><li>一系列值，如：200-299</li><li>组合值，如：201,202,210-299</li></ul>
 </td>
 </tr>
 </tbody>
@@ -225,7 +226,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p1916032024714"><a name="p1916032024714"></a><a name="p1916032024714"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p64172706"><a name="p64172706"></a><a name="p64172706"></a>弹性云服务器的名称。</p>
+<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p64172706"><a name="p64172706"></a><a name="p64172706"></a>后端实例的名称。</p>
 <p id="p7024991"><a name="p7024991"></a><a name="p7024991"></a>支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。</p>
 <div class="note" id="note1155910113419"><a name="note1155910113419"></a><a name="note1155910113419"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1559011141"><a name="p1559011141"></a><a name="p1559011141"></a>中文字符必须为UTF-8或者unicode编码。</p>
 </div></div>
@@ -237,18 +238,18 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p1217432012470"><a name="p1217432012470"></a><a name="p1217432012470"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p1825072175810"><a name="p1825072175810"></a><a name="p1825072175810"></a>弹性云服务器的ID。</p>
+<td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p1825072175810"><a name="p1825072175810"></a><a name="p1825072175810"></a>后端实例的编号。</p>
 </td>
 </tr>
 <tr id="row4191162015475"><td class="cellrowborder" valign="top" width="15.46154615461546%" headers="mcps1.2.5.1.1 "><p id="p17191112094711"><a name="p17191112094711"></a><a name="p17191112094711"></a>weight</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p131911920174712"><a name="p131911920174712"></a><a name="p131911920174712"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.2 "><p id="p131911920174712"><a name="p131911920174712"></a><a name="p131911920174712"></a>type = 2时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="13.4013401340134%" headers="mcps1.2.5.1.3 "><p id="p161911220194720"><a name="p161911220194720"></a><a name="p161911220194720"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.73577357735774%" headers="mcps1.2.5.1.4 "><p id="p1133512255618"><a name="p1133512255618"></a><a name="p1133512255618"></a>权重值。</p>
-<p id="p4191102016478"><a name="p4191102016478"></a><a name="p4191102016478"></a>权重值越大，转发到该弹性云服务器的请求数量越多。</p>
-<p id="p17922913115812"><a name="p17922913115812"></a><a name="p17922913115812"></a>取值范围1 ~ 100。</p>
+<p id="p4191102016478"><a name="p4191102016478"></a><a name="p4191102016478"></a>权重值越大，转发到该后端实例的请求数量越多。</p>
+<p id="p17922913115812"><a name="p17922913115812"></a><a name="p17922913115812"></a>取值范围1 ~ 100，仅VPC通道类型为2时有效。</p>
 </td>
 </tr>
 </tbody>
@@ -262,6 +263,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
   "name": "vpc_001",
   "port": 15565,
   "type": 2,
+ 
   "vpc_health_config": {
     "http_code": "205",
     "path": "/hc",
@@ -313,8 +315,8 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p64881305424"><a name="p64881305424"></a><a name="p64881305424"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p55779867"><a name="p55779867"></a><a name="p55779867"></a>VPC通道的类型。</p>
-<p id="p1898392617427"><a name="p1898392617427"></a><a name="p1898392617427"></a>2：API网关内置支持负载均衡功能的快速通道类型。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p5748337181118"><a name="p5748337181118"></a><a name="p5748337181118"></a>VPC通道的类型。</p>
+<a name="ul4748103711119"></a><a name="ul4748103711119"></a><ul id="ul4748103711119"><li>1：私网ELB通道</li><li>2：API网关内置支持负载均衡功能的快速通道类型</li></ul>
 </td>
 </tr>
 <tr id="row138095017017"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p14809406014"><a name="p14809406014"></a><a name="p14809406014"></a>status</p>
