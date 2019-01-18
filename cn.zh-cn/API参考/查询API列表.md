@@ -143,6 +143,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p3771332"><a name="p3771332"></a><a name="p3771332"></a>页码，默认值：1</p>
 </td>
 </tr>
+<tr id="row136191246154813"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p26191463489"><a name="p26191463489"></a><a name="p26191463489"></a>precise_search</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1261984620484"><a name="p1261984620484"></a><a name="p1261984620484"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p261916461487"><a name="p261916461487"></a><a name="p261916461487"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p10619154674815"><a name="p10619154674815"></a><a name="p10619154674815"></a>指定需要精确匹配查找的资源名称</p>
+</td>
+</tr>
 </tbody>
 </table>
 

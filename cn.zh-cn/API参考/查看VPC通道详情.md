@@ -83,12 +83,12 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p60351493"><a name="p60351493"></a><a name="p60351493"></a>VPC通道的名称。</p>
 </td>
 </tr>
-<tr id="row748812305426"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p19871155912585"><a name="p19871155912585"></a><a name="p19871155912585"></a>type</p>
+<tr id="row748812305426"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p02495197162"><a name="p02495197162"></a><a name="p02495197162"></a>type</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p64881305424"><a name="p64881305424"></a><a name="p64881305424"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p16251161941619"><a name="p16251161941619"></a><a name="p16251161941619"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p139319318333"><a name="p139319318333"></a><a name="p139319318333"></a>VPC通道的类型。</p>
-<p id="p1116050104015"><a name="p1116050104015"></a><a name="p1116050104015"></a>2：API网关内置支持负载均衡功能的快速通道类型。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p5748337181118"><a name="p5748337181118"></a><a name="p5748337181118"></a>VPC通道的类型。</p>
+<a name="ul4748103711119"></a><a name="ul4748103711119"></a><ul id="ul4748103711119"><li>1：私网ELB通道</li><li>2：API网关内置支持负载均衡功能的快速通道类型</li></ul>
 </td>
 </tr>
 <tr id="row138095017017"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p14809406014"><a name="p14809406014"></a><a name="p14809406014"></a>status</p>
@@ -228,7 +228,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p15281310185519"><a name="p15281310185519"></a><a name="p15281310185519"></a>检查目标HTTP响应时，判断成功使用的HTTP响应码。</p>
 <p id="p1144417511111"><a name="p1144417511111"></a><a name="p1144417511111"></a>取值范围为100到599之前的任意整数值，支持如下三种格式：</p>
-<a name="ul343965120114"></a><a name="ul343965120114"></a><ul id="ul343965120114"><li>多个值，如：200,201,202</li><li>一系列值，如：200 ~ 299</li><li>组合值，如：201,202,210 ~ 299</li></ul>
+<a name="ul343965120114"></a><a name="ul343965120114"></a><ul id="ul343965120114"><li>多个值，如：200,201,202</li><li>一系列值，如：200-299</li><li>组合值，如：201,202,210-299</li></ul>
 </td>
 </tr>
 <tr id="row1931011312412"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p13103312242"><a name="p13103312242"></a><a name="p13103312242"></a>create_time</p>
@@ -256,7 +256,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p173611832112714"><a name="p173611832112714"></a><a name="p173611832112714"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p163616323277"><a name="p163616323277"></a><a name="p163616323277"></a>member对象的编号。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p163616323277"><a name="p163616323277"></a><a name="p163616323277"></a>后端实例对象的编号。</p>
 </td>
 </tr>
 <tr id="row193611732112718"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p6361133242711"><a name="p6361133242711"></a><a name="p6361133242711"></a>vpc_id</p>
@@ -270,21 +270,28 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p037713328279"><a name="p037713328279"></a><a name="p037713328279"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p1620615311293"><a name="p1620615311293"></a><a name="p1620615311293"></a>member对象的状态。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p1620615311293"><a name="p1620615311293"></a><a name="p1620615311293"></a>后端实例对象的状态。</p>
 </td>
 </tr>
 <tr id="row11392163220272"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p6462652102914"><a name="p6462652102914"></a><a name="p6462652102914"></a>instance_name</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p15392113202710"><a name="p15392113202710"></a><a name="p15392113202710"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p7643513300"><a name="p7643513300"></a><a name="p7643513300"></a>弹性云服务器的名称。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p7643513300"><a name="p7643513300"></a><a name="p7643513300"></a>后端实例的名称。</p>
 </td>
 </tr>
 <tr id="row1339216325273"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p12462195214295"><a name="p12462195214295"></a><a name="p12462195214295"></a>instance_id</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p103921532112711"><a name="p103921532112711"></a><a name="p103921532112711"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p13641554304"><a name="p13641554304"></a><a name="p13641554304"></a>弹性云服务器的ID。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p13641554304"><a name="p13641554304"></a><a name="p13641554304"></a>后端实例的ID。</p>
+</td>
+</tr>
+<tr id="row1727563495911"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p11276133405917"><a name="p11276133405917"></a><a name="p11276133405917"></a>host</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p127653405913"><a name="p127653405913"></a><a name="p127653405913"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p1027614347599"><a name="p1027614347599"></a><a name="p1027614347599"></a>后端实例的主机地址</p>
 </td>
 </tr>
 <tr id="row1940916329273"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p10462165210296"><a name="p10462165210296"></a><a name="p10462165210296"></a>weight</p>
@@ -292,7 +299,7 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p5409163242719"><a name="p5409163242719"></a><a name="p5409163242719"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p1133512255618"><a name="p1133512255618"></a><a name="p1133512255618"></a>权重值。</p>
-<p id="p4191102016478"><a name="p4191102016478"></a><a name="p4191102016478"></a>权重值越大，转发到该弹性云服务器的请求数量越多。</p>
+<p id="p4191102016478"><a name="p4191102016478"></a><a name="p4191102016478"></a>权重值越大，转发到该后端实例的请求数量越多。</p>
 <p id="p17922913115812"><a name="p17922913115812"></a><a name="p17922913115812"></a>取值范围1 ~ 100。</p>
 </td>
 </tr>
@@ -300,7 +307,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p1043963216271"><a name="p1043963216271"></a><a name="p1043963216271"></a>Timestamp</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p124391632192720"><a name="p124391632192720"></a><a name="p124391632192720"></a>弹性云服务器增加到VPC通道的时间。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p124391632192720"><a name="p124391632192720"></a><a name="p124391632192720"></a>后端实例增加到VPC通道的时间。</p>
 </td>
 </tr>
 </tbody>
@@ -334,6 +341,7 @@ URI中的参数说明如下表所示。
     {
       "instance_id": "instance01",
       "instance_name": "instance_name01",
+      "host": "127.0.0.1",
       "weight": 10,
       "id": "c3bc73605a8b400793363c87574fbad7",
       "vpc_id": "c3e6a7d85d9e47be89dfcc3cd37405d7",

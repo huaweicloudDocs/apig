@@ -25,6 +25,8 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
+o
+
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >-   可以在URI后面用‘?’和‘&’添加不同的查询条件组合。  
 >-   查询条件可为以下字段以及对应的值：id、name、vpc\_type、project\_id、page\_size、page\_no。  
@@ -96,6 +98,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="43.56435643564357%" headers="mcps1.2.5.1.4 "><p id="p0879113822110"><a name="p0879113822110"></a><a name="p0879113822110"></a>页码，默认值：1。</p>
 </td>
 </tr>
+<tr id="row167242325210"><td class="cellrowborder" valign="top" width="18.81188118811881%" headers="mcps1.2.5.1.1 "><p id="p19672223105215"><a name="p19672223105215"></a><a name="p19672223105215"></a>precise_search</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.801980198019802%" headers="mcps1.2.5.1.2 "><p id="p1367222310525"><a name="p1367222310525"></a><a name="p1367222310525"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.82178217821782%" headers="mcps1.2.5.1.3 "><p id="p4672142375211"><a name="p4672142375211"></a><a name="p4672142375211"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="43.56435643564357%" headers="mcps1.2.5.1.4 "><p id="p19672182317528"><a name="p19672182317528"></a><a name="p19672182317528"></a>指定需要精确匹配查找的资源名称</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -142,66 +153,65 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 
 **表 4**  VPC参数说明
 
-<a name="table18539112218612"></a>
-<table><thead align="left"><tr id="row115544226616"><th class="cellrowborder" valign="top" width="18%" id="mcps1.2.4.1.1"><p id="p14554222662"><a name="p14554222662"></a><a name="p14554222662"></a>名称</p>
+<a name="table197111958323"></a>
+<table><thead align="left"><tr id="row87221581128"><th class="cellrowborder" valign="top" width="18.18%" id="mcps1.2.4.1.1"><p id="p372519582025"><a name="p372519582025"></a><a name="p372519582025"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="17%" id="mcps1.2.4.1.2"><p id="p45541222666"><a name="p45541222666"></a><a name="p45541222666"></a>类型</p>
+<th class="cellrowborder" valign="top" width="16.16%" id="mcps1.2.4.1.2"><p id="p147282582021"><a name="p147282582021"></a><a name="p147282582021"></a>类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="65%" id="mcps1.2.4.1.3"><p id="p1555418228613"><a name="p1555418228613"></a><a name="p1555418228613"></a>说明</p>
+<th class="cellrowborder" valign="top" width="65.66%" id="mcps1.2.4.1.3"><p id="p374210583210"><a name="p374210583210"></a><a name="p374210583210"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row1455432219610"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p95541226620"><a name="p95541226620"></a><a name="p95541226620"></a>id</p>
+<tbody><tr id="row1174420581729"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p2074616586213"><a name="p2074616586213"></a><a name="p2074616586213"></a>id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p2570202219613"><a name="p2570202219613"></a><a name="p2570202219613"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p974815584210"><a name="p974815584210"></a><a name="p974815584210"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p25696563"><a name="p25696563"></a><a name="p25696563"></a>VPC通道的编号。</p>
-</td>
-</tr>
-<tr id="row45701322869"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p2057002214616"><a name="p2057002214616"></a><a name="p2057002214616"></a>name</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p175701122168"><a name="p175701122168"></a><a name="p175701122168"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p60351493"><a name="p60351493"></a><a name="p60351493"></a>VPC通道的名称。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p875011584215"><a name="p875011584215"></a><a name="p875011584215"></a>VPC通道的编号。</p>
 </td>
 </tr>
-<tr id="row3570122219619"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p14570422066"><a name="p14570422066"></a><a name="p14570422066"></a>type</p>
+<tr id="row4751658120"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p1175215581922"><a name="p1175215581922"></a><a name="p1175215581922"></a>name</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p15701122866"><a name="p15701122866"></a><a name="p15701122866"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p87551058920"><a name="p87551058920"></a><a name="p87551058920"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p139319318333"><a name="p139319318333"></a><a name="p139319318333"></a>VPC通道的类型。</p>
-<p id="p1116050104015"><a name="p1116050104015"></a><a name="p1116050104015"></a>2：API网关内置支持负载均衡功能的快速通道类型。</p>
-</td>
-</tr>
-<tr id="row138095017017"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p14809406014"><a name="p14809406014"></a><a name="p14809406014"></a>status</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p5809305016"><a name="p5809305016"></a><a name="p5809305016"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p12663581620"><a name="p12663581620"></a><a name="p12663581620"></a>VPC通道的状态。</p>
-<a name="ul15791839184416"></a><a name="ul15791839184416"></a><ul id="ul15791839184416"><li>1：正常</li><li>2：异常</li></ul>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p7756958726"><a name="p7756958726"></a><a name="p7756958726"></a>VPC通道的名称。</p>
 </td>
 </tr>
-<tr id="row31998111201"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p151995112018"><a name="p151995112018"></a><a name="p151995112018"></a>port</p>
+<tr id="row17757195814211"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p02495197162"><a name="p02495197162"></a><a name="p02495197162"></a>type</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p15199011306"><a name="p15199011306"></a><a name="p15199011306"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p16251161941619"><a name="p16251161941619"></a><a name="p16251161941619"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p49461931193318"><a name="p49461931193318"></a><a name="p49461931193318"></a>VPC通道中主机的端口号。</p>
-<p id="p153729251171"><a name="p153729251171"></a><a name="p153729251171"></a>取值范围1 ~ 65535。</p>
-</td>
-</tr>
-<tr id="row05591488016"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p135594817016"><a name="p135594817016"></a><a name="p135594817016"></a>balance_strategy</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p14559178309"><a name="p14559178309"></a><a name="p14559178309"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p22981401418"><a name="p22981401418"></a><a name="p22981401418"></a>分发算法。</p>
-<a name="ul31881612450"></a><a name="ul31881612450"></a><ul id="ul31881612450"><li>1：加权轮询（wrr）</li><li>2：加权最少连接（wleastconn）</li><li>3：源地址哈希（source）</li><li>4：URI哈希（uri）</li></ul>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p5748337181118"><a name="p5748337181118"></a><a name="p5748337181118"></a>VPC通道的类型。</p>
+<a name="ul4748103711119"></a><a name="ul4748103711119"></a><ul id="ul4748103711119"><li>1：私网ELB通道</li><li>2：API网关内置支持负载均衡功能的快速通道类型</li></ul>
 </td>
 </tr>
-<tr id="row109961654185911"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p19996135415590"><a name="p19996135415590"></a><a name="p19996135415590"></a>create_time</p>
+<tr id="row1378145815219"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p478419583211"><a name="p478419583211"></a><a name="p478419583211"></a>status</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p20996554195919"><a name="p20996554195919"></a><a name="p20996554195919"></a>Timestamp</p>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p117861358624"><a name="p117861358624"></a><a name="p117861358624"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p198451273146"><a name="p198451273146"></a><a name="p198451273146"></a>VPC通道的创建时间。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p1678812589219"><a name="p1678812589219"></a><a name="p1678812589219"></a>VPC通道的状态。</p>
+<a name="ul4789165816218"></a><a name="ul4789165816218"></a><ul id="ul4789165816218"><li>1：正常</li><li>2：异常</li></ul>
+</td>
+</tr>
+<tr id="row079513582213"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p07971458025"><a name="p07971458025"></a><a name="p07971458025"></a>port</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p77991558123"><a name="p77991558123"></a><a name="p77991558123"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p16681305"><a name="p16681305"></a><a name="p16681305"></a>VPC通道中主机的端口号。</p>
+</td>
+</tr>
+<tr id="row188041458421"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p1180616581121"><a name="p1180616581121"></a><a name="p1180616581121"></a>balance_strategy</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p1280835813215"><a name="p1280835813215"></a><a name="p1280835813215"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p168103581629"><a name="p168103581629"></a><a name="p168103581629"></a>分发算法。</p>
+<a name="ul381113585218"></a><a name="ul381113585218"></a><ul id="ul381113585218"><li>1：加权轮询（wrr）</li><li>2：加权最少连接（wleastconn）</li><li>3：源地址哈希（source）</li><li>4：URI哈希（uri）</li></ul>
+</td>
+</tr>
+<tr id="row582114581722"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p682425815217"><a name="p682425815217"></a><a name="p682425815217"></a>create_time</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.16%" headers="mcps1.2.4.1.2 "><p id="p78261581217"><a name="p78261581217"></a><a name="p78261581217"></a>Timestamp</p>
+</td>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="p1682865813210"><a name="p1682865813210"></a><a name="p1682865813210"></a>VPC通道的创建时间。</p>
 </td>
 </tr>
 </tbody>
@@ -217,6 +227,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
     {
       "name": "通道1",
       "type": 1,
+    
       "port": 8080,
       "balance_strategy": 1,
       "id": "39c62689302a48fe9f4bd7cf5c052064",
@@ -225,7 +236,8 @@ HTTP/HTTPS请求方法以及URI如下表所示。
     },
     {
       "name": "通道2",
-      "type": 1,
+      "type": 2,
+     
       "port": 8088,
       "balance_strategy": 1,
       "id": "e6831cbcbe2b45bbbc6318c2892f060b",

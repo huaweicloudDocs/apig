@@ -225,8 +225,8 @@ URL中的参数说明如[表1](#table12812809)所示。
 
 >![](public_sys-resources/icon-notice.gif) **注意：**   
 >如果使用多项目（多Project）时，http头部消息中必须含有x-project-id字段，此字段需要自行添加。以AK/SK认证为例，添加方法如下：  
->1.  参考[获取项目编号](获取项目编号.md)查询到多项目的ID。  
->2.  在AccessServiceImpl.java中的调用signer.sign\(\)方法后面添加一行代码，参数值请填写实际的project id，具体位置参考[3.b](请求签名流程.md#li22657210162236)：  
+>1.  参考[获取项目ID](获取项目ID.md)查询到多项目的ID。  
+>2.  在AccessServiceImpl.java中的调用signer.sign\(\)方法后面添加一行代码，参数值请填写实际的project id，具体位置参考[4.a](AK-SK认证.md#li14378310161713)：  
 >    request.addHeader\("x-project-id", "20cf5fb8035543049a80906a6652fed2"\);  
 >如上，即可完成多项目下的AK/SK认证，否则可能报错。  
 
@@ -331,6 +331,9 @@ X-Apig-Mode: debug表示响应消息头增加API网关调试信息。
 -   cURL
 
     cURL是一个命令行工具，用来执行各种URL操作和信息传输。cURL充当的是HTTP客户端，可以发送HTTP请求给服务端，并接收响应消息。cURL适用于接口调试。关于cURL详细信息请参见[https://curl.haxx.se/](https://curl.haxx.se/)。
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“\~/.bash\_history”、“/var/log/messages”（如有）。  
 
 -   编码
 
