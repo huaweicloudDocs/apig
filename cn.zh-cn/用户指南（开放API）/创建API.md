@@ -51,7 +51,7 @@ API提供方把API接口配置在API网关中，开放后端能力。
     <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.4.1.2 "><p id="p1347622781611"><a name="p1347622781611"></a><a name="p1347622781611"></a>API类型：</p>
     <a name="ul0446338191910"></a><a name="ul0446338191910"></a><ul id="ul0446338191910"><li>公开：表示API公开。</li><li>私有：表示API不公开。</li></ul>
     </td>
-    <td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.4.1.3 "><a name="ul181113391495"></a><a name="ul181113391495"></a><ul id="ul181113391495"><li>选择“公开”类型时，API支持上架云市场。</li><li>选择“私有”类型时，当该API所在分组上架云市场时，该API不会上架。</li></ul>
+    <td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.4.1.3 "><a name="ul181113391495"></a><a name="ul181113391495"></a><ul id="ul181113391495"><li>选择“公开”类型时，API支持上架。</li><li>选择“私有”类型时，当该API所在分组上架时，该API不会上架。</li></ul>
     </td>
     </tr>
     <tr id="row8159123418166"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p015933461620"><a name="p015933461620"></a><a name="p015933461620"></a>安全认证</p>
@@ -133,11 +133,11 @@ API提供方把API接口配置在API网关中，开放后端能力。
     <tr id="row19149171881810"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p21502182182"><a name="p21502182182"></a><a name="p21502182182"></a>支持CORS</p>
     </td>
     <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.4.1.2 "><p id="p4909125414281"><a name="p4909125414281"></a><a name="p4909125414281"></a>是否开启跨域访问CORS（cross-origin resource sharing）。</p>
-    <p id="p158511625154816"><a name="p158511625154816"></a><a name="p158511625154816"></a>CORS允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。</p>
+    <p id="p158511625154816"><a name="p158511625154816"></a><a name="p158511625154816"></a>CORS允许浏览器向跨域服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。</p>
     <p id="p2526151865310"><a name="p2526151865310"></a><a name="p2526151865310"></a>CORS请求分为两类：</p>
     <a name="ul14470542195410"></a><a name="ul14470542195410"></a><ul id="ul14470542195410"><li>简单请求：头信息之中，增加一个Origin字段。</li><li>非简单请求：在正式通信之前，增加一次HTTP查询请求。</li></ul>
     </td>
-    <td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.4.1.3 "><p id="p11501418111810"><a name="p11501418111810"></a><a name="p11501418111810"></a>开启CORS（非简单请求）时，您需要单独创建一个“Method”为“OPTIONS”的API，具体步骤请参见<a href="创建OPTIONS方式的API.md">创建OPTIONS方式的API</a>。</p>
+    <td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.4.1.3 "><p id="p11501418111810"><a name="p11501418111810"></a><a name="p11501418111810"></a>开启CORS（非简单请求）时，您需要单独创建一个“Method”为“OPTIONS”的API，具体步骤请参见<a href="开启跨域访问.md">开启跨域访问</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -205,7 +205,7 @@ API提供方把API接口配置在API网关中，开放后端能力。
 8.  当“Method”为“POST”/“PUT”/“PATCH”/“ANY”时，您可以在“请求体内容描述”中增加对于请求体的描述信息。
 9.  单击“下一步”，进入“定义后端服务”页面。
 
-    选择API后端服务类型。后端服务类型分HTTP/HTTPS、FunctionGraph和Mock三种，具体参数描述见[表4](#table19365277271)。
+    选择API后端服务类型。后端服务类型分HTTP/HTTPS、FunctionGraph（暂未上线）和Mock三种，具体参数描述见[表4](#table19365277271)。
 
     **表 4**  定义后端服务
 
@@ -367,9 +367,9 @@ API提供方把API接口配置在API网关中，开放后端能力。
         </th>
         </tr>
         </thead>
-        <tbody><tr id="row535818141391"><td class="cellrowborder" valign="top" width="30.3%" headers="mcps1.2.3.1.1 "><p id="p635816141094"><a name="p635816141094"></a><a name="p635816141094"></a>后端参数名</p>
+        <tbody><tr id="row535818141391"><td class="cellrowborder" valign="top" width="30.3%" headers="mcps1.2.3.1.1 "><p id="p635816141094"><a name="p635816141094"></a><a name="p635816141094"></a>常量参数名</p>
         </td>
-        <td class="cellrowborder" valign="top" width="69.69999999999999%" headers="mcps1.2.3.1.2 "><p id="p193581148918"><a name="p193581148918"></a><a name="p193581148918"></a>后端参数的名称，如果参数在“PATH”位置，那么参数名称需要和“后端请求Path”中的名称相同。</p>
+        <td class="cellrowborder" valign="top" width="69.69999999999999%" headers="mcps1.2.3.1.2 "><p id="p193581148918"><a name="p193581148918"></a><a name="p193581148918"></a>常量参数的名称，如果参数在“PATH”位置，那么参数名称需要和“后端请求Path”中的名称相同。</p>
         <div class="note" id="note177432316818"><a name="note177432316818"></a><a name="note177432316818"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul3775202311815"></a><a name="ul3775202311815"></a><ul id="ul3775202311815"><li>参数名不能为x-sdk-*开头。</li><li>参数名不能为x-stage。</li><li>HEADER位置参数名不再区分大小写。</li></ul>
         </div></div>
         </td>

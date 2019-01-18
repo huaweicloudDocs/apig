@@ -27,26 +27,26 @@
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row14286311173619"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p52861411103620"><a name="p52861411103620"></a><a name="p52861411103620"></a>导入方式</p>
+    <tbody><tr id="row14286311173619"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p52861411103620"><a name="p52861411103620"></a><a name="p52861411103620"></a><span>导入方式</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p17286171143616"><a name="p17286171143616"></a><a name="p17286171143616"></a>导入方式包含以下2种：</p>
     <a name="ul17716192483810"></a><a name="ul17716192483810"></a><ul id="ul17716192483810"><li>导入到新的分组：将API定义导入到一个新的分组，导入过程中系统会自动创建一个新的API分组，并将导入的API归属到该分组。</li><li>导入到已有分组：将API定义导入到一个已有的分组，导入过程中不会删除分组中已有的API，只是将新增的API导入分组。</li></ul>
     </td>
     </tr>
-    <tr id="row3286101118369"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p32861711183614"><a name="p32861711183614"></a><a name="p32861711183614"></a>API分组</p>
+    <tr id="row3286101118369"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p32861711183614"><a name="p32861711183614"></a><a name="p32861711183614"></a><span>API分组</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p92867112366"><a name="p92867112366"></a><a name="p92867112366"></a>仅在选择“导入到已有分组”时，需要选择API分组。</p>
     </td>
     </tr>
-    <tr id="row7286711183611"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p12286191116360"><a name="p12286191116360"></a><a name="p12286191116360"></a>是否覆盖</p>
+    <tr id="row7286711183611"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p12286191116360"><a name="p12286191116360"></a><a name="p12286191116360"></a><span>是否覆盖</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p20286181118363"><a name="p20286181118363"></a><a name="p20286181118363"></a>仅在选择“导入到已有分组”时，需要选择是否覆盖。</p>
     <p id="p72021538134113"><a name="p72021538134113"></a><a name="p72021538134113"></a>勾选“是否覆盖”后，当导入的API定义与已有的API定义冲突时，导入的API定义会覆盖已有的API定义。</p>
     </td>
     </tr>
-    <tr id="row32862011133615"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p132861115369"><a name="p132861115369"></a><a name="p132861115369"></a>Swagger</p>
+    <tr id="row32862011133615"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p132861115369"><a name="p132861115369"></a><a name="p132861115369"></a><span>Swagger</span></p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p14286151113620"><a name="p14286151113620"></a><a name="p14286151113620"></a>选择Swagger文件</p>
+    <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p14286151113620"><a name="p14286151113620"></a><a name="p14286151113620"></a>选择<span>Swagger</span>文件</p>
     </td>
     </tr>
     </tbody>

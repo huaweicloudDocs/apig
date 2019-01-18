@@ -28,32 +28,32 @@
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row3286101118369"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p32861711183614"><a name="p32861711183614"></a><a name="p32861711183614"></a>API分组</p>
+    <tbody><tr id="row3286101118369"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p32861711183614"><a name="p32861711183614"></a><a name="p32861711183614"></a><span>API分组</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p92867112366"><a name="p92867112366"></a><a name="p92867112366"></a>选择待导出API所在的API分组。</p>
     </td>
     </tr>
-    <tr id="row194915509914"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p13492350591"><a name="p13492350591"></a><a name="p13492350591"></a>运行环境</p>
+    <tr id="row194915509914"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p13492350591"><a name="p13492350591"></a><a name="p13492350591"></a><span>运行环境</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p14492105011915"><a name="p14492105011915"></a><a name="p14492105011915"></a>选择待导出API所在的环境。</p>
     </td>
     </tr>
-    <tr id="row185485314913"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p1211151841013"><a name="p1211151841013"></a><a name="p1211151841013"></a>API</p>
+    <tr id="row185485314913"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p1211151841013"><a name="p1211151841013"></a><a name="p1211151841013"></a><span>API</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p954653293"><a name="p954653293"></a><a name="p954653293"></a>默认导出API分组所在环境的所有的API，如果需要导出个别API，单击“自定义导出API”，勾选需要导出的API名称。</p>
     </td>
     </tr>
-    <tr id="row16234355692"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p152343551892"><a name="p152343551892"></a><a name="p152343551892"></a>API定义范围</p>
+    <tr id="row16234355692"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p152343551892"><a name="p152343551892"></a><a name="p152343551892"></a><span>API定义范围</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><a name="ul51051155111915"></a><a name="ul51051155111915"></a><ul id="ul51051155111915"><li>基础定义：包括API前端请求定义和响应定义，不包括后端服务定义。其中API前端请求定义除了Swagger规范定义项外，还包括API网关的一些Swagger扩展字段。</li><li>全量定义：包括API前端请求定义、后端服务定义和响应定义。</li><li>扩展定义：包括API前端请求定义、后端服务定义和响应定义，还包括API关联的流量控制、访问控制等策略对象的定义。</li></ul>
     </td>
     </tr>
-    <tr id="row188814592914"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p1388125917918"><a name="p1388125917918"></a><a name="p1388125917918"></a>导出格式</p>
+    <tr id="row188814592914"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p1388125917918"><a name="p1388125917918"></a><a name="p1388125917918"></a><span>导出格式</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p1888155917915"><a name="p1888155917915"></a><a name="p1888155917915"></a>选择JSON或YAML。</p>
     </td>
     </tr>
-    <tr id="row5847204071012"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p584714017109"><a name="p584714017109"></a><a name="p584714017109"></a>自定义版本</p>
+    <tr id="row5847204071012"><td class="cellrowborder" valign="top" width="27.35%" headers="mcps1.2.3.1.1 "><p id="p584714017109"><a name="p584714017109"></a><a name="p584714017109"></a><span>自定义版本</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="72.65%" headers="mcps1.2.3.1.2 "><p id="p128473404109"><a name="p128473404109"></a><a name="p128473404109"></a>为导出的API自定义版本号，如果没有指定版本号，默认使用当前时间。</p>
     </td>

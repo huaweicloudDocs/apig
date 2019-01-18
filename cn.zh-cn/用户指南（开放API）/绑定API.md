@@ -5,7 +5,7 @@
 在策略创建之后，通过绑定API的方式，为API加上调用策略。
 
 >![](public_sys-resources/icon-note.gif) **说明：**   
->一个API只能绑定一个流控策略。  
+>同一个环境中一个API只能被一个流控策略绑定，一个流控策略可以绑定多个API。  
 
 ## 前提条件<a name="section83110548119"></a>
 

@@ -35,17 +35,17 @@ API创建后需要验证服务是否正常，管理控制台提供调试功能�
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row2431345016"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p8441941705"><a name="p8441941705"></a><a name="p8441941705"></a>Protocol</p>
+    <tbody><tr id="row2431345016"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p8441941705"><a name="p8441941705"></a><a name="p8441941705"></a><span>Protocol</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p444164702"><a name="p444164702"></a><a name="p444164702"></a>仅在“请求协议”为“HTTP&amp;HTTPS”时，支持修改。</p>
     </td>
     </tr>
-    <tr id="row699013480453"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p599054811454"><a name="p599054811454"></a><a name="p599054811454"></a>Method</p>
+    <tr id="row699013480453"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p599054811454"><a name="p599054811454"></a><a name="p599054811454"></a><span>Method</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1990104816453"><a name="p1990104816453"></a><a name="p1990104816453"></a>仅在“Method”为“ANY”时，支持修改。</p>
     </td>
     </tr>
-    <tr id="row1299115489454"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p699184812454"><a name="p699184812454"></a><a name="p699184812454"></a>Suffix</p>
+    <tr id="row1299115489454"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p699184812454"><a name="p699184812454"></a><a name="p699184812454"></a><span>Suffix</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p49911348204512"><a name="p49911348204512"></a><a name="p49911348204512"></a>仅在“匹配模式”为“前缀模式”时，支持自定义路径。</p>
     </td>
@@ -55,7 +55,7 @@ API创建后需要验证服务是否正常，管理控制台提供调试功能�
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p139911748164513"><a name="p139911748164513"></a><a name="p139911748164513"></a>仅在“Path”中存在“{}”时，支持修改。</p>
     </td>
     </tr>
-    <tr id="row10991184818452"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1899144854513"><a name="p1899144854513"></a><a name="p1899144854513"></a>Headers</p>
+    <tr id="row10991184818452"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1899144854513"><a name="p1899144854513"></a><a name="p1899144854513"></a>Header Parameters</p>
     </td>
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1991134811453"><a name="p1991134811453"></a><a name="p1991134811453"></a>HTTP Headers的参数与参数值。</p>
     </td>
