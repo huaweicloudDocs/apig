@@ -1,4 +1,4 @@
-# 获取API及文档<a name="apig-zh-ug-180307009"></a>
+# 获取API及文档<a name="ZH-CN_TOPIC_0085149605"></a>
 
 获取API：
 

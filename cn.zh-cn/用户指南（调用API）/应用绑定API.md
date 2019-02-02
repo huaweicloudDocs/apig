@@ -1,15 +1,15 @@
-# 应用绑定API<a name="apig-zh-ug-180307052"></a>
+# 应用绑定API<a name="ZH-CN_TOPIC_0084776265"></a>
 
-## 操作场景<a name="zh-cn_topic_0084776265_section1731012541118"></a>
+## 操作场景<a name="section1731012541118"></a>
 
 在应用创建后，需要将应用绑定API，然后才可以使用APP认证调用API。
 
-## 前提条件<a name="zh-cn_topic_0084776265_section83110548119"></a>
+## 前提条件<a name="section83110548119"></a>
 
 -   已创建应用。
 -   已发布需要绑定的API。
 
-## 操作步骤<a name="zh-cn_topic_0084776265_section8731554122615"></a>
+## 操作步骤<a name="section8731554122615"></a>
 
 1.  登录管理控制台。
 2.  在管理控制台左上角单击![](figures/icon-region.png)，选择区域。

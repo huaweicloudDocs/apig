@@ -1,10 +1,10 @@
-# SDK<a name="apig-zh-ug-180307056"></a>
+# SDK<a name="ZH-CN_TOPIC_0092639998"></a>
 
-## 操作场景<a name="zh-cn_topic_0092639998_section1382525105810"></a>
+## 操作场景<a name="section1382525105810"></a>
 
-API使用APP认证或者IAM认证（AK/SK）时，请根据需要下载SDK包和文档，参考文档完成API的调用。
+API使用APP认证或者华为IAM认证（AK/SK）时，请根据需要下载SDK包和文档，参考文档完成API的调用。
 
-## 操作步骤<a name="zh-cn_topic_0092639998_section51576331613"></a>
+## 操作步骤<a name="section51576331613"></a>
 
 1.  登录管理控制台。
 2.  在管理控制台左上角单击![](figures/icon-region.png)，选择区域。

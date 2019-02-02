@@ -1,15 +1,15 @@
-# 查看应用绑定的API详情<a name="apig-zh-ug-180307054"></a>
+# 查看应用绑定的API详情<a name="ZH-CN_TOPIC_0084768157"></a>
 
-## 操作场景<a name="zh-cn_topic_0084768157_section1731012541118"></a>
+## 操作场景<a name="section1731012541118"></a>
 
 在应用绑定API后，查看应用绑定的API的详情。
 
-## 前提条件<a name="zh-cn_topic_0084768157_section83110548119"></a>
+## 前提条件<a name="section83110548119"></a>
 
 -   已创建应用。
 -   应用已绑定API。
 
-## 操作步骤<a name="zh-cn_topic_0084768157_section8731554122615"></a>
+## 操作步骤<a name="section8731554122615"></a>
 
 1.  登录管理控制台。
 2.  在管理控制台左上角单击![](figures/icon-region.png)，选择区域。
