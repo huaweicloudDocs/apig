@@ -11,15 +11,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 **表 1**  HTTP/HTTPS请求方法以及URI
 
 <a name="table65264697"></a>
-<table><thead align="left"><tr id="row59320654"><th class="cellrowborder" valign="top" width="34.35%" id="mcps1.2.3.1.1"><p id="p40243635"><a name="p40243635"></a><a name="p40243635"></a>请求方法</p>
+<table><thead align="left"><tr id="row59320654"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p40243635"><a name="p40243635"></a><a name="p40243635"></a>请求方法</p>
 </th>
-<th class="cellrowborder" valign="top" width="65.64999999999999%" id="mcps1.2.3.1.2"><p id="p38508980"><a name="p38508980"></a><a name="p38508980"></a>URI</p>
+<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p38508980"><a name="p38508980"></a><a name="p38508980"></a>URI</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row32219707"><td class="cellrowborder" valign="top" width="34.35%" headers="mcps1.2.3.1.1 "><p id="p59659437"><a name="p59659437"></a><a name="p59659437"></a>GET</p>
+<tbody><tr id="row32219707"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p59659437"><a name="p59659437"></a><a name="p59659437"></a>GET</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.64999999999999%" headers="mcps1.2.3.1.2 "><p id="p576244"><a name="p576244"></a><a name="p576244"></a>/v1.0/apigw/app-auths/unbinded-apis[?page_size, page_no, app_id, env_id, api_id, api_name, group_id]</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p576244"><a name="p576244"></a><a name="p576244"></a>/v1.0/apigw/app-auths/unbinded-apis[?page_size, page_no, app_id, env_id, api_id, api_name, group_id]</p>
 </td>
 </tr>
 </tbody>

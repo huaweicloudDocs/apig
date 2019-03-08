@@ -11,15 +11,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 **表 1**  HTTP/HTTPS请求方法以及URI
 
 <a name="table27084002"></a>
-<table><thead align="left"><tr id="row40355780"><th class="cellrowborder" valign="top" width="34.339999999999996%" id="mcps1.2.3.1.1"><p id="p47592766"><a name="p47592766"></a><a name="p47592766"></a>请求方法</p>
+<table><thead align="left"><tr id="row40355780"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p47592766"><a name="p47592766"></a><a name="p47592766"></a>请求方法</p>
 </th>
-<th class="cellrowborder" valign="top" width="65.66%" id="mcps1.2.3.1.2"><p id="p29808828"><a name="p29808828"></a><a name="p29808828"></a>URI</p>
+<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p29808828"><a name="p29808828"></a><a name="p29808828"></a>URI</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row65704871"><td class="cellrowborder" valign="top" width="34.339999999999996%" headers="mcps1.2.3.1.1 "><p id="p20494310"><a name="p20494310"></a><a name="p20494310"></a>POST</p>
+<tbody><tr id="row65704871"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p20494310"><a name="p20494310"></a><a name="p20494310"></a>POST</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.3.1.2 "><p id="p49426402"><a name="p49426402"></a><a name="p49426402"></a>/v1.0/apigw/api-groups</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p49426402"><a name="p49426402"></a><a name="p49426402"></a>/v1.0/apigw/api-groups</p>
 </td>
 </tr>
 </tbody>

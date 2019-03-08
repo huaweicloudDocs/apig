@@ -27,27 +27,25 @@
 
     ```
     {
-      "auth": {
-        "identity": {
-          "methods": [
-            "password"
-          ],
-          "password": {
-            "user": {
-              "name": "username", //登录控制台后，从“我的凭证”页面获取“用户名”
-              "password": "password",
-              "domain": {
-                "name": "domainname" //登录控制台后，从“我的凭证”页面获取“账号名”
-              }
-            }
-          }
-        },
-        "scope": {
-          "project": {
-            "id": "0215ef11e49d4743be23dd97a1561e91" //登录控制台后，从“我的凭证”页面获取“项目ID”       
-          }
-        }
-      }
+    	"auth": {
+    		"identity": {
+    			"methods": ["password"],
+    			"password": {
+    				"user": {
+    					"name": "username",//登录控制台后，从“我的凭证”页面获取“用户名”
+    					"password": "password",
+    					"domain": {
+    						"name": "domainname"//登录控制台后，从“我的凭证”页面获取“账号名”
+    					}
+    				}
+    			}
+    		},
+    		"scope": {
+    			"project": {
+    				"id": "0215ef11e49d4743be23dd97a1561e91"//登录控制台后，从“我的凭证”页面获取“项目ID”
+    			}
+    		}
+    	}
     }
     ```
 
