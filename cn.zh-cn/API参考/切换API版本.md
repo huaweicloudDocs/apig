@@ -13,15 +13,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 **表 1**  HTTP/HTTPS请求方法以及URI
 
 <a name="table42014202"></a>
-<table><thead align="left"><tr id="row11048869"><th class="cellrowborder" valign="top" width="34.339999999999996%" id="mcps1.2.3.1.1"><p id="p22543169"><a name="p22543169"></a><a name="p22543169"></a>请求方法</p>
+<table><thead align="left"><tr id="row11048869"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p22543169"><a name="p22543169"></a><a name="p22543169"></a>请求方法</p>
 </th>
-<th class="cellrowborder" valign="top" width="65.66%" id="mcps1.2.3.1.2"><p id="p14057426"><a name="p14057426"></a><a name="p14057426"></a>URI</p>
+<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p14057426"><a name="p14057426"></a><a name="p14057426"></a>URI</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row64909760"><td class="cellrowborder" valign="top" width="34.339999999999996%" headers="mcps1.2.3.1.1 "><p id="p23199218"><a name="p23199218"></a><a name="p23199218"></a>PUT</p>
+<tbody><tr id="row64909760"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p23199218"><a name="p23199218"></a><a name="p23199218"></a>PUT</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.3.1.2 "><p id="p88529"><a name="p88529"></a><a name="p88529"></a>/v1.0/apigw/apis/publish/{api_id}</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p88529"><a name="p88529"></a><a name="p88529"></a>/v1.0/apigw/apis/publish/{api_id}</p>
 </td>
 </tr>
 </tbody>

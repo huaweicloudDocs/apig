@@ -13,15 +13,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 **表 1**  HTTP/HTTPS请求方法以及URI
 
 <a name="table33561337"></a>
-<table><thead align="left"><tr id="row12491901"><th class="cellrowborder" valign="top" width="34.339999999999996%" id="mcps1.2.3.1.1"><p id="p5211088"><a name="p5211088"></a><a name="p5211088"></a>请求方法</p>
+<table><thead align="left"><tr id="row12491901"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p5211088"><a name="p5211088"></a><a name="p5211088"></a>请求方法</p>
 </th>
-<th class="cellrowborder" valign="top" width="65.66%" id="mcps1.2.3.1.2"><p id="p19444963"><a name="p19444963"></a><a name="p19444963"></a>URI</p>
+<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p19444963"><a name="p19444963"></a><a name="p19444963"></a>URI</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row31538142"><td class="cellrowborder" valign="top" width="34.339999999999996%" headers="mcps1.2.3.1.1 "><p id="p4452714"><a name="p4452714"></a><a name="p4452714"></a>DELETE</p>
+<tbody><tr id="row31538142"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p4452714"><a name="p4452714"></a><a name="p4452714"></a>DELETE</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.3.1.2 "><p id="p25125550"><a name="p25125550"></a><a name="p25125550"></a>/v1.0/apigw/api-groups/{id}</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p25125550"><a name="p25125550"></a><a name="p25125550"></a>/v1.0/apigw/api-groups/{id}</p>
 </td>
 </tr>
 </tbody>
