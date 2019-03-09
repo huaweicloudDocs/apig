@@ -1,5 +1,10 @@
 # APIG错误码<a name="apig-zh-api-180713213"></a>
 
+通过本文档管理API，发生错误时，产生的错误码如[表1](#table13193435)所示。
+
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>调用API，发生错误时，产生的错误码请参考[错误码](https://support.huaweicloud.com/ugcall-apig/apig-zh-ug-180530090.html)。  
+
 **表 1**  错误码
 
 <a name="table13193435"></a>
@@ -219,6 +224,13 @@
 <td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p11553112519585"><a name="p11553112519585"></a><a name="p11553112519585"></a>No permissions for operating this method by PDP.</p>
 </td>
 <td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p1155317251584"><a name="p1155317251584"></a><a name="p1155317251584"></a>细粒度授权失败，无权限执行此操作</p>
+</td>
+</tr>
+<tr id="row3922191253413"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p20922101217340"><a name="p20922101217340"></a><a name="p20922101217340"></a>APIG.1120</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p149231812183410"><a name="p149231812183410"></a><a name="p149231812183410"></a>You do not have permissions to create ELB channels.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p492312121342"><a name="p492312121342"></a><a name="p492312121342"></a>没有权限创建私网ELB通道</p>
 </td>
 </tr>
 <tr id="row48511259"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p37097900"><a name="p37097900"></a><a name="p37097900"></a>APIG.1201</p>
@@ -802,6 +814,20 @@
 <td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p160733313319"><a name="p160733313319"></a><a name="p160733313319"></a>ACL策略个数超过限额</p>
 </td>
 </tr>
+<tr id="row137501049174315"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p1775294934319"><a name="p1775294934319"></a><a name="p1775294934319"></a>APIG.3113</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p1075204912432"><a name="p1075204912432"></a><a name="p1075204912432"></a>Maximum number of API backend policies reached.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p175219490438"><a name="p175219490438"></a><a name="p175219490438"></a>API的策略后端个数超过限额</p>
+</td>
+</tr>
+<tr id="row038123816553"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p113814385557"><a name="p113814385557"></a><a name="p113814385557"></a>APIG.3114</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p193818389559"><a name="p193818389559"></a><a name="p193818389559"></a>Maximum number of API conditions reached.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p183820380556"><a name="p183820380556"></a><a name="p183820380556"></a>策略后端的策略条件个数超过限额</p>
+</td>
+</tr>
 <tr id="row196251125152116"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p1462752522110"><a name="p1462752522110"></a><a name="p1462752522110"></a>APIG.3125</p>
 </td>
 <td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p12627132542118"><a name="p12627132542118"></a><a name="p12627132542118"></a>Maximum number of APIs for one API group reached.</p>
@@ -870,6 +896,13 @@
 <td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p14761633132919"><a name="p14761633132919"></a><a name="p14761633132919"></a>Parameter name already exists.</p>
 </td>
 <td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p98151124143816"><a name="p98151124143816"></a><a name="p98151124143816"></a>参数名称已存在</p>
+</td>
+</tr>
+<tr id="row1955683612572"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p15556436165718"><a name="p15556436165718"></a><a name="p15556436165718"></a>APIG.3210</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p13556736145719"><a name="p13556736145719"></a><a name="p13556736145719"></a>API backend policy name already exists.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p1755663611574"><a name="p1755663611574"></a><a name="p1755663611574"></a>策略后端名称已存在</p>
 </td>
 </tr>
 <tr id="row32385986"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p6019205"><a name="p6019205"></a><a name="p6019205"></a>APIG.3301</p>
@@ -970,6 +1003,13 @@
 <td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p17263131942911"><a name="p17263131942911"></a><a name="p17263131942911"></a>计费类型不可更改</p>
 </td>
 </tr>
+<tr id="row918218334411"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p31831433124119"><a name="p31831433124119"></a><a name="p31831433124119"></a>APIG.3408</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p1518314339410"><a name="p1518314339410"></a><a name="p1518314339410"></a>Authentication type of the API is not 'APP'.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p8183103384115"><a name="p8183103384115"></a><a name="p8183103384115"></a>API的认证类型不是APP</p>
+</td>
+</tr>
 <tr id="row1581012240295"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p1810224112918"><a name="p1810224112918"></a><a name="p1810224112918"></a>APIG.3409</p>
 </td>
 <td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p522139193317"><a name="p522139193317"></a><a name="p522139193317"></a>Access of purchased APIs cannot be granted to Apps of other tenants.</p>
@@ -1038,6 +1078,48 @@
 <td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p17544103012256"><a name="p17544103012256"></a><a name="p17544103012256"></a>Default AZ cannot be bound with any users.</p>
 </td>
 <td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p287752716562"><a name="p287752716562"></a><a name="p287752716562"></a>默认业务区不允许绑定用户</p>
+</td>
+</tr>
+<tr id="row646317712422"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p1146367154216"><a name="p1146367154216"></a><a name="p1146367154216"></a>APIG.3420</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p1846317717427"><a name="p1846317717427"></a><a name="p1846317717427"></a>API group is retired.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p04634774212"><a name="p04634774212"></a><a name="p04634774212"></a>指定的API分组已经退市</p>
+</td>
+</tr>
+<tr id="row639411226442"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p1073725184517"><a name="p1073725184517"></a><a name="p1073725184517"></a>APIG.3447</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p139442234411"><a name="p139442234411"></a><a name="p139442234411"></a>The Acl Strategy has already binded to APIs.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p039416223445"><a name="p039416223445"></a><a name="p039416223445"></a>指定的ACL策略绑定了API，无法删除</p>
+</td>
+</tr>
+<tr id="row382012774318"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p88218764318"><a name="p88218764318"></a><a name="p88218764318"></a>APIG.3451</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p682157134313"><a name="p682157134313"></a><a name="p682157134313"></a>The Throttle Strategy has already binded to APIs.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p1182120715430"><a name="p1182120715430"></a><a name="p1182120715430"></a>指定的流控策略绑定了API，无法删除</p>
+</td>
+</tr>
+<tr id="row47861616513"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p878171617513"><a name="p878171617513"></a><a name="p878171617513"></a>APIG.3471</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p147831625117"><a name="p147831625117"></a><a name="p147831625117"></a>No permission to operate this vpc type.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p078171645115"><a name="p078171645115"></a><a name="p078171645115"></a>不能对该类型的VPC通道执行此操作</p>
+</td>
+</tr>
+<tr id="row3795142095120"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p77951201519"><a name="p77951201519"></a><a name="p77951201519"></a>APIG.3472</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p1179552019511"><a name="p1179552019511"></a><a name="p1179552019511"></a>Instance is already used by other VPC.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p17795520155120"><a name="p17795520155120"></a><a name="p17795520155120"></a>后端实例已经被其它通道使用</p>
+</td>
+</tr>
+<tr id="row1797622219514"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p1297632215118"><a name="p1297632215118"></a><a name="p1297632215118"></a>APIG.3473</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p7976172245118"><a name="p7976172245118"></a><a name="p7976172245118"></a>Instance is already bound to other endpoint service.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p1597692285110"><a name="p1597692285110"></a><a name="p1597692285110"></a>后端实例已经绑定了其它endpoint service</p>
 </td>
 </tr>
 <tr id="row249611140209"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p0496111442013"><a name="p0496111442013"></a><a name="p0496111442013"></a>APIG.3500</p>
@@ -1122,6 +1204,20 @@
 <td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p184585423716"><a name="p184585423716"></a><a name="p184585423716"></a>DNS request failed.</p>
 </td>
 <td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p1845135473711"><a name="p1845135473711"></a><a name="p1845135473711"></a>请求dns服务失败</p>
+</td>
+</tr>
+<tr id="row18471647127"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p154711245121"><a name="p154711245121"></a><a name="p154711245121"></a>APIG.9007</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p2047194101211"><a name="p2047194101211"></a><a name="p2047194101211"></a>ELB request failed.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p194714411129"><a name="p194714411129"></a><a name="p194714411129"></a>请求ELB服务失败</p>
+</td>
+</tr>
+<tr id="row1821194124512"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p17211194164513"><a name="p17211194164513"></a><a name="p17211194164513"></a>APIG.9008</p>
+</td>
+<td class="cellrowborder" valign="top" width="46%" headers="mcps1.2.4.1.2 "><p id="p18211741114516"><a name="p18211741114516"></a><a name="p18211741114516"></a>Too many requests.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.4.1.3 "><p id="p6211341184515"><a name="p6211341184515"></a><a name="p6211341184515"></a>请求过于频繁，请稍后重试</p>
 </td>
 </tr>
 <tr id="row7503123025916"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p17503730115913"><a name="p17503730115913"></a><a name="p17503730115913"></a>APIG.9991</p>

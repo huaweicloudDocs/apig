@@ -15,15 +15,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 **表 1**  HTTP/HTTPS请求方法以及URI
 
 <a name="table31836871"></a>
-<table><thead align="left"><tr id="row66270525"><th class="cellrowborder" valign="top" width="34.339999999999996%" id="mcps1.2.3.1.1"><p id="p66312269"><a name="p66312269"></a><a name="p66312269"></a>请求方法</p>
+<table><thead align="left"><tr id="row66270525"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p66312269"><a name="p66312269"></a><a name="p66312269"></a>请求方法</p>
 </th>
-<th class="cellrowborder" valign="top" width="65.66%" id="mcps1.2.3.1.2"><p id="p2584681"><a name="p2584681"></a><a name="p2584681"></a>URI</p>
+<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p2584681"><a name="p2584681"></a><a name="p2584681"></a>URI</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row8032634"><td class="cellrowborder" valign="top" width="34.339999999999996%" headers="mcps1.2.3.1.1 "><p id="p46663656"><a name="p46663656"></a><a name="p46663656"></a>POST</p>
+<tbody><tr id="row8032634"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p46663656"><a name="p46663656"></a><a name="p46663656"></a>POST</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.3.1.2 "><p id="p21659802"><a name="p21659802"></a><a name="p21659802"></a>/v1.0/apigw/apis</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p21659802"><a name="p21659802"></a><a name="p21659802"></a>/v1.0/apigw/apis</p>
 </td>
 </tr>
 </tbody>
@@ -123,8 +123,8 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p35372032"><a name="p35372032"></a><a name="p35372032"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p46562321"><a name="p46562321"></a><a name="p46562321"></a>API的匹配方式：</p>
-<a name="ul8369025"></a><a name="ul8369025"></a><ul id="ul8369025"><li>SWA：前缀匹配</li><li>NORMAL：正常匹配（绝对匹配）<p id="p31111474402"><a name="p31111474402"></a><a name="p31111474402"></a>默认：NORMAL</p>
-</li></ul>
+<a name="ul8369025"></a><a name="ul8369025"></a><ul id="ul8369025"><li>SWA：前缀匹配</li><li>NORMAL：正常匹配（绝对匹配）</li></ul>
+<p id="p54641218412"><a name="p54641218412"></a><a name="p54641218412"></a>默认：NORMAL</p>
 </td>
 </tr>
 <tr id="row61222081"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p60041530"><a name="p60041530"></a><a name="p60041530"></a>remark</p>
@@ -269,9 +269,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <a name="table24173475"></a>
 <table><thead align="left"><tr id="row27724933"><th class="cellrowborder" valign="top" width="15.15%" id="mcps1.2.5.1.1"><p id="p31127089"><a name="p31127089"></a><a name="p31127089"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="13.13%" id="mcps1.2.5.1.2"><p id="p38266241"><a name="p38266241"></a><a name="p38266241"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="13.16%" id="mcps1.2.5.1.2"><p id="p38266241"><a name="p38266241"></a><a name="p38266241"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="14.14%" id="mcps1.2.5.1.3"><p id="p12557789"><a name="p12557789"></a><a name="p12557789"></a>类型</p>
+<th class="cellrowborder" valign="top" width="14.11%" id="mcps1.2.5.1.3"><p id="p12557789"><a name="p12557789"></a><a name="p12557789"></a>类型</p>
 </th>
 <th class="cellrowborder" valign="top" width="57.58%" id="mcps1.2.5.1.4"><p id="p10548014"><a name="p10548014"></a><a name="p10548014"></a>说明</p>
 </th>
@@ -279,9 +279,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </thead>
 <tbody><tr id="row49082844"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p16287438"><a name="p16287438"></a><a name="p16287438"></a>url_domain</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p1741473216910"><a name="p1741473216910"></a><a name="p1741473216910"></a>后端服务不使用VPC通道时，必选</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p1741473216910"><a name="p1741473216910"></a><a name="p1741473216910"></a>后端服务不使用VPC通道时，必选</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p24574368"><a name="p24574368"></a><a name="p24574368"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p24574368"><a name="p24574368"></a><a name="p24574368"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p44366800"><a name="p44366800"></a><a name="p44366800"></a>后端的Endpoint。</p>
 <p id="p9406451538"><a name="p9406451538"></a><a name="p9406451538"></a>由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.huaweicloud.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。</p>
@@ -290,18 +290,18 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row64033799"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p19355245"><a name="p19355245"></a><a name="p19355245"></a>version</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p24271019"><a name="p24271019"></a><a name="p24271019"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p24271019"><a name="p24271019"></a><a name="p24271019"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p19795562"><a name="p19795562"></a><a name="p19795562"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p19795562"><a name="p19795562"></a><a name="p19795562"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p59936722"><a name="p59936722"></a><a name="p59936722"></a>web后端版本</p>
 </td>
 </tr>
 <tr id="row6000091"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p16245391"><a name="p16245391"></a><a name="p16245391"></a>req_protocol</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p40808295"><a name="p40808295"></a><a name="p40808295"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p40808295"><a name="p40808295"></a><a name="p40808295"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p17137612"><a name="p17137612"></a><a name="p17137612"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p17137612"><a name="p17137612"></a><a name="p17137612"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p45969317"><a name="p45969317"></a><a name="p45969317"></a>请求协议：</p>
 <a name="ul4739707"></a><a name="ul4739707"></a><ul id="ul4739707"><li>HTTP</li><li>HTTPS</li></ul>
@@ -309,9 +309,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row32695023"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p31051236"><a name="p31051236"></a><a name="p31051236"></a>req_method</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p32122210"><a name="p32122210"></a><a name="p32122210"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p32122210"><a name="p32122210"></a><a name="p32122210"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p51762192"><a name="p51762192"></a><a name="p51762192"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p51762192"><a name="p51762192"></a><a name="p51762192"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p31987990"><a name="p31987990"></a><a name="p31987990"></a>请求方式：</p>
 <a name="ul47767884"></a><a name="ul47767884"></a><ul id="ul47767884"><li>GET</li><li>POST</li><li>PUT</li><li>DELETE</li><li>HEAD</li><li>PATCH</li><li>OPTIONS</li><li>ANY</li></ul>
@@ -319,9 +319,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row26241179"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p45160793"><a name="p45160793"></a><a name="p45160793"></a>req_uri</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p34145627"><a name="p34145627"></a><a name="p34145627"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p34145627"><a name="p34145627"></a><a name="p34145627"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p14332426"><a name="p14332426"></a><a name="p14332426"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p14332426"><a name="p14332426"></a><a name="p14332426"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p20075853"><a name="p20075853"></a><a name="p20075853"></a>请求地址</p>
 <p id="p1273516206484"><a name="p1273516206484"></a><a name="p1273516206484"></a>总长度不超过512，且满足URI规范。</p>
@@ -332,9 +332,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row30294306"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p37919687"><a name="p37919687"></a><a name="p37919687"></a>timeout</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p51595784"><a name="p51595784"></a><a name="p51595784"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p51595784"><a name="p51595784"></a><a name="p51595784"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p18509007"><a name="p18509007"></a><a name="p18509007"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p18509007"><a name="p18509007"></a><a name="p18509007"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p22834561"><a name="p22834561"></a><a name="p22834561"></a>API网关请求后端服务的超时时间，最大60000，最小为1</p>
 <p id="p3397199"><a name="p3397199"></a><a name="p3397199"></a>单位：毫秒</p>
@@ -343,9 +343,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row48499315"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p36130470"><a name="p36130470"></a><a name="p36130470"></a>remark</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p40886937"><a name="p40886937"></a><a name="p40886937"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p40886937"><a name="p40886937"></a><a name="p40886937"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p23507572"><a name="p23507572"></a><a name="p23507572"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p23507572"><a name="p23507572"></a><a name="p23507572"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p25065184"><a name="p25065184"></a><a name="p25065184"></a>描述</p>
 <p id="p18908459"><a name="p18908459"></a><a name="p18908459"></a>字符长度不超过255</p>
@@ -355,9 +355,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row54459243"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p49122562"><a name="p49122562"></a><a name="p49122562"></a>vpc_status</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p19504577"><a name="p19504577"></a><a name="p19504577"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p19504577"><a name="p19504577"></a><a name="p19504577"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p36366929"><a name="p36366929"></a><a name="p36366929"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p36366929"><a name="p36366929"></a><a name="p36366929"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p60040154"><a name="p60040154"></a><a name="p60040154"></a>是否使用VPC通道：</p>
 <a name="ul17737046"></a><a name="ul17737046"></a><ul id="ul17737046"><li>1 : 使用VPC通道</li><li>2 : 不使用VPC通道</li></ul>
@@ -365,9 +365,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row45404886"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p53917160"><a name="p53917160"></a><a name="p53917160"></a>vpc_info</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p5213863"><a name="p5213863"></a><a name="p5213863"></a>如果vpc_status=1，则这个字典类型为必填信息</p>
+<td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.5.1.2 "><p id="p5213863"><a name="p5213863"></a><a name="p5213863"></a>如果vpc_status=1，则这个字典类型为必填信息</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p19669754"><a name="p19669754"></a><a name="p19669754"></a>字典类型</p>
+<td class="cellrowborder" valign="top" width="14.11%" headers="mcps1.2.5.1.3 "><p id="p19669754"><a name="p19669754"></a><a name="p19669754"></a>字典类型</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p49746250"><a name="p49746250"></a><a name="p49746250"></a>VPC通道详情</p>
 </td>
@@ -404,6 +404,16 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p42761322"><a name="p42761322"></a><a name="p42761322"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p41115076"><a name="p41115076"></a><a name="p41115076"></a>代理主机</p>
+</td>
+</tr>
+<tr id="row162292516161"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p723065121617"><a name="p723065121617"></a><a name="p723065121617"></a>vpc_port</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p1230135110165"><a name="p1230135110165"></a><a name="p1230135110165"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p17230851131610"><a name="p17230851131610"></a><a name="p17230851131610"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p173496816411"><a name="p173496816411"></a><a name="p173496816411"></a>VPC通道端口</p>
+<p id="p1423019510164"><a name="p1423019510164"></a><a name="p1423019510164"></a>私网ELB类型通道时必选，用来指定ELB实例的监听器端口</p>
 </td>
 </tr>
 </tbody>
@@ -488,7 +498,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row51588510"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p17919758"><a name="p17919758"></a><a name="p17919758"></a>timeout</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p42214303"><a name="p42214303"></a><a name="p42214303"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p42214303"><a name="p42214303"></a><a name="p42214303"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p63915384"><a name="p63915384"></a><a name="p63915384"></a>Integer</p>
 </td>
@@ -665,7 +675,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1122017131128"><a name="p1122017131128"></a><a name="p1122017131128"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1722001319126"><a name="p1722001319126"></a><a name="p1722001319126"></a>正则校验规则</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1722001319126"><a name="p1722001319126"></a><a name="p1722001319126"></a>正则校验规则（暂不支持）</p>
 </td>
 </tr>
 <tr id="row177506146139"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p197501614181317"><a name="p197501614181317"></a><a name="p197501614181317"></a>json_schema</p>
@@ -674,7 +684,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1275091417134"><a name="p1275091417134"></a><a name="p1275091417134"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p07501140138"><a name="p07501140138"></a><a name="p07501140138"></a>JSON校验规则</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p07501140138"><a name="p07501140138"></a><a name="p07501140138"></a>JSON校验规则（暂不支持）</p>
 </td>
 </tr>
 </tbody>
@@ -717,7 +727,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p10230145415237"><a name="p10230145415237"></a><a name="p10230145415237"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p724735411231"><a name="p724735411231"></a><a name="p724735411231"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p724735411231"><a name="p724735411231"></a><a name="p724735411231"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1524775413233"><a name="p1524775413233"></a><a name="p1524775413233"></a>参数类别：</p>
 <a name="ul1124735482312"></a><a name="ul1124735482312"></a><ul id="ul1124735482312"><li>REQUEST</li><li>CONSTANT</li><li>SYSTEM</li></ul>
@@ -727,7 +737,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p1427715452315"><a name="p1427715452315"></a><a name="p1427715452315"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p17277155419233"><a name="p17277155419233"></a><a name="p17277155419233"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p17277155419233"><a name="p17277155419233"></a><a name="p17277155419233"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p657172452818"><a name="p657172452818"></a><a name="p657172452818"></a>参数值</p>
 <p id="p110811324312"><a name="p110811324312"></a><a name="p110811324312"></a>字符长度不超过255</p>
@@ -1330,49 +1340,49 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p161151635164413"><a name="p161151635164413"></a><a name="p161151635164413"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p9115133544413"><a name="p9115133544413"></a><a name="p9115133544413"></a>参数枚举值</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p2559522184412"><a name="p2559522184412"></a><a name="p2559522184412"></a>参数枚举值</p>
 </td>
 </tr>
 <tr id="row121151635204414"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p151311235144415"><a name="p151311235144415"></a><a name="p151311235144415"></a>min_num</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p713112353443"><a name="p713112353443"></a><a name="p713112353443"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p01464350441"><a name="p01464350441"></a><a name="p01464350441"></a>参数最小值（参数类型为NUMBER时有效）</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p95973228446"><a name="p95973228446"></a><a name="p95973228446"></a>参数最小值（参数类型为NUMBER时有效）</p>
 </td>
 </tr>
 <tr id="row01461435194417"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p8146203564415"><a name="p8146203564415"></a><a name="p8146203564415"></a>max_num</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p31627353442"><a name="p31627353442"></a><a name="p31627353442"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p117823511445"><a name="p117823511445"></a><a name="p117823511445"></a>参数最大值（参数类型为NUMBER时有效）</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p2631222104413"><a name="p2631222104413"></a><a name="p2631222104413"></a>参数最大值（参数类型为NUMBER时有效）</p>
 </td>
 </tr>
 <tr id="row1717853574413"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p61782355443"><a name="p61782355443"></a><a name="p61782355443"></a>min_size</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p201932035194417"><a name="p201932035194417"></a><a name="p201932035194417"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1119312351443"><a name="p1119312351443"></a><a name="p1119312351443"></a>参数最小长度</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p2668152294420"><a name="p2668152294420"></a><a name="p2668152294420"></a>参数最小长度</p>
 </td>
 </tr>
 <tr id="row1220912352444"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p12209535144412"><a name="p12209535144412"></a><a name="p12209535144412"></a>max_size</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p12251035164419"><a name="p12251035164419"></a><a name="p12251035164419"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p13225335194419"><a name="p13225335194419"></a><a name="p13225335194419"></a>参数最大长度</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p3702522184416"><a name="p3702522184416"></a><a name="p3702522184416"></a>参数最大长度</p>
 </td>
 </tr>
 <tr id="row1422523519444"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p52401735134413"><a name="p52401735134413"></a><a name="p52401735134413"></a>regular</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p12240153510443"><a name="p12240153510443"></a><a name="p12240153510443"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1256035204417"><a name="p1256035204417"></a><a name="p1256035204417"></a>正则校验规则</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p12731822184412"><a name="p12731822184412"></a><a name="p12731822184412"></a>正则校验规则（暂不支持）</p>
 </td>
 </tr>
 <tr id="row12561435124410"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p202561335114413"><a name="p202561335114413"></a><a name="p202561335114413"></a>json_schema</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p16271035114412"><a name="p16271035114412"></a><a name="p16271035114412"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1628793511445"><a name="p1628793511445"></a><a name="p1628793511445"></a>JSON校验规则</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p57661222144411"><a name="p57661222144411"></a><a name="p57661222144411"></a>JSON校验规则（暂不支持）</p>
 </td>
 </tr>
 </tbody>
@@ -1419,14 +1429,14 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tr>
 <tr id="row7412103554417"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p14271535144413"><a name="p14271535144413"></a><a name="p14271535144413"></a>origin</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p34431235184418"><a name="p34431235184418"></a><a name="p34431235184418"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p34431235184418"><a name="p34431235184418"></a><a name="p34431235184418"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1044312351449"><a name="p1044312351449"></a><a name="p1044312351449"></a>参数类别</p>
 </td>
 </tr>
 <tr id="row445983511447"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p5475203519440"><a name="p5475203519440"></a><a name="p5475203519440"></a>value</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1449053524417"><a name="p1449053524417"></a><a name="p1449053524417"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1449053524417"><a name="p1449053524417"></a><a name="p1449053524417"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p9490435144419"><a name="p9490435144419"></a><a name="p9490435144419"></a>参数值</p>
 </td>

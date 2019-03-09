@@ -11,15 +11,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 **表 1**  HTTP/HTTPS请求方法以及URI
 
 <a name="table1300090"></a>
-<table><thead align="left"><tr id="row35865770"><th class="cellrowborder" valign="top" width="34.339999999999996%" id="mcps1.2.3.1.1"><p id="p19446229"><a name="p19446229"></a><a name="p19446229"></a>请求方法</p>
+<table><thead align="left"><tr id="row35865770"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p19446229"><a name="p19446229"></a><a name="p19446229"></a>请求方法</p>
 </th>
-<th class="cellrowborder" valign="top" width="65.66%" id="mcps1.2.3.1.2"><p id="p31640721"><a name="p31640721"></a><a name="p31640721"></a>URI</p>
+<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p31640721"><a name="p31640721"></a><a name="p31640721"></a>URI</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row12761605"><td class="cellrowborder" valign="top" width="34.339999999999996%" headers="mcps1.2.3.1.1 "><p id="p27057114"><a name="p27057114"></a><a name="p27057114"></a>PUT</p>
+<tbody><tr id="row12761605"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p27057114"><a name="p27057114"></a><a name="p27057114"></a>PUT</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.3.1.2 "><p id="p44142648"><a name="p44142648"></a><a name="p44142648"></a>/v1.0/apigw/apis/{id}</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p44142648"><a name="p44142648"></a><a name="p44142648"></a>/v1.0/apigw/apis/{id}</p>
 </td>
 </tr>
 </tbody>
@@ -353,7 +353,7 @@ URI中的参数说明如下表所示。
 </tr>
 <tr id="row52675390"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p38848230"><a name="p38848230"></a><a name="p38848230"></a>timeout</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p59698910"><a name="p59698910"></a><a name="p59698910"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p59698910"><a name="p59698910"></a><a name="p59698910"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p3773518"><a name="p3773518"></a><a name="p3773518"></a>Integer</p>
 </td>
@@ -425,6 +425,16 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p8986837"><a name="p8986837"></a><a name="p8986837"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1117285801112"><a name="p1117285801112"></a><a name="p1117285801112"></a>代理主机</p>
+</td>
+</tr>
+<tr id="row516664612910"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p723065121617"><a name="p723065121617"></a><a name="p723065121617"></a>vpc_port</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p1230135110165"><a name="p1230135110165"></a><a name="p1230135110165"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p17230851131610"><a name="p17230851131610"></a><a name="p17230851131610"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1423019510164"><a name="p1423019510164"></a><a name="p1423019510164"></a>VPC通道端口</p>
+<p id="p06918365413"><a name="p06918365413"></a><a name="p06918365413"></a>私网ELB类型通道时必选，用来指定ELB实例的监听器端口</p>
 </td>
 </tr>
 </tbody>
@@ -509,7 +519,7 @@ URI中的参数说明如下表所示。
 </tr>
 <tr id="row44240322"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p26696343"><a name="p26696343"></a><a name="p26696343"></a>timeout</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p14920160"><a name="p14920160"></a><a name="p14920160"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p14920160"><a name="p14920160"></a><a name="p14920160"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p573446"><a name="p573446"></a><a name="p573446"></a>Integer</p>
 </td>
@@ -641,7 +651,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p71411168392"><a name="p71411168392"></a><a name="p71411168392"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p141581516113916"><a name="p141581516113916"></a><a name="p141581516113916"></a>参数枚举值</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p2559522184412"><a name="p2559522184412"></a><a name="p2559522184412"></a>参数枚举值</p>
 </td>
 </tr>
 <tr id="row878217618128"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p1778211616128"><a name="p1778211616128"></a><a name="p1778211616128"></a>min_num</p>
@@ -650,7 +660,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p178213613128"><a name="p178213613128"></a><a name="p178213613128"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p11708175481613"><a name="p11708175481613"></a><a name="p11708175481613"></a>参数最小值（参数类型为NUMBER时有效）</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p95973228446"><a name="p95973228446"></a><a name="p95973228446"></a>参数最小值（参数类型为NUMBER时有效）</p>
 </td>
 </tr>
 <tr id="row1242311108123"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p154235102129"><a name="p154235102129"></a><a name="p154235102129"></a>max_num</p>
@@ -659,7 +669,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1442316104122"><a name="p1442316104122"></a><a name="p1442316104122"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p542391091215"><a name="p542391091215"></a><a name="p542391091215"></a>参数最大值（参数类型为NUMBER时有效）</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p2631222104413"><a name="p2631222104413"></a><a name="p2631222104413"></a>参数最大值（参数类型为NUMBER时有效）</p>
 </td>
 </tr>
 <tr id="row21901721131212"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p9190321131218"><a name="p9190321131218"></a><a name="p9190321131218"></a>min_size</p>
@@ -668,7 +678,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1619082112121"><a name="p1619082112121"></a><a name="p1619082112121"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p719062181213"><a name="p719062181213"></a><a name="p719062181213"></a>参数最小长度</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p2668152294420"><a name="p2668152294420"></a><a name="p2668152294420"></a>参数最小长度</p>
 </td>
 </tr>
 <tr id="row192351217191211"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p182351717171210"><a name="p182351717171210"></a><a name="p182351717171210"></a>max_size</p>
@@ -677,7 +687,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p20235181721217"><a name="p20235181721217"></a><a name="p20235181721217"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p122359172126"><a name="p122359172126"></a><a name="p122359172126"></a>参数最大长度</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p3702522184416"><a name="p3702522184416"></a><a name="p3702522184416"></a>参数最大长度</p>
 </td>
 </tr>
 <tr id="row222041311121"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p10220131331219"><a name="p10220131331219"></a><a name="p10220131331219"></a>regular</p>
@@ -686,7 +696,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1122017131128"><a name="p1122017131128"></a><a name="p1122017131128"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1722001319126"><a name="p1722001319126"></a><a name="p1722001319126"></a>正则校验规则</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p12731822184412"><a name="p12731822184412"></a><a name="p12731822184412"></a>正则校验规则（暂不支持）</p>
 </td>
 </tr>
 <tr id="row177506146139"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p197501614181317"><a name="p197501614181317"></a><a name="p197501614181317"></a>json_schema</p>
@@ -695,7 +705,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1275091417134"><a name="p1275091417134"></a><a name="p1275091417134"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p07501140138"><a name="p07501140138"></a><a name="p07501140138"></a>JSON校验规则</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p57661222144411"><a name="p57661222144411"></a><a name="p57661222144411"></a>JSON校验规则（暂不支持）</p>
 </td>
 </tr>
 </tbody>
@@ -738,7 +748,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p10230145415237"><a name="p10230145415237"></a><a name="p10230145415237"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p724735411231"><a name="p724735411231"></a><a name="p724735411231"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p724735411231"><a name="p724735411231"></a><a name="p724735411231"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1524775413233"><a name="p1524775413233"></a><a name="p1524775413233"></a>参数类别：</p>
 <a name="ul1124735482312"></a><a name="ul1124735482312"></a><ul id="ul1124735482312"><li>REQUEST</li><li>CONSTANT</li><li>SYSTEM</li></ul>
@@ -748,7 +758,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p1427715452315"><a name="p1427715452315"></a><a name="p1427715452315"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p17277155419233"><a name="p17277155419233"></a><a name="p17277155419233"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p17277155419233"><a name="p17277155419233"></a><a name="p17277155419233"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p657172452818"><a name="p657172452818"></a><a name="p657172452818"></a>参数值</p>
 <p id="p110811324312"><a name="p110811324312"></a><a name="p110811324312"></a>字符长度不超过255</p>
@@ -1372,49 +1382,49 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p161151635164413"><a name="p161151635164413"></a><a name="p161151635164413"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p9115133544413"><a name="p9115133544413"></a><a name="p9115133544413"></a>参数枚举值</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p17209124910453"><a name="p17209124910453"></a><a name="p17209124910453"></a>参数枚举值</p>
 </td>
 </tr>
 <tr id="row121151635204414"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p151311235144415"><a name="p151311235144415"></a><a name="p151311235144415"></a>min_num</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p129607951117"><a name="p129607951117"></a><a name="p129607951117"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p01464350441"><a name="p01464350441"></a><a name="p01464350441"></a>参数最小值（参数类型为NUMBER时有效）</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p192431498456"><a name="p192431498456"></a><a name="p192431498456"></a>参数最小值（参数类型为NUMBER时有效）</p>
 </td>
 </tr>
 <tr id="row01461435194417"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p8146203564415"><a name="p8146203564415"></a><a name="p8146203564415"></a>max_num</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p31627353442"><a name="p31627353442"></a><a name="p31627353442"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p117823511445"><a name="p117823511445"></a><a name="p117823511445"></a>参数最大值（参数类型为NUMBER时有效）</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1327444914518"><a name="p1327444914518"></a><a name="p1327444914518"></a>参数最大值（参数类型为NUMBER时有效）</p>
 </td>
 </tr>
 <tr id="row1717853574413"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p61782355443"><a name="p61782355443"></a><a name="p61782355443"></a>min_size</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p201932035194417"><a name="p201932035194417"></a><a name="p201932035194417"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1119312351443"><a name="p1119312351443"></a><a name="p1119312351443"></a>参数最小长度</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p330311493456"><a name="p330311493456"></a><a name="p330311493456"></a>参数最小长度</p>
 </td>
 </tr>
 <tr id="row1220912352444"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p12209535144412"><a name="p12209535144412"></a><a name="p12209535144412"></a>max_size</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p12251035164419"><a name="p12251035164419"></a><a name="p12251035164419"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p13225335194419"><a name="p13225335194419"></a><a name="p13225335194419"></a>参数最大长度</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p9329749144513"><a name="p9329749144513"></a><a name="p9329749144513"></a>参数最大长度</p>
 </td>
 </tr>
 <tr id="row1422523519444"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p52401735134413"><a name="p52401735134413"></a><a name="p52401735134413"></a>regular</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p12240153510443"><a name="p12240153510443"></a><a name="p12240153510443"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1256035204417"><a name="p1256035204417"></a><a name="p1256035204417"></a>正则校验规则</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p193631549154517"><a name="p193631549154517"></a><a name="p193631549154517"></a>正则校验规则（暂不支持）</p>
 </td>
 </tr>
 <tr id="row12561435124410"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p202561335114413"><a name="p202561335114413"></a><a name="p202561335114413"></a>json_schema</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p16271035114412"><a name="p16271035114412"></a><a name="p16271035114412"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1628793511445"><a name="p1628793511445"></a><a name="p1628793511445"></a>JSON校验规则</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p17400114994510"><a name="p17400114994510"></a><a name="p17400114994510"></a>JSON校验规则（暂不支持）</p>
 </td>
 </tr>
 </tbody>
@@ -1461,14 +1471,14 @@ URI中的参数说明如下表所示。
 </tr>
 <tr id="row7412103554417"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p14271535144413"><a name="p14271535144413"></a><a name="p14271535144413"></a>origin</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p34431235184418"><a name="p34431235184418"></a><a name="p34431235184418"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p112891555114512"><a name="p112891555114512"></a><a name="p112891555114512"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1044312351449"><a name="p1044312351449"></a><a name="p1044312351449"></a>参数类别</p>
 </td>
 </tr>
 <tr id="row445983511447"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p5475203519440"><a name="p5475203519440"></a><a name="p5475203519440"></a>value</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1449053524417"><a name="p1449053524417"></a><a name="p1449053524417"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p331005594512"><a name="p331005594512"></a><a name="p331005594512"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p9490435144419"><a name="p9490435144419"></a><a name="p9490435144419"></a>参数值</p>
 </td>
