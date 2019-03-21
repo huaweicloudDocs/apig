@@ -10,7 +10,8 @@ API提供方把API接口配置在API网关中，开放后端能力。
 
 ## 前提条件<a name="section83110548119"></a>
 
-已创建API分组。
+-   已创建API分组。如果未创建API分组，可在本操作页面中创建API分组。
+-   如果后端服务需要使用VPC通道，请先[创建VPC通道](创建VPC通道.md)，或在本操作页面中创建VPC通道。
 
 ## 操作步骤<a name="section17464154193117"></a>
 
@@ -204,7 +205,7 @@ API提供方把API接口配置在API网关中，开放后端能力。
 8.  当“Method”为“POST”/“PUT”/“PATCH”/“ANY”时，您可以在“请求体内容描述”中增加对于请求体的描述信息。
 9.  单击“下一步”，进入“定义后端服务”页面。
 
-    选择API后端服务类型。后端服务类型分HTTP/HTTPS、FunctionGraph（暂未上线）和Mock三种，具体参数描述见[表4](#zh-cn_topic_0080101678_table19365277271)。
+    选择API后端服务类型。后端服务类型分HTTP/HTTPS、FunctionGraph和Mock三种，具体参数描述见[表4](#zh-cn_topic_0080101678_table19365277271)。
 
     **表 4**  定义后端服务
 
@@ -217,7 +218,7 @@ API提供方把API接口配置在API网关中，开放后端能力。
     </th>
     </tr>
     </thead>
-    <tbody><tr id="zh-cn_topic_0080101678_row73602710275"><td class="cellrowborder" rowspan="9" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0080101678_p1636142722717"><a name="zh-cn_topic_0080101678_p1636142722717"></a><a name="zh-cn_topic_0080101678_p1636142722717"></a>HTTP/HTTPS</p>
+    <tbody><tr id="zh-cn_topic_0080101678_row73602710275"><td class="cellrowborder" rowspan="8" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0080101678_p1636142722717"><a name="zh-cn_topic_0080101678_p1636142722717"></a><a name="zh-cn_topic_0080101678_p1636142722717"></a>HTTP/HTTPS</p>
     <p id="zh-cn_topic_0080101678_p1682518352286"><a name="zh-cn_topic_0080101678_p1682518352286"></a><a name="zh-cn_topic_0080101678_p1682518352286"></a></p>
     </td>
     <td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0080101678_p436122720273"><a name="zh-cn_topic_0080101678_p436122720273"></a><a name="zh-cn_topic_0080101678_p436122720273"></a>协议</p>
@@ -241,14 +242,9 @@ API提供方把API接口配置在API网关中，开放后端能力。
     </tr>
     <tr id="zh-cn_topic_0080101678_row19372278271"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0080101678_p1337152742710"><a name="zh-cn_topic_0080101678_p1337152742710"></a><a name="zh-cn_topic_0080101678_p1337152742710"></a>后端服务地址（可选）</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0080101678_p9942165415311"><a name="zh-cn_topic_0080101678_p9942165415311"></a><a name="zh-cn_topic_0080101678_p9942165415311"></a>关联端口的IP地址/域名。仅在不使用VPC通道时，需要设置。</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0080101678_p9942165415311"><a name="zh-cn_topic_0080101678_p9942165415311"></a><a name="zh-cn_topic_0080101678_p9942165415311"></a>IP地址:端口/域名。仅在不使用VPC通道时，需要设置。</p>
+    <p id="zh-cn_topic_0080101678_p488045922618"><a name="zh-cn_topic_0080101678_p488045922618"></a><a name="zh-cn_topic_0080101678_p488045922618"></a>端口范围：1 ~ 65535。</p>
     <p id="zh-cn_topic_0080101678_p1583414428393"><a name="zh-cn_topic_0080101678_p1583414428393"></a><a name="zh-cn_topic_0080101678_p1583414428393"></a>如果需要创建变量标识，则填写“#变量名#”，如#ipaddress#。支持创建多个变量标识，如#ipaddress##test#。</p>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0080101678_row1582514357282"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0080101678_p208251735192812"><a name="zh-cn_topic_0080101678_p208251735192812"></a><a name="zh-cn_topic_0080101678_p208251735192812"></a>端口（可选）</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0080101678_p112757268421"><a name="zh-cn_topic_0080101678_p112757268421"></a><a name="zh-cn_topic_0080101678_p112757268421"></a>端口范围：1 ~ 65535。仅在不使用VPC通道时，需要设置。</p>
-    <p id="zh-cn_topic_0080101678_p178251435192814"><a name="zh-cn_topic_0080101678_p178251435192814"></a><a name="zh-cn_topic_0080101678_p178251435192814"></a>如果需要创建变量标识，则填写“#变量名#”，如#port#。只支持设置一个变量标识。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0080101678_row74195413537"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0080101678_p194214544531"><a name="zh-cn_topic_0080101678_p194214544531"></a><a name="zh-cn_topic_0080101678_p194214544531"></a>VPC通道（可选）</p>
@@ -311,7 +307,75 @@ API提供方把API接口配置在API网关中，开放后端能力。
     >-   变量名严格区分大小写。  
     >-   如果在API定义中设置变量，那么必须在待发布环境上配置变量名和变量值，否则变量无法赋值，API将无法正常调用。  
 
-10. （可选）配置后端服务参数。
+10. （可选）添加后端策略。
+
+    添加多个后端策略后，通过不同的策略条件，请求被转发到不同的后端服务中。
+
+    1.  单击“添加策略后端”。
+    2.  后端策略增加的参数，具体如[表5](#zh-cn_topic_0080101678_table161651642172215)所示，其他参数说明参见[表4](#zh-cn_topic_0080101678_table19365277271)。
+
+        **表 5**  后端策略参数
+
+        <a name="zh-cn_topic_0080101678_table161651642172215"></a>
+        <table><thead align="left"><tr id="zh-cn_topic_0080101678_row816694252213"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0080101678_p869118215233"><a name="zh-cn_topic_0080101678_p869118215233"></a><a name="zh-cn_topic_0080101678_p869118215233"></a>信息项</p>
+        </th>
+        <th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0080101678_p156912217236"><a name="zh-cn_topic_0080101678_p156912217236"></a><a name="zh-cn_topic_0080101678_p156912217236"></a>描述</p>
+        </th>
+        </tr>
+        </thead>
+        <tbody><tr id="zh-cn_topic_0080101678_row121661242152210"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p116614252220"><a name="zh-cn_topic_0080101678_p116614252220"></a><a name="zh-cn_topic_0080101678_p116614252220"></a>后端策略名称</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p16166134282212"><a name="zh-cn_topic_0080101678_p16166134282212"></a><a name="zh-cn_topic_0080101678_p16166134282212"></a>您自定义的名称，用于识别不同的后端策略。</p>
+        </td>
+        </tr>
+        <tr id="zh-cn_topic_0080101678_row216624212221"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p151661142102210"><a name="zh-cn_topic_0080101678_p151661142102210"></a><a name="zh-cn_topic_0080101678_p151661142102210"></a>生效方式</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0080101678_ul0239558175417"></a><a name="zh-cn_topic_0080101678_ul0239558175417"></a><ul id="zh-cn_topic_0080101678_ul0239558175417"><li>满足任一条件：只要满足策略条件中的任意一项，此后端策略就可以生效。</li><li>满足全部条件：只有满足所有的策略条件，此后端策略才生效。</li></ul>
+        </td>
+        </tr>
+        <tr id="zh-cn_topic_0080101678_row0152121682419"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p215211632418"><a name="zh-cn_topic_0080101678_p215211632418"></a><a name="zh-cn_topic_0080101678_p215211632418"></a>策略条件</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p923965815413"><a name="zh-cn_topic_0080101678_p923965815413"></a><a name="zh-cn_topic_0080101678_p923965815413"></a>使后端策略生效的条件，具体如<a href="#zh-cn_topic_0080101678_table10241058205411">表6</a>所示。</p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+
+        **表 6**  策略条件
+
+        <a name="zh-cn_topic_0080101678_table10241058205411"></a>
+        <table><thead align="left"><tr id="zh-cn_topic_0080101678_row16240858165410"><th class="cellrowborder" valign="top" width="20.59%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0080101678_p10240165817543"><a name="zh-cn_topic_0080101678_p10240165817543"></a><a name="zh-cn_topic_0080101678_p10240165817543"></a>信息项</p>
+        </th>
+        <th class="cellrowborder" valign="top" width="79.41%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0080101678_p19240125815419"><a name="zh-cn_topic_0080101678_p19240125815419"></a><a name="zh-cn_topic_0080101678_p19240125815419"></a>描述</p>
+        </th>
+        </tr>
+        </thead>
+        <tbody><tr id="zh-cn_topic_0080101678_row14240175855413"><td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p162405589548"><a name="zh-cn_topic_0080101678_p162405589548"></a><a name="zh-cn_topic_0080101678_p162405589548"></a>条件来源</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="79.41%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0080101678_ul824095855419"></a><a name="zh-cn_topic_0080101678_ul824095855419"></a><ul id="zh-cn_topic_0080101678_ul824095855419"><li>源地址：以访问API的请求地址作为策略条件来源。</li><li>请求入参：以请求入参参数作为策略条件来源。</li></ul>
+        </td>
+        </tr>
+        <tr id="zh-cn_topic_0080101678_row124095810545"><td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p1224085815417"><a name="zh-cn_topic_0080101678_p1224085815417"></a><a name="zh-cn_topic_0080101678_p1224085815417"></a>参数名称</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="79.41%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p20240658125416"><a name="zh-cn_topic_0080101678_p20240658125416"></a><a name="zh-cn_topic_0080101678_p20240658125416"></a>仅在“条件来源”为“请求入参”时，需要设置。选择已创建的入参参数名称。</p>
+        </td>
+        </tr>
+        <tr id="zh-cn_topic_0080101678_row16241195813548"><td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p10240125816544"><a name="zh-cn_topic_0080101678_p10240125816544"></a><a name="zh-cn_topic_0080101678_p10240125816544"></a>条件类型</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="79.41%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p13240125885416"><a name="zh-cn_topic_0080101678_p13240125885416"></a><a name="zh-cn_topic_0080101678_p13240125885416"></a>仅在“条件来源”为“请求入参”时，需要设置。</p>
+        <a name="zh-cn_topic_0080101678_ul142415589544"></a><a name="zh-cn_topic_0080101678_ul142415589544"></a><ul id="zh-cn_topic_0080101678_ul142415589544"><li>相等：请求参数值必须为输入值时，条件成立。</li><li>枚举：请求参数值只需要和枚举值中任何一个值相同，条件成立。</li><li>匹配：请求参数值只需要和<span>正则表达式</span>中任何一个值相同，条件成立。</li></ul>
+        </td>
+        </tr>
+        <tr id="zh-cn_topic_0080101678_row62411958195412"><td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p19241115865413"><a name="zh-cn_topic_0080101678_p19241115865413"></a><a name="zh-cn_topic_0080101678_p19241115865413"></a>条件值</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="79.41%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0080101678_ul102411958125415"></a><a name="zh-cn_topic_0080101678_ul102411958125415"></a><ul id="zh-cn_topic_0080101678_ul102411958125415"><li>“条件类型”为“相等”时，输入一个值。</li><li>“条件类型”为“枚举”时，输入多个值，以英文逗号隔开。</li><li>“条件类型”为“匹配”时，输入一个范围，例如：[0-5]。</li><li>“条件来源”为“源地址”时，输入一个或多个IP地址，以英文逗号隔开。</li></ul>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+
+
+11. （可选）配置后端服务参数。
 
     将调用API时传入的参数映射到后端服务对应的位置。
 
@@ -350,14 +414,14 @@ API提供方把API接口配置在API网关中，开放后端能力。
 
 
 
-11. （可选）设置常量参数。
+12. （可选）设置常量参数。
 
     如果后端服务需要接收API调用者不可见的常量，可以通过设置常量参数来实现。API网关在请求后端服务时，将常量参数增加到指定请求位置，并将请求发送给后端服务。
 
     1.  在“常量参数”右边单击![](figures/icon-down.png)，显示常量参数列表。
-    2.  单击“添加常量参数”，输入如[表5](#zh-cn_topic_0080101678_table1835918141595)所示信息。
+    2.  单击“添加常量参数”，输入如[表7](#zh-cn_topic_0080101678_table1835918141595)所示信息。
 
-        **表 5**  常量参数
+        **表 7**  常量参数
 
         <a name="zh-cn_topic_0080101678_table1835918141595"></a>
         <table><thead align="left"><tr id="zh-cn_topic_0080101678_row43581714193"><th class="cellrowborder" valign="top" width="30.3%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0080101678_p163583143913"><a name="zh-cn_topic_0080101678_p163583143913"></a><a name="zh-cn_topic_0080101678_p163583143913"></a>信息项</p>
@@ -398,9 +462,9 @@ API提供方把API接口配置在API网关中，开放后端能力。
         >-   “QUERY”位置的参数值会对如下字符进行百分号编码：ASCII码为0到31的字符、\>、=、<、+、&、%、\#、"、\[、\\、\]、^、\`、\{、|、\}、空白符、ASCII码为127到255的字符。  
 
 
-12. 单击“下一步”，进入“返回结果基础定义”页面，填写如[表6](#zh-cn_topic_0080101678_table744813380582)所示信息。
+13. 单击“下一步”，进入“返回结果基础定义”页面，填写如[表8](#zh-cn_topic_0080101678_table744813380582)所示信息。
 
-    **表 6**  定义返回结果
+    **表 8**  定义返回结果
 
     <a name="zh-cn_topic_0080101678_table744813380582"></a>
     <table><thead align="left"><tr id="zh-cn_topic_0080101678_row134496380581"><th class="cellrowborder" valign="top" width="28.999999999999996%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0080101678_p13631445105915"><a name="zh-cn_topic_0080101678_p13631445105915"></a><a name="zh-cn_topic_0080101678_p13631445105915"></a>信息项</p>
@@ -422,7 +486,7 @@ API提供方把API接口配置在API网关中，开放后端能力。
     </tbody>
     </table>
 
-13. 单击“完成”，完成API的创建。
+14. 单击“完成”，完成API的创建。
 
     API创建完成后，在API列表页面单击API名称，查看API详细信息。
 
