@@ -2,7 +2,7 @@
 
 ## 操作场景<a name="section25971517509"></a>
 
-Swagger是基于OpenAPI规范构建的开源工具，可以帮助您设计、构建、记录以及使用 Rest API。API网关支持导入Swagger 2.0定义的API到已有的API分组或新的API分组。
+Swagger是基于OpenAPI规范构建的开源工具，可以帮助您设计、构建、记录以及使用Rest API。API网关支持导入Swagger 2.0定义的API到已有的API分组或新的API分组。
 
 导入API支持单个API导入和批量API导入，主要取决于Swagger文件中包含的API数量。
 

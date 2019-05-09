@@ -156,7 +156,7 @@ API提供者把API接口配置在API网关中，开放后端能力。
         <tbody><tr id="zh-cn_topic_0080101678_row470020016611"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p13700502613"><a name="zh-cn_topic_0080101678_p13700502613"></a><a name="zh-cn_topic_0080101678_p13700502613"></a>参数名</p>
         </td>
         <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p97001503618"><a name="zh-cn_topic_0080101678_p97001503618"></a><a name="zh-cn_topic_0080101678_p97001503618"></a>参数的名称，如果参数在“PATH”位置，那么参数名称需要和“请求Path”中的名称相同。</p>
-        <div class="note" id="zh-cn_topic_0080101678_note1086540637"><a name="zh-cn_topic_0080101678_note1086540637"></a><a name="zh-cn_topic_0080101678_note1086540637"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="zh-cn_topic_0080101678_ul7763461339"></a><a name="zh-cn_topic_0080101678_ul7763461339"></a><ul id="zh-cn_topic_0080101678_ul7763461339"><li>参数名不能为x-sdk-*开头。</li><li>参数名不能为x-stage。</li><li>HEADER位置参数名不再区分大小写。</li></ul>
+        <div class="note" id="zh-cn_topic_0080101678_note1086540637"><a name="zh-cn_topic_0080101678_note1086540637"></a><a name="zh-cn_topic_0080101678_note1086540637"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="zh-cn_topic_0080101678_ul7763461339"></a><a name="zh-cn_topic_0080101678_ul7763461339"></a><ul id="zh-cn_topic_0080101678_ul7763461339"><li>参数名不能是x-apig- 、x-sdk-开头，不区分大小写。</li><li>参数名不能是x-stage，不区分大小写。</li><li>参数位置为HEADER时，参数名不能是“Authorization”和“X-Auth-Token”，不区分大小写，也不支持下划线。</li></ul>
         </div></div>
         </td>
         </tr>
@@ -396,9 +396,9 @@ API提供者把API接口配置在API网关中，开放后端能力。
         2.  调用API的请求参数名称、位置可以与后端参数名称、位置不同。
 
             >![](public_sys-resources/icon-note.gif) **说明：**   
-            >-   参数名不能为x-sdk-\*开头。  
-            >-   参数名不能为x-stage。  
-            >-   HEADER位置参数名不再区分大小写。  
+            >-   参数名不能是x-apig- 、x-sdk-开头，不区分大小写。  
+            >-   参数名不能是x-stage，不区分大小写。  
+            >-   参数位置为HEADER时，参数名不区分大小写，也不支持下划线。  
 
         3.  如上图，test01和test03在调用API时分别配置于PATH和QUERY位置，后端服务通过映射，将在HEADER位置接收test01和test03的值。test02在调用API时配置于HEADER位置，后端服务通过映射，将在PATH位置以参数名test05来接收test02的值。
 
@@ -440,7 +440,7 @@ API提供者把API接口配置在API网关中，开放后端能力。
         <tbody><tr id="zh-cn_topic_0080101678_row535818141391"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p635816141094"><a name="zh-cn_topic_0080101678_p635816141094"></a><a name="zh-cn_topic_0080101678_p635816141094"></a>常量参数名</p>
         </td>
         <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p193581148918"><a name="zh-cn_topic_0080101678_p193581148918"></a><a name="zh-cn_topic_0080101678_p193581148918"></a>常量参数的名称，如果参数在“PATH”位置，那么参数名称需要和“后端请求Path”中的名称相同。</p>
-        <div class="note" id="zh-cn_topic_0080101678_note177432316818"><a name="zh-cn_topic_0080101678_note177432316818"></a><a name="zh-cn_topic_0080101678_note177432316818"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="zh-cn_topic_0080101678_ul3775202311815"></a><a name="zh-cn_topic_0080101678_ul3775202311815"></a><ul id="zh-cn_topic_0080101678_ul3775202311815"><li>参数名不能为x-sdk-*开头。</li><li>参数名不能为x-stage。</li><li>HEADER位置参数名不再区分大小写。</li></ul>
+        <div class="note" id="zh-cn_topic_0080101678_note162561812012"><a name="zh-cn_topic_0080101678_note162561812012"></a><a name="zh-cn_topic_0080101678_note162561812012"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="zh-cn_topic_0080101678_ul192516181203"></a><a name="zh-cn_topic_0080101678_ul192516181203"></a><ul id="zh-cn_topic_0080101678_ul192516181203"><li>参数名不能是x-apig- 、x-sdk-开头，不区分大小写。</li><li>参数名不能是x-stage，不区分大小写。</li><li>参数位置为HEADER时，参数名不区分大小写，也不支持下划线。</li></ul>
         </div></div>
         </td>
         </tr>
@@ -502,10 +502,6 @@ API提供者把API接口配置在API网关中，开放后端能力。
     API创建完成后，在API列表页面单击API名称，查看API详细信息。
 
 
-## 后续操作<a name="zh-cn_topic_0080101678_section1679143819506"></a>
-
-您创建完API后，通过[调试API](调试API.md)，验证服务是否正常。
-
 ## 使用API方式创建API<a name="zh-cn_topic_0080101678_section7546754133419"></a>
 
 您还可以使用API的方式创建API，具体操作请查看以下链接。
@@ -523,4 +519,12 @@ API提供者把API接口配置在API网关中，开放后端能力。
 [在API网关中创建完成API，调用时报“No backend available”错误，怎么解决？](https://support.huaweicloud.com/apig_faq/apig-zh-faq-181016018.html)
 
 [使用JavaScript调用API，报\{error\_msg: "The API does not exist or has not been published in an environment",…\}错误，怎么解决？](https://support.huaweicloud.com/apig_faq/apig-zh-faq-181016020.html)
+
+## 创建API的最佳实践<a name="zh-cn_topic_0080101678_section75307401351"></a>
+
+[基于API网关的电话号码归属地查询](https://support.huaweicloud.com/bestpractice-apig/apig-zh-bp-180606001.html)
+
+## 后续操作<a name="zh-cn_topic_0080101678_section1679143819506"></a>
+
+您创建完API后，通过[调试API](调试API.md)，验证服务是否正常。
 

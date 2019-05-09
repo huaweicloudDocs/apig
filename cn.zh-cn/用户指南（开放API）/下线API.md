@@ -24,13 +24,13 @@
 
 6.  选择API需要下线的环境，单击“确定”，完成API下线。
 
-## 后续操作<a name="zh-cn_topic_0080101678_section1679143819506"></a>
-
-您将API下线后，可以通过[删除API](删除API.md)，释放此API所占用的资源。
-
 ## 使用API方式下线API<a name="zh-cn_topic_0080101678_section7546754133419"></a>
 
 您还可以使用API的方式下线API，具体操作请查看以下链接。
 
 [下线API](https://support.huaweicloud.com/api-apig/apig-zh-api-180713029.html)
+
+## 后续操作<a name="zh-cn_topic_0080101678_section1679143819506"></a>
+
+您将API下线后，可以通过[删除API](删除API.md)，释放此API所占用的资源。
 

@@ -41,10 +41,6 @@ API在创建后，通过指定授权给某些应用，让指定应用能够调�
     >如果已授权的应用列表中包含无需授权的应用，在此应用所在行单击“解除授权”，将无需授权的应用删除。  
 
 
-## 后续操作<a name="zh-cn_topic_0080101678_section1679143819506"></a>
-
-您将API授权给指定应用后，可以通过不同语言的SDK调用此API。
-
 ## 使用API方式授权API<a name="zh-cn_topic_0080101678_section7546754133419"></a>
 
 您还可以使用API的方式授权API，具体操作请查看以下链接。
@@ -52,4 +48,8 @@ API在创建后，通过指定授权给某些应用，让指定应用能够调�
 [授权](https://support.huaweicloud.com/api-apig/apig-zh-api-180713046.html)
 
 [解除授权](https://support.huaweicloud.com/api-apig/apig-zh-api-180713049.html)
+
+## 后续操作<a name="zh-cn_topic_0080101678_section1679143819506"></a>
+
+您将API授权给指定应用后，可以通过不同语言的SDK调用此API。
 

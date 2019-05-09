@@ -2,11 +2,9 @@
 
 ## 操作场景<a name="section397917113411"></a>
 
-API网关支持将部署在VPC或ELB实例中的后端服务开放API，从而实现后端服务的负载均衡。
+在API网关中创建VPC通道来访问VPC环境中的资源，并将部署在VPC中的后端服务开放API。同时VPC通道具有负载均衡功能，从而实现后端服务的负载均衡。
 
 创建VPC通道后，在创建API，且后端服务类型为HTTP/HTTPS时，后端服务地址可以直接使用已创建的VPC通道。
-
-VPC通道包括快速通道和私网ELB通道。
 
 例如，VPC中包含6台ECS，已创建一条VPC通道，其中ECS 01和ECS 04已添加到VPC通道中，此时API网关通过VPC通道可以直接访问VPC中的ECS 01和ECS 04。
 
@@ -18,8 +16,7 @@ VPC通道包括快速通道和私网ELB通道。
 
 ## 前提条件<a name="section0671164213481"></a>
 
--   已创建弹性云服务器。
--   已购买ELB实例。
+已创建弹性云服务器。
 
 ## 创建快速通道<a name="section1579620508489"></a>
 
@@ -120,23 +117,13 @@ VPC通道包括快速通道和私网ELB通道。
 
 9.  单击“完成”，完成快速通道的创建。
 
-## 创建私网ELB通道<a name="section38422498477"></a>
-
-1.  登录管理控制台。
-2.  在管理控制台左上角单击![](figures/icon-region.png)，选择区域。
-3.  在服务列表中，单击“应用服务 \> API网关”，进入API网关服务管理页面。
-4.  单击“开放API \> VPC通道”，进入到VPC通道列表页面。
-5.  单击“创建私网ELB通道”，弹出“创建私网ELB通道”对话框。
-6.  输入通道名称，选择ELB实例，单击“确定”，完成私网ELB通道的创建。
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   一个ELB实例仅能创建一个VPC通道，创建完成后不支持更新操作。  
-    >-   创建ELB实例的具体步骤请参见[创建增强型负载均衡器](https://support.huaweicloud.com/qs-elb/zh-cn_topic_0052569751.html)，目前只支持购买增强型负载均衡，且“类型”为“私网”。  
-
-
 ## 使用API方式创建VPC通道<a name="zh-cn_topic_0080101678_section7546754133419"></a>
 
 您还可以使用API的方式创建VPC通道，具体操作请查看以下链接。
 
 [创建VPC通道](https://support.huaweicloud.com/api-apig/apig-zh-api-180713161.html)
+
+## 后续操作<a name="section175555161880"></a>
+
+[创建API](创建API.md)，将部署在VPC中的后端服务开放API，从而实现后端服务的负载均衡。
 

@@ -50,13 +50,13 @@
     >-   对外开放API时，您需要为API分组绑定您自己的独立域名。  
 
 
-## 后续操作<a name="section12967127112416"></a>
-
-API分组创建成功后，您可以为此分组[绑定域名](绑定域名.md)，API调用者通过访问独立域名来调用您开放的API。
-
 ## 使用API方式创建API分组<a name="section7546754133419"></a>
 
 您还可以使用API的方式创建API分组，具体操作请查看以下链接。
 
 [创建API分组](https://support.huaweicloud.com/api-apig/apig-zh-api-180713016.html)
+
+## 后续操作<a name="section12967127112416"></a>
+
+API分组创建成功后，您可以为此分组[绑定域名](绑定域名.md)，API调用者通过访问独立域名来调用您开放的API。
 
