@@ -12,10 +12,8 @@
 -   [应用管理]
     -   [创建应用](创建应用.md)
     -   [删除应用](删除应用.md)
-    -   [应用绑定API](应用绑定API.md)
     -   [重置AppSecret](重置AppSecret.md)
     -   [查看应用绑定的API详情](查看应用绑定的API详情.md)
-    -   [解绑API](解绑API.md)
 
 -   [SDK](SDK.md)
 -   [已购买API](已购买API.md)

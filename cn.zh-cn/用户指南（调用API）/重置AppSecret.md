@@ -18,3 +18,9 @@
 6.  在右上角单击“重置AppSecret”，弹出“重置AppSecret”对话框。
 7.  单击“确定”，完成AppSecret的重置。
 
+## 使用API方式重置AppSecret<a name="section321091893419"></a>
+
+您还可以使用API的方式重置AppSecret，具体操作请查看以下链接。
+
+[重置密钥](https://support.huaweicloud.com/api-apig/apig-zh-api-180713038.html)
+
