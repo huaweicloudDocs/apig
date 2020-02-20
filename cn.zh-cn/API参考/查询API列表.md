@@ -289,6 +289,13 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p10453298"><a name="p10453298"></a><a name="p10453298"></a>API认证方式</p>
 </td>
 </tr>
+<tr id="row36853316346"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p4426105522114"><a name="p4426105522114"></a><a name="p4426105522114"></a>authorizer_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p43515104346"><a name="p43515104346"></a><a name="p43515104346"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p116491557133012"><a name="p116491557133012"></a><a name="p116491557133012"></a>前端自定义认证对象的ID</p>
+</td>
+</tr>
 <tr id="row26970819"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p37152759"><a name="p37152759"></a><a name="p37152759"></a>match_mode</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p56583503"><a name="p56583503"></a><a name="p56583503"></a>String</p>

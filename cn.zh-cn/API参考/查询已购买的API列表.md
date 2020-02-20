@@ -1,4 +1,4 @@
-# 查询已购买的API列表<a name="ZH-CN_TOPIC_0118924524"></a>
+# 查询已购买的API列表<a name="apig-zh-api-180713112"></a>
 
 ## 功能介绍<a name="section29753322"></a>
 

@@ -1,4 +1,4 @@
-# 查询已购买的API分组列表<a name="ZH-CN_TOPIC_0118924522"></a>
+# 查询已购买的API分组列表<a name="apig-zh-api-180713110"></a>
 
 ## 功能介绍<a name="section24315590"></a>
 
