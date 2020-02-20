@@ -545,12 +545,12 @@ API网关接口的分类与说明如[表1](#table51381943105818)所示。
 <td class="cellrowborder" valign="top" width="75%" headers="mcps1.1.3.1.2 "><p id="p175514260537"><a name="p175514260537"></a><a name="p175514260537"></a>如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。</p>
 </td>
 </tr>
-<tr id="row187551826175318"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.3.1.1 "><p id="p3755126195318"><a name="p3755126195318"></a><a name="p3755126195318"></a><a href="绑定证书.md">绑定证书</a></p>
+<tr id="row187551826175318"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.3.1.1 "><p id="p3755126195318"><a name="p3755126195318"></a><a name="p3755126195318"></a><a href="绑定域名证书.md">绑定域名证书</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="75%" headers="mcps1.1.3.1.2 "><p id="p20755826165310"><a name="p20755826165310"></a><a name="p20755826165310"></a>如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。</p>
 </td>
 </tr>
-<tr id="row137554261538"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.3.1.1 "><p id="p575502614530"><a name="p575502614530"></a><a name="p575502614530"></a><a href="删除证书.md">删除证书</a></p>
+<tr id="row137554261538"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.3.1.1 "><p id="p575502614530"><a name="p575502614530"></a><a name="p575502614530"></a><a href="删除域名证书.md">删除域名证书</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="75%" headers="mcps1.1.3.1.2 "><p id="p147551226195313"><a name="p147551226195313"></a><a name="p147551226195313"></a>如果域名证书不再需要或者已过期，则可以删除证书内容。</p>
 </td>

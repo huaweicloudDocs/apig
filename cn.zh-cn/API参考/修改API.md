@@ -170,7 +170,16 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p64276511"><a name="p64276511"></a><a name="p64276511"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p39014891"><a name="p39014891"></a><a name="p39014891"></a>API认证方式：</p>
-<a name="ul13321616"></a><a name="ul13321616"></a><ul id="ul13321616"><li>NONE：无认证</li><li>APP：APP认证</li><li>IAM：IAM认证</li></ul>
+<a name="ul13321616"></a><a name="ul13321616"></a><ul id="ul13321616"><li>NONE：无认证</li><li>APP：APP认证</li><li>IAM：IAM认证</li><li>AUTHORIZER：自定义认证</li></ul>
+</td>
+</tr>
+<tr id="row10515021163118"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p18639182918193"><a name="p18639182918193"></a><a name="p18639182918193"></a>authorizer_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p18242111382911"><a name="p18242111382911"></a><a name="p18242111382911"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p6795718112914"><a name="p6795718112914"></a><a name="p6795718112914"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p17639829131912"><a name="p17639829131912"></a><a name="p17639829131912"></a>前端自定义认证对象的ID</p>
 </td>
 </tr>
 <tr id="row27386479"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p3712290"><a name="p3712290"></a><a name="p3712290"></a>backend_type</p>
@@ -432,6 +441,15 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p29717840"><a name="p29717840"></a><a name="p29717840"></a>字典类型</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p58334854"><a name="p58334854"></a><a name="p58334854"></a>VPC通道详情</p>
+</td>
+</tr>
+<tr id="row1633331263218"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p4426105522114"><a name="p4426105522114"></a><a name="p4426105522114"></a>authorizer_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p4918204324"><a name="p4918204324"></a><a name="p4918204324"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p6761122173217"><a name="p6761122173217"></a><a name="p6761122173217"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p116491557133012"><a name="p116491557133012"></a><a name="p116491557133012"></a>后端自定义认证对象的ID</p>
 </td>
 </tr>
 </tbody>

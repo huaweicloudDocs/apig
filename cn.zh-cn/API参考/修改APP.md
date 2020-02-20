@@ -2,7 +2,7 @@
 
 ## 功能介绍<a name="section63138047"></a>
 
-修改指定APP的信息。其中可修改的属性为：name、remark，其它属性不可修改。
+修改指定APP的信息。其中可修改的属性为：name、remark，当支持用户自定义key和secret的开关开启时，app\_key和app\_secret也支持修改，其它属性不可修改。
 
 ## URI<a name="section31371512"></a>
 
@@ -91,6 +91,28 @@ URI中的参数说明如下表所示。
 </div></div>
 </td>
 </tr>
+<tr id="row345025916519"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p4115186203816"><a name="p4115186203816"></a><a name="p4115186203816"></a>app_key</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p18115669385"><a name="p18115669385"></a><a name="p18115669385"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p151151266389"><a name="p151151266389"></a><a name="p151151266389"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p141151066380"><a name="p141151066380"></a><a name="p141151066380"></a>APP的key</p>
+<p id="p14879124513402"><a name="p14879124513402"></a><a name="p14879124513402"></a>支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。</p>
+<p id="p610473083912"><a name="p610473083912"></a><a name="p610473083912"></a>用户自定义APP的key需要开启配额开关</p>
+</td>
+</tr>
+<tr id="row13951012524"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p571817817386"><a name="p571817817386"></a><a name="p571817817386"></a>app_secret</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p07197813819"><a name="p07197813819"></a><a name="p07197813819"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1871928203812"><a name="p1871928203812"></a><a name="p1871928203812"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p177191863810"><a name="p177191863810"></a><a name="p177191863810"></a>密钥</p>
+<p id="p69053295477"><a name="p69053295477"></a><a name="p69053295477"></a>支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。</p>
+<p id="p790520296470"><a name="p790520296470"></a><a name="p790520296470"></a>用户自定义APP的密钥需要开启配额开关</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -99,7 +121,9 @@ URI中的参数说明如下表所示。
 ```
 {
 	"name": "app_001",
-	"remark": "第一个APP"
+	"remark": "第一个APP",
+        "app_key": "app_key_sample",
+        "app_secret": "app_secret_sample"
 }
 ```
 
