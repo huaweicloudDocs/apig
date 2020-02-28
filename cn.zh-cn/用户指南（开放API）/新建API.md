@@ -52,6 +52,12 @@ API提供者把API接口配置在API网关中，开放后端能力。
     <p id="zh-cn_topic_0080101678_p9491203112812"><a name="zh-cn_topic_0080101678_p9491203112812"></a><a name="zh-cn_topic_0080101678_p9491203112812"></a>如果尚未创建API分组，单击“新建分组”，为API新创建一个分组。</p>
     </td>
     </tr>
+    <tr id="zh-cn_topic_0080101678_row198013182315"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p138017188311"><a name="zh-cn_topic_0080101678_p138017188311"></a><a name="zh-cn_topic_0080101678_p138017188311"></a>网关响应</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p480141812320"><a name="zh-cn_topic_0080101678_p480141812320"></a><a name="zh-cn_topic_0080101678_p480141812320"></a>网关响应指API网关未能成功处理API请求，从而产生的错误响应。</p>
+    <p id="zh-cn_topic_0080101678_p143361019152619"><a name="zh-cn_topic_0080101678_p143361019152619"></a><a name="zh-cn_topic_0080101678_p143361019152619"></a>API网关提供默认的网关响应（default）。如果您需要自定义响应状态码或网关响应内容，可在API分组管理中新增网关响应，按照您自己的响应内容，符合JSON格式即可。</p>
+    </td>
+    </tr>
     <tr id="zh-cn_topic_0080101678_row247519275166"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p14476127151620"><a name="zh-cn_topic_0080101678_p14476127151620"></a><a name="zh-cn_topic_0080101678_p14476127151620"></a>类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1347622781611"><a name="zh-cn_topic_0080101678_p1347622781611"></a><a name="zh-cn_topic_0080101678_p1347622781611"></a>API类型：</p>
@@ -61,11 +67,22 @@ API提供者把API接口配置在API网关中，开放后端能力。
     <tr id="zh-cn_topic_0080101678_row8159123418166"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p015933461620"><a name="zh-cn_topic_0080101678_p015933461620"></a><a name="zh-cn_topic_0080101678_p015933461620"></a>安全认证</p>
     </td>
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1369005482116"><a name="zh-cn_topic_0080101678_p1369005482116"></a><a name="zh-cn_topic_0080101678_p1369005482116"></a>API认证方式：</p>
-    <a name="zh-cn_topic_0080101678_ul10691205415213"></a><a name="zh-cn_topic_0080101678_ul10691205415213"></a><ul id="zh-cn_topic_0080101678_ul10691205415213"><li>APP认证：表示由API网关服务负责接口请求的安全认证。</li><li>华为IAM认证：表示借助IAM服务进行安全认证。</li><li>无认证：表示不需要认证。</li></ul>
+    <a name="zh-cn_topic_0080101678_ul10691205415213"></a><a name="zh-cn_topic_0080101678_ul10691205415213"></a><ul id="zh-cn_topic_0080101678_ul10691205415213"><li>APP认证：表示由API网关服务负责接口请求的安全认证。</li><li>华为IAM认证：表示借助IAM服务进行安全认证。</li><li>自定义认证：用户有自己的认证系统或服务（如使用OAuth认证），可选择“自定义认证”。</li><li>无认证：表示不需要认证。</li></ul>
     <p id="zh-cn_topic_0080101678_p4159203413168"><a name="zh-cn_topic_0080101678_p4159203413168"></a><a name="zh-cn_topic_0080101678_p4159203413168"></a>各种认证方式下的API调用稍有不同，具体请参考《<a href="https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307010.html" target="_blank" rel="noopener noreferrer">API网关开发指南</a>》。</p>
     <p id="zh-cn_topic_0080101678_p19611248142514"><a name="zh-cn_topic_0080101678_p19611248142514"></a><a name="zh-cn_topic_0080101678_p19611248142514"></a>推荐使用APP认证方式。</p>
-    <div class="notice" id="zh-cn_topic_0080101678_note13699104617916"><a name="zh-cn_topic_0080101678_note13699104617916"></a><a name="zh-cn_topic_0080101678_note13699104617916"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="zh-cn_topic_0080101678_ul77001646498"></a><a name="zh-cn_topic_0080101678_ul77001646498"></a><ul id="zh-cn_topic_0080101678_ul77001646498"><li>认证方式为华为IAM认证时，任何API网关租户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li><li>认证方式为无认证时，任何公网用户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li></ul>
+    <div class="notice" id="zh-cn_topic_0080101678_note13699104617916"><a name="zh-cn_topic_0080101678_note13699104617916"></a><a name="zh-cn_topic_0080101678_note13699104617916"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="zh-cn_topic_0080101678_ul77001646498"></a><a name="zh-cn_topic_0080101678_ul77001646498"></a><ul id="zh-cn_topic_0080101678_ul77001646498"><li>认证方式为华为IAM认证时，任何API网关租户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li><li>认证方式为无认证时，任何公网用户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li><li>认证方式为自定义认证时，需要在函数服务中写一段函数，对接用户自己的认证系统或服务。</li></ul>
     </div></div>
+    </td>
+    </tr>
+    <tr id="zh-cn_topic_0080101678_row48673328315"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p2086720324318"><a name="zh-cn_topic_0080101678_p2086720324318"></a><a name="zh-cn_topic_0080101678_p2086720324318"></a>支持简易认证</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1769917615481"><a name="zh-cn_topic_0080101678_p1769917615481"></a><a name="zh-cn_topic_0080101678_p1769917615481"></a>简易认证指APP认证方式下调用API时，在HTTP请求头部消息增加一个参数X-Apig-AppCode，而不需要对请求内容签名，API网关也仅校验AppCode，不校验请求签名，从而实现快速响应。</p>
+    <p id="zh-cn_topic_0080101678_p8152162414218"><a name="zh-cn_topic_0080101678_p8152162414218"></a><a name="zh-cn_topic_0080101678_p8152162414218"></a>注意仅在共享版API网关具备，且仅支持HTTPS方式调用，不支持HTTP方式。具体使用请参考<a href="apig-lgug-200227001.md">为简易认证添加AppCode</a>。</p>
+    </td>
+    </tr>
+    <tr id="zh-cn_topic_0080101678_row3902017219"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p179120142119"><a name="zh-cn_topic_0080101678_p179120142119"></a><a name="zh-cn_topic_0080101678_p179120142119"></a>自定义认证</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p4916017212"><a name="zh-cn_topic_0080101678_p4916017212"></a><a name="zh-cn_topic_0080101678_p4916017212"></a>自定义认证需要提前创建，可单击右侧的“新建自定义认证”链接创建。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0080101678_row2113124794715"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p18113247164716"><a name="zh-cn_topic_0080101678_p18113247164716"></a><a name="zh-cn_topic_0080101678_p18113247164716"></a>标签</p>
