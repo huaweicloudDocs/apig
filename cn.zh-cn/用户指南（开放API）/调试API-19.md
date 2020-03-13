@@ -1,4 +1,4 @@
-# 调试API<a name="apig-zh-api-180911220"></a>
+# 调试API<a name="apig-phapi-180911220"></a>
 
 ## 功能介绍<a name="section56312882"></a>
 
@@ -19,7 +19,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </thead>
 <tbody><tr id="row23262289"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p103940534920"><a name="p103940534920"></a><a name="p103940534920"></a>POST</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p18327454"><a name="p18327454"></a><a name="p18327454"></a>/v1.0/apigw/apis/debug/{api_id}</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p18327454"><a name="p18327454"></a><a name="p18327454"></a><span id="ph592118334214"><a name="ph592118334214"></a><a name="ph592118334214"></a>/v1/{project_id}/apigw/instances/{instance_id}</span>/apis/debug/{api_id}</p>
 </td>
 </tr>
 </tbody>
@@ -32,21 +32,39 @@ URI中的参数说明如下表所示。
 <a name="table8128785"></a>
 <table><thead align="left"><tr id="row50936577"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p32222095"><a name="p32222095"></a><a name="p32222095"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p59852877"><a name="p59852877"></a><a name="p59852877"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="17.580000000000002%" id="mcps1.2.5.1.2"><p id="p59852877"><a name="p59852877"></a><a name="p59852877"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p16244835"><a name="p16244835"></a><a name="p16244835"></a>类型</p>
+<th class="cellrowborder" valign="top" width="16.07%" id="mcps1.2.5.1.3"><p id="p16244835"><a name="p16244835"></a><a name="p16244835"></a>类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p40763258"><a name="p40763258"></a><a name="p40763258"></a>说明</p>
+<th class="cellrowborder" valign="top" width="41.349999999999994%" id="mcps1.2.5.1.4"><p id="p40763258"><a name="p40763258"></a><a name="p40763258"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row13489593"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p120121165010"><a name="p120121165010"></a><a name="p120121165010"></a>api_id</p>
+<tbody><tr id="row1334312018383"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p55878963"><a name="p55878963"></a><a name="p55878963"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p55742162"><a name="p55742162"></a><a name="p55742162"></a>是</p>
+<td class="cellrowborder" valign="top" width="17.580000000000002%" headers="mcps1.2.5.1.2 "><p id="p29902160"><a name="p29902160"></a><a name="p29902160"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p18821243"><a name="p18821243"></a><a name="p18821243"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.5.1.3 "><p id="p6155914"><a name="p6155914"></a><a name="p6155914"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p48125676"><a name="p48125676"></a><a name="p48125676"></a>API的编号</p>
+<td class="cellrowborder" valign="top" width="41.349999999999994%" headers="mcps1.2.5.1.4 "><p id="p28867016"><a name="p28867016"></a><a name="p28867016"></a>项目ID。可从控制台“我的凭证”中获取region下项目ID，管理员权限可查询。</p>
+</td>
+</tr>
+<tr id="row31871520113813"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1780913159538"><a name="p1780913159538"></a><a name="p1780913159538"></a>instance_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.580000000000002%" headers="mcps1.2.5.1.2 "><p id="p9809215115310"><a name="p9809215115310"></a><a name="p9809215115310"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.5.1.3 "><p id="p1280914152538"><a name="p1280914152538"></a><a name="p1280914152538"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.349999999999994%" headers="mcps1.2.5.1.4 "><p id="p1880914157537"><a name="p1880914157537"></a><a name="p1880914157537"></a>实例ID，可从API网关控制台的专享版实例信息中获取。</p>
+</td>
+</tr>
+<tr id="row13489593"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p120121165010"><a name="p120121165010"></a><a name="p120121165010"></a>api_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.580000000000002%" headers="mcps1.2.5.1.2 "><p id="p55742162"><a name="p55742162"></a><a name="p55742162"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.5.1.3 "><p id="p18821243"><a name="p18821243"></a><a name="p18821243"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.349999999999994%" headers="mcps1.2.5.1.4 "><p id="p48125676"><a name="p48125676"></a><a name="p48125676"></a>API的编号</p>
 </td>
 </tr>
 </tbody>
