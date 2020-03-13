@@ -1,4 +1,4 @@
-# 修改API<a name="apig-zh-api-180713026"></a>
+# 修改API<a name="apig-phapi-180713026"></a>
 
 ## 功能介绍<a name="section50377025"></a>
 
@@ -19,7 +19,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </thead>
 <tbody><tr id="row12761605"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p27057114"><a name="p27057114"></a><a name="p27057114"></a>PUT</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p44142648"><a name="p44142648"></a><a name="p44142648"></a>/v1.0/apigw/apis/{id}</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p44142648"><a name="p44142648"></a><a name="p44142648"></a><span id="ph177061045113620"><a name="ph177061045113620"></a><a name="ph177061045113620"></a>/v1/{project_id}/apigw/instances/{instance_id}</span>/apis/{id}</p>
 </td>
 </tr>
 </tbody>
@@ -40,7 +40,25 @@ URI中的参数说明如下表所示。
 </th>
 </tr>
 </thead>
-<tbody><tr id="row7627537"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p13850780"><a name="p13850780"></a><a name="p13850780"></a>id</p>
+<tbody><tr id="row4216172251613"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p55878963"><a name="p55878963"></a><a name="p55878963"></a>project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p29902160"><a name="p29902160"></a><a name="p29902160"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.308469153084694%" headers="mcps1.2.5.1.3 "><p id="p6155914"><a name="p6155914"></a><a name="p6155914"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="42.85571442855714%" headers="mcps1.2.5.1.4 "><p id="p28867016"><a name="p28867016"></a><a name="p28867016"></a>项目ID。可从控制台“我的凭证”中获取region下项目ID，管理员权限可查询。</p>
+</td>
+</tr>
+<tr id="row22582251614"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p1780913159538"><a name="p1780913159538"></a><a name="p1780913159538"></a>instance_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p9809215115310"><a name="p9809215115310"></a><a name="p9809215115310"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.308469153084694%" headers="mcps1.2.5.1.3 "><p id="p1280914152538"><a name="p1280914152538"></a><a name="p1280914152538"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="42.85571442855714%" headers="mcps1.2.5.1.4 "><p id="p1880914157537"><a name="p1880914157537"></a><a name="p1880914157537"></a>实例ID，可从API网关控制台的专享版实例信息中获取。</p>
+</td>
+</tr>
+<tr id="row7627537"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p13850780"><a name="p13850780"></a><a name="p13850780"></a>id</p>
 </td>
 <td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p48171408"><a name="p48171408"></a><a name="p48171408"></a>是</p>
 </td>
@@ -173,7 +191,7 @@ URI中的参数说明如下表所示。
 <a name="ul13321616"></a><a name="ul13321616"></a><ul id="ul13321616"><li>NONE：无认证</li><li>APP：APP认证</li><li>IAM：IAM认证</li><li>AUTHORIZER：自定义认证</li></ul>
 </td>
 </tr>
-<tr id="row155907528401"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p1038662319534"><a name="p1038662319534"></a><a name="p1038662319534"></a>auth_opt</p>
+<tr id="row16571415155114"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p1038662319534"><a name="p1038662319534"></a><a name="p1038662319534"></a>auth_opt</p>
 </td>
 <td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p16386823125311"><a name="p16386823125311"></a><a name="p16386823125311"></a>否</p>
 </td>
@@ -268,15 +286,6 @@ URI中的参数说明如下表所示。
 <p id="p132518115249"><a name="p132518115249"></a><a name="p132518115249"></a>字符长度不超过20480</p>
 <div class="note" id="note13283119202415"><a name="note13283119202415"></a><a name="note13283119202415"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p23141919202413"><a name="p23141919202413"></a><a name="p23141919202413"></a>中文字符必须为UTF-8或者unicode编码。</p>
 </div></div>
-</td>
-</tr>
-<tr id="row920424915714"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p420474917572"><a name="p420474917572"></a><a name="p420474917572"></a>response_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p72042049185710"><a name="p72042049185710"></a><a name="p72042049185710"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p9204174917578"><a name="p9204174917578"></a><a name="p9204174917578"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p152041149125719"><a name="p152041149125719"></a><a name="p152041149125719"></a>分组自定义响应ID</p>
 </td>
 </tr>
 <tr id="row46533916"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p11150814"><a name="p11150814"></a><a name="p11150814"></a>backend_api</p>
@@ -1361,7 +1370,7 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p20293325"><a name="p20293325"></a><a name="p20293325"></a>API认证方式</p>
 </td>
 </tr>
-<tr id="row20877175944313"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p45549491969"><a name="p45549491969"></a><a name="p45549491969"></a>auth_opt</p>
+<tr id="row136861755910"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p45549491969"><a name="p45549491969"></a><a name="p45549491969"></a>auth_opt</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p19554194910611"><a name="p19554194910611"></a><a name="p19554194910611"></a>字段数据类型</p>
 </td>
@@ -1471,13 +1480,6 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p369665183416"><a name="p369665183416"></a><a name="p369665183416"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p77123514347"><a name="p77123514347"></a><a name="p77123514347"></a>失败返回示例，描述API的异常返回信息</p>
-</td>
-</tr>
-<tr id="row5901123585812"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p143863714587"><a name="p143863714587"></a><a name="p143863714587"></a>response_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p191744175817"><a name="p191744175817"></a><a name="p191744175817"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p438183765818"><a name="p438183765818"></a><a name="p438183765818"></a>分组自定义响应ID</p>
 </td>
 </tr>
 <tr id="row50765917"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p18398585"><a name="p18398585"></a><a name="p18398585"></a>backend_api</p>

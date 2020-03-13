@@ -1,4 +1,4 @@
-# 修改API分组<a name="apig-zh-api-180713017"></a>
+# 修改API分组<a name="apig-phapi-180713017"></a>
 
 ## 功能介绍<a name="section60874305"></a>
 
@@ -19,7 +19,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </thead>
 <tbody><tr id="row53594754"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p46207780"><a name="p46207780"></a><a name="p46207780"></a>PUT</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p51842715"><a name="p51842715"></a><a name="p51842715"></a>/v1.0/apigw/api-groups/{id}</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p516914488266"><a name="p516914488266"></a><a name="p516914488266"></a>/v1/{project_id}/apigw/instances/{instance_id}/api-groups/{id}</p>
 </td>
 </tr>
 </tbody>
@@ -40,7 +40,25 @@ URI中的参数说明如下表所示。
 </th>
 </tr>
 </thead>
-<tbody><tr id="row46257610"><td class="cellrowborder" valign="top" width="23.46765323467653%" headers="mcps1.2.5.1.1 "><p id="p55878963"><a name="p55878963"></a><a name="p55878963"></a>id</p>
+<tbody><tr id="row123241413191316"><td class="cellrowborder" valign="top" width="23.46765323467653%" headers="mcps1.2.5.1.1 "><p id="p13125151611313"><a name="p13125151611313"></a><a name="p13125151611313"></a>project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p1012511620138"><a name="p1012511620138"></a><a name="p1012511620138"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.3 "><p id="p212591651317"><a name="p212591651317"></a><a name="p212591651317"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.835816418358164%" headers="mcps1.2.5.1.4 "><p id="p112520160138"><a name="p112520160138"></a><a name="p112520160138"></a>项目ID。可从控制台“我的凭证”中获取region下项目ID，管理员权限可查询。</p>
+</td>
+</tr>
+<tr id="row51194135132"><td class="cellrowborder" valign="top" width="23.46765323467653%" headers="mcps1.2.5.1.1 "><p id="p1780913159538"><a name="p1780913159538"></a><a name="p1780913159538"></a>instance_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p9809215115310"><a name="p9809215115310"></a><a name="p9809215115310"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.3 "><p id="p1280914152538"><a name="p1280914152538"></a><a name="p1280914152538"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.835816418358164%" headers="mcps1.2.5.1.4 "><p id="p1880914157537"><a name="p1880914157537"></a><a name="p1880914157537"></a>实例ID，可从API网关控制台的专享版实例信息中获取。</p>
+</td>
+</tr>
+<tr id="row46257610"><td class="cellrowborder" valign="top" width="23.46765323467653%" headers="mcps1.2.5.1.1 "><p id="p55878963"><a name="p55878963"></a><a name="p55878963"></a>id</p>
 </td>
 <td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p29902160"><a name="p29902160"></a><a name="p29902160"></a>是</p>
 </td>
@@ -142,13 +160,6 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p54763172"><a name="p54763172"></a><a name="p54763172"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p6631937"><a name="p6631937"></a><a name="p6631937"></a>系统默认分配的子域名</p>
-</td>
-</tr>
-<tr id="row235125816260"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p9351105813265"><a name="p9351105813265"></a><a name="p9351105813265"></a>sl_domains</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p15351658152613"><a name="p15351658152613"></a><a name="p15351658152613"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p2035118583263"><a name="p2035118583263"></a><a name="p2035118583263"></a>系统默认分配的子域名列表</p>
 </td>
 </tr>
 <tr id="row59687435"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p2844060"><a name="p2844060"></a><a name="p2844060"></a>register_time</p>
@@ -269,7 +280,6 @@ URI中的参数说明如下表所示。
 	"name": "api_group_001",
 	"status": 1,
 	"sl_domain": "0e91b83b-0774-4e8e-b187-2d695ed4743b.apigw.example.com",
-        "sl_domains": ["0e91b83b-0774-4e8e-b187-2d695ed4743b.apigw.example.com","0e91b83b-0774-4e8e-b187-2d695ed4743b.apigw.example.cn"],
 	"remark": "分组001",
 	"register_time": "2017-12-28T11:44:53Z",
 	"update_time": "2017-12-28T11:49:01.048600577Z",
