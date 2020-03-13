@@ -1,6 +1,6 @@
 # 创建用户并授权使用API网关<a name="apig-ug-190529109"></a>
 
-如果您需要对您所拥有的API网关服务进行权限管理，您可以使用[统一身份认证服务](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)（Identity and Access Management，简称IAM），通过IAM，您可以：
+如果您需要对您所拥有的API网关服务进行权限管理，您可以使用[统一身份认证服务](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)（Identity and Access Management，简称IAM），通过IAM，您可以：
 
 -   根据企业的业务组织，在您的华为云账号中，给企业中不同职能部门的员工创建IAM用户，让员工拥有唯一安全凭证，并使用API网关服务资源。
 -   根据企业用户的职能，设置不同的访问权限，以达到用户之间的权限隔离。
@@ -12,7 +12,7 @@
 
 ## 前提条件<a name="zh-cn_topic_0170877287_section17723185741610"></a>
 
-给用户组授权之前，请您了解用户组可以添加的[API网关服务系统策略](#table1934161212122)，并结合实际需求进行选择。若您需要对除API网关服务之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/usermanual-permissions/zh-cn_topic_0063498930.html)。
+给用户组授权之前，请您了解用户组可以添加的[API网关服务系统策略](#table1934161212122)，并结合实际需求进行选择。若您需要对除API网关服务之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/usermanual-permissions/iam_01_0001.html)。
 
 **表 1**  API网关服务系统策略
 
@@ -40,11 +40,11 @@
 **图 1**  给用户授权API网关服务权限流程<a name="zh-cn_topic_0170877287_fig15451536531"></a>  
 ![](figures/给用户授权API网关服务权限流程.png "给用户授权API网关服务权限流程")
 
-1.  <a name="zh-cn_topic_0170877287_li10176121316284"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611269.html)
+1.  <a name="zh-cn_topic_0170877287_li10176121316284"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/iam_03_0001.html)
 
     在IAM控制台创建用户组，并授予API网关服务的权限“APIG Administrator”。
 
-2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611303.html)
+2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)
 
     在IAM控制台创建用户，并将其加入[1](#zh-cn_topic_0170877287_li10176121316284)中创建的用户组。
 
