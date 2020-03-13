@@ -1,4 +1,4 @@
-# 查询API列表<a name="apig-zh-api-180713031"></a>
+# 查询API列表<a name="apig-phapi-180713031"></a>
 
 ## 功能介绍<a name="section31536236"></a>
 
@@ -19,7 +19,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </thead>
 <tbody><tr id="row58226873"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p18756261"><a name="p18756261"></a><a name="p18756261"></a>GET</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p42862133"><a name="p42862133"></a><a name="p42862133"></a>/v1.0/apigw/apis[?page_size, page_no, id, name, group_id, req_protocol, req_method, req_uri, auth_type, env_id, type,status, tags]</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p42862133"><a name="p42862133"></a><a name="p42862133"></a><span id="ph10636125916401"><a name="ph10636125916401"></a><a name="ph10636125916401"></a>/v1/{project_id}/apigw/instances/{instance_id}</span>/apis[?page_size, page_no, id, name, group_id, req_protocol, req_method, req_uri, auth_type, env_id, type,status, tags]</p>
 </td>
 </tr>
 </tbody>
@@ -36,129 +36,147 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <a name="table309072"></a>
 <table><thead align="left"><tr id="row29526596"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p42844056"><a name="p42844056"></a><a name="p42844056"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p47816505"><a name="p47816505"></a><a name="p47816505"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="17.349999999999998%" id="mcps1.2.5.1.2"><p id="p47816505"><a name="p47816505"></a><a name="p47816505"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p47931662"><a name="p47931662"></a><a name="p47931662"></a>类型</p>
+<th class="cellrowborder" valign="top" width="20.61%" id="mcps1.2.5.1.3"><p id="p47931662"><a name="p47931662"></a><a name="p47931662"></a>类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p57259391"><a name="p57259391"></a><a name="p57259391"></a>说明</p>
+<th class="cellrowborder" valign="top" width="37.04%" id="mcps1.2.5.1.4"><p id="p57259391"><a name="p57259391"></a><a name="p57259391"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row7499126"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p3449432"><a name="p3449432"></a><a name="p3449432"></a>id</p>
+<tbody><tr id="row1701205616189"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1076285717184"><a name="p1076285717184"></a><a name="p1076285717184"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p10968591"><a name="p10968591"></a><a name="p10968591"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p17762457101817"><a name="p17762457101817"></a><a name="p17762457101817"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p16040707"><a name="p16040707"></a><a name="p16040707"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p147621357181819"><a name="p147621357181819"></a><a name="p147621357181819"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p24228891"><a name="p24228891"></a><a name="p24228891"></a>API的编号</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p5762157171820"><a name="p5762157171820"></a><a name="p5762157171820"></a>项目ID。可从控制台“我的凭证”中获取region下项目ID，管理员权限可查询。</p>
+</td>
+</tr>
+<tr id="row9525115619183"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p37621057191818"><a name="p37621057191818"></a><a name="p37621057191818"></a>instance_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p1576255771817"><a name="p1576255771817"></a><a name="p1576255771817"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p276265719181"><a name="p276265719181"></a><a name="p276265719181"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p147621657111817"><a name="p147621657111817"></a><a name="p147621657111817"></a>实例ID，可从API网关控制台的专享版实例信息中获取。</p>
+</td>
+</tr>
+<tr id="row7499126"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p3449432"><a name="p3449432"></a><a name="p3449432"></a>id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p10968591"><a name="p10968591"></a><a name="p10968591"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p16040707"><a name="p16040707"></a><a name="p16040707"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p24228891"><a name="p24228891"></a><a name="p24228891"></a>API的编号</p>
 </td>
 </tr>
 <tr id="row16733432"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p13230786"><a name="p13230786"></a><a name="p13230786"></a>name</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p65060773"><a name="p65060773"></a><a name="p65060773"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p65060773"><a name="p65060773"></a><a name="p65060773"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p35431240"><a name="p35431240"></a><a name="p35431240"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p35431240"><a name="p35431240"></a><a name="p35431240"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p51358163"><a name="p51358163"></a><a name="p51358163"></a>API的名称</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p51358163"><a name="p51358163"></a><a name="p51358163"></a>API的名称</p>
 </td>
 </tr>
 <tr id="row59570287"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p60463979"><a name="p60463979"></a><a name="p60463979"></a>group_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p65744098"><a name="p65744098"></a><a name="p65744098"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p65744098"><a name="p65744098"></a><a name="p65744098"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p23671742"><a name="p23671742"></a><a name="p23671742"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p23671742"><a name="p23671742"></a><a name="p23671742"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p38362983"><a name="p38362983"></a><a name="p38362983"></a>API所属分组编号</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p38362983"><a name="p38362983"></a><a name="p38362983"></a>API所属分组编号</p>
 </td>
 </tr>
 <tr id="row9722532"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p49327594"><a name="p49327594"></a><a name="p49327594"></a>req_protocol</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p36112177"><a name="p36112177"></a><a name="p36112177"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p36112177"><a name="p36112177"></a><a name="p36112177"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p39405216"><a name="p39405216"></a><a name="p39405216"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p39405216"><a name="p39405216"></a><a name="p39405216"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p37705952"><a name="p37705952"></a><a name="p37705952"></a>请求协议</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p37705952"><a name="p37705952"></a><a name="p37705952"></a>请求协议</p>
 </td>
 </tr>
 <tr id="row3809254"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p40114146"><a name="p40114146"></a><a name="p40114146"></a>req_method</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p28020354"><a name="p28020354"></a><a name="p28020354"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p28020354"><a name="p28020354"></a><a name="p28020354"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p55056174"><a name="p55056174"></a><a name="p55056174"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p55056174"><a name="p55056174"></a><a name="p55056174"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p30365135"><a name="p30365135"></a><a name="p30365135"></a>请求方法</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p30365135"><a name="p30365135"></a><a name="p30365135"></a>请求方法</p>
 </td>
 </tr>
 <tr id="row4850767"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p57367866"><a name="p57367866"></a><a name="p57367866"></a>req_uri</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p16285582"><a name="p16285582"></a><a name="p16285582"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p16285582"><a name="p16285582"></a><a name="p16285582"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p44063729"><a name="p44063729"></a><a name="p44063729"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p44063729"><a name="p44063729"></a><a name="p44063729"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p12392334"><a name="p12392334"></a><a name="p12392334"></a>请求路径</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p12392334"><a name="p12392334"></a><a name="p12392334"></a>请求路径</p>
 </td>
 </tr>
 <tr id="row44422145"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p41423973"><a name="p41423973"></a><a name="p41423973"></a>auth_type</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p67007510"><a name="p67007510"></a><a name="p67007510"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p67007510"><a name="p67007510"></a><a name="p67007510"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p58899195"><a name="p58899195"></a><a name="p58899195"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p58899195"><a name="p58899195"></a><a name="p58899195"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p6105468"><a name="p6105468"></a><a name="p6105468"></a>授权类型</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p6105468"><a name="p6105468"></a><a name="p6105468"></a>授权类型</p>
 </td>
 </tr>
 <tr id="row54949219"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p21701787"><a name="p21701787"></a><a name="p21701787"></a>env_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p13014307"><a name="p13014307"></a><a name="p13014307"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p13014307"><a name="p13014307"></a><a name="p13014307"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p47525923"><a name="p47525923"></a><a name="p47525923"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p47525923"><a name="p47525923"></a><a name="p47525923"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p24394564"><a name="p24394564"></a><a name="p24394564"></a>发布的环境编号</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p24394564"><a name="p24394564"></a><a name="p24394564"></a>发布的环境编号</p>
 </td>
 </tr>
 <tr id="row18224488"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p66897437"><a name="p66897437"></a><a name="p66897437"></a>type</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p49983302"><a name="p49983302"></a><a name="p49983302"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p49983302"><a name="p49983302"></a><a name="p49983302"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p22115660"><a name="p22115660"></a><a name="p22115660"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p22115660"><a name="p22115660"></a><a name="p22115660"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p46538006"><a name="p46538006"></a><a name="p46538006"></a>API类型</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p46538006"><a name="p46538006"></a><a name="p46538006"></a>API类型</p>
 </td>
 </tr>
 <tr id="row15164448154320"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p8509135192518"><a name="p8509135192518"></a><a name="p8509135192518"></a>tags</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p165091851162513"><a name="p165091851162513"></a><a name="p165091851162513"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p165091851162513"><a name="p165091851162513"></a><a name="p165091851162513"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p550915152518"><a name="p550915152518"></a><a name="p550915152518"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p550915152518"><a name="p550915152518"></a><a name="p550915152518"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p650975122517"><a name="p650975122517"></a><a name="p650975122517"></a>标签</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p650975122517"><a name="p650975122517"></a><a name="p650975122517"></a>标签</p>
 </td>
 </tr>
 <tr id="row16188872"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p36230260"><a name="p36230260"></a><a name="p36230260"></a>page_size</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p48969944"><a name="p48969944"></a><a name="p48969944"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p48969944"><a name="p48969944"></a><a name="p48969944"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p7142557"><a name="p7142557"></a><a name="p7142557"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p7142557"><a name="p7142557"></a><a name="p7142557"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p41676267"><a name="p41676267"></a><a name="p41676267"></a>每页显示的条数，默认值：20</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p41676267"><a name="p41676267"></a><a name="p41676267"></a>每页显示的条数，默认值：20</p>
 </td>
 </tr>
 <tr id="row39542084"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p48792241"><a name="p48792241"></a><a name="p48792241"></a>page_no</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p59857467"><a name="p59857467"></a><a name="p59857467"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p59857467"><a name="p59857467"></a><a name="p59857467"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p16616649"><a name="p16616649"></a><a name="p16616649"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p16616649"><a name="p16616649"></a><a name="p16616649"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p3771332"><a name="p3771332"></a><a name="p3771332"></a>页码，默认值：1</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p3771332"><a name="p3771332"></a><a name="p3771332"></a>页码，默认值：1</p>
 </td>
 </tr>
 <tr id="row136191246154813"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p26191463489"><a name="p26191463489"></a><a name="p26191463489"></a>precise_search</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1261984620484"><a name="p1261984620484"></a><a name="p1261984620484"></a>否</p>
+<td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.2 "><p id="p1261984620484"><a name="p1261984620484"></a><a name="p1261984620484"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p261916461487"><a name="p261916461487"></a><a name="p261916461487"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.5.1.3 "><p id="p261916461487"><a name="p261916461487"></a><a name="p261916461487"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p10619154674815"><a name="p10619154674815"></a><a name="p10619154674815"></a>指定需要精确匹配查找的参数名称，目前仅支持name、req_uri</p>
+<td class="cellrowborder" valign="top" width="37.04%" headers="mcps1.2.5.1.4 "><p id="p10619154674815"><a name="p10619154674815"></a><a name="p10619154674815"></a>指定需要精确匹配查找的参数名称，目前仅支持name、req_uri</p>
 </td>
 </tr>
 </tbody>
@@ -289,7 +307,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p10453298"><a name="p10453298"></a><a name="p10453298"></a>API认证方式</p>
 </td>
 </tr>
-<tr id="row3636143811515"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p45549491969"><a name="p45549491969"></a><a name="p45549491969"></a>auth_opt</p>
+<tr id="row39420599177"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p45549491969"><a name="p45549491969"></a><a name="p45549491969"></a>auth_opt</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p19554194910611"><a name="p19554194910611"></a><a name="p19554194910611"></a>字段数据类型</p>
 </td>
@@ -385,13 +403,6 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p969065252610"><a name="p969065252610"></a><a name="p969065252610"></a>[]String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p10599103122713"><a name="p10599103122713"></a><a name="p10599103122713"></a>标签</p>
-</td>
-</tr>
-<tr id="row1035216311304"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1388814535919"><a name="p1388814535919"></a><a name="p1388814535919"></a>response_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p5888345115911"><a name="p5888345115911"></a><a name="p5888345115911"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p14331422017"><a name="p14331422017"></a><a name="p14331422017"></a>分组自定义响应ID</p>
 </td>
 </tr>
 </tbody>

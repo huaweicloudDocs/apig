@@ -146,6 +146,13 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p47574258"><a name="p47574258"></a><a name="p47574258"></a>API认证方式</p>
 </td>
 </tr>
+<tr id="row5263105615455"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p45549491969"><a name="p45549491969"></a><a name="p45549491969"></a>auth_opt</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p19554194910611"><a name="p19554194910611"></a><a name="p19554194910611"></a>字段数据类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p155541490617"><a name="p155541490617"></a><a name="p155541490617"></a>API认证方式参数</p>
+</td>
+</tr>
 <tr id="row1552723173315"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p4426105522114"><a name="p4426105522114"></a><a name="p4426105522114"></a>authorizer_id</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p51041119338"><a name="p51041119338"></a><a name="p51041119338"></a>String</p>
@@ -256,6 +263,13 @@ URI中的参数说明如下表所示。
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p369665183416"><a name="p369665183416"></a><a name="p369665183416"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p77123514347"><a name="p77123514347"></a><a name="p77123514347"></a>失败返回示例，描述API的异常返回信息</p>
+</td>
+</tr>
+<tr id="row38876451599"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1388814535919"><a name="p1388814535919"></a><a name="p1388814535919"></a>response_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p5888345115911"><a name="p5888345115911"></a><a name="p5888345115911"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p14331422017"><a name="p14331422017"></a><a name="p14331422017"></a>分组自定义响应ID</p>
 </td>
 </tr>
 <tr id="row47054253"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p53298164"><a name="p53298164"></a><a name="p53298164"></a>backend_api</p>
@@ -1052,6 +1066,27 @@ URI中的参数说明如下表所示。
 </tbody>
 </table>
 
+**表 13**  auth\_opt参数说明
+
+<a name="table3296221173715"></a>
+<table><thead align="left"><tr id="row829715213377"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p17297192173718"><a name="p17297192173718"></a><a name="p17297192173718"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p9297821143718"><a name="p9297821143718"></a><a name="p9297821143718"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p4297152163717"><a name="p4297152163717"></a><a name="p4297152163717"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row4297421123717"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1848964315375"><a name="p1848964315375"></a><a name="p1848964315375"></a>app_code_auth_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p4489164310372"><a name="p4489164310372"></a><a name="p4489164310372"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1948934316376"><a name="p1948934316376"></a><a name="p1948934316376"></a>AppCode简易认证类型</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 响应消息样例：
 
 ```
@@ -1063,6 +1098,9 @@ URI中的参数说明如下表所示。
   "req_method": "GET",
   "req_uri": "/test/{tenant_id}",
   "auth_type": "APP",
+  "auth_opt": {
+    "app_code_auth_type": "DISABLE"
+  },
   "tags": ["APIG-SN-test", "test"],
   "cors": false,
   "match_mode": "NORMAL",
@@ -1156,7 +1194,7 @@ URI中的参数说明如下表所示。
 
 ## 状态码<a name="section48575109"></a>
 
-**表 13**  返回消息说明
+**表 14**  返回消息说明
 
 <a name="table5357896"></a>
 <table><thead align="left"><tr id="row27259487"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p60534834"><a name="p60534834"></a><a name="p60534834"></a>状态码</p>
