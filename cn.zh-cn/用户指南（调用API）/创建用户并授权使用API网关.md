@@ -12,24 +12,46 @@
 
 ## 前提条件<a name="zh-cn_topic_0170877287_section17723185741610"></a>
 
-给用户组授权之前，请您了解用户组可以添加的[API网关服务系统策略](#table1934161212122)，并结合实际需求进行选择。若您需要对除API网关服务之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/usermanual-permissions/iam_01_0001.html)。
+给用户组授权之前，请您了解用户组可以添加的[表1](#table13382143731910)，并结合实际需求进行选择。若您需要对除API网关服务之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/usermanual-permissions/iam_01_0001.html)。
 
-**表 1**  API网关服务系统策略
+**表 1**  API网关的系统角色或策略
 
-<a name="table1934161212122"></a>
-<table><thead align="left"><tr id="row17131111218122"><th class="cellrowborder" valign="top" width="17.348265173482652%" id="mcps1.2.4.1.1"><p id="p14131131231217"><a name="p14131131231217"></a><a name="p14131131231217"></a>策略名称</p>
+<a name="table13382143731910"></a>
+<table><thead align="left"><tr id="row10382193761919"><th class="cellrowborder" valign="top" width="16.04%" id="mcps1.2.5.1.1"><p id="p538314372199"><a name="p538314372199"></a><a name="p538314372199"></a>系统角色/策略名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="28.037196280371962%" id="mcps1.2.4.1.2"><p id="p141311112151214"><a name="p141311112151214"></a><a name="p141311112151214"></a>描述</p>
+<th class="cellrowborder" valign="top" width="36.53%" id="mcps1.2.5.1.2"><p id="p638393718193"><a name="p638393718193"></a><a name="p638393718193"></a>描述</p>
 </th>
-<th class="cellrowborder" valign="top" width="54.61453854614538%" id="mcps1.2.4.1.3"><p id="p7131912181212"><a name="p7131912181212"></a><a name="p7131912181212"></a>操作</p>
+<th class="cellrowborder" valign="top" width="17.18%" id="mcps1.2.5.1.3"><p id="p1138363718194"><a name="p1138363718194"></a><a name="p1138363718194"></a>类别</p>
+</th>
+<th class="cellrowborder" valign="top" width="30.25%" id="mcps1.2.5.1.4"><p id="p2078410663110"><a name="p2078410663110"></a><a name="p2078410663110"></a>依赖关系</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row17132191291216"><td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.4.1.1 "><p id="p1413231216124"><a name="p1413231216124"></a><a name="p1413231216124"></a>APIG Administrator</p>
+<tbody><tr id="row238315376192"><td class="cellrowborder" valign="top" width="16.04%" headers="mcps1.2.5.1.1 "><p id="p14383143721913"><a name="p14383143721913"></a><a name="p14383143721913"></a>APIG Administrator</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.037196280371962%" headers="mcps1.2.4.1.2 "><p id="p41321012191210"><a name="p41321012191210"></a><a name="p41321012191210"></a>API网关服务的管理员权限。</p>
+<td class="cellrowborder" valign="top" width="36.53%" headers="mcps1.2.5.1.2 "><p id="p038363721913"><a name="p038363721913"></a><a name="p038363721913"></a>API网关服务的管理员权限。拥有该权限的用户可以使用<strong id="b18885142014"><a name="b18885142014"></a><a name="b18885142014"></a>共享版</strong>API网关服务的所有功能。</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.61453854614538%" headers="mcps1.2.4.1.3 "><p id="p188281101814"><a name="p188281101814"></a><a name="p188281101814"></a>创建API、发布API、删除API等</p>
+<td class="cellrowborder" valign="top" width="17.18%" headers="mcps1.2.5.1.3 "><p id="p1638343771915"><a name="p1638343771915"></a><a name="p1638343771915"></a>系统角色</p>
+</td>
+<td class="cellrowborder" valign="top" width="30.25%" headers="mcps1.2.5.1.4 "><a name="ul1882803818238"></a><a name="ul1882803818238"></a><ul id="ul1882803818238"><li>使用VPC通道时，用户还需具备VPC Administrator角色权限</li><li>使用自定义认证功能，用户还需具备FunctionGraph Administrator角色权限。</li></ul>
+</td>
+</tr>
+<tr id="row29471637175418"><td class="cellrowborder" valign="top" width="16.04%" headers="mcps1.2.5.1.1 "><p id="p1594818373542"><a name="p1594818373542"></a><a name="p1594818373542"></a>APIG FullAccess</p>
+</td>
+<td class="cellrowborder" valign="top" width="36.53%" headers="mcps1.2.5.1.2 "><p id="p99480376545"><a name="p99480376545"></a><a name="p99480376545"></a>API网关服务所有权限。拥有该权限的用户可以使用<strong id="b18522018182014"><a name="b18522018182014"></a><a name="b18522018182014"></a>专享版</strong>API网关服务的所有功能。</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.18%" headers="mcps1.2.5.1.3 "><p id="p2948123718546"><a name="p2948123718546"></a><a name="p2948123718546"></a>系统策略</p>
+</td>
+<td class="cellrowborder" valign="top" width="30.25%" headers="mcps1.2.5.1.4 "><p id="p878476183110"><a name="p878476183110"></a><a name="p878476183110"></a>无。</p>
+</td>
+</tr>
+<tr id="row17372113817546"><td class="cellrowborder" valign="top" width="16.04%" headers="mcps1.2.5.1.1 "><p id="p43721838135417"><a name="p43721838135417"></a><a name="p43721838135417"></a>APIG ReadOnlyAccess</p>
+</td>
+<td class="cellrowborder" valign="top" width="36.53%" headers="mcps1.2.5.1.2 "><p id="p1227810374218"><a name="p1227810374218"></a><a name="p1227810374218"></a>API网关服务的只读访问权限。拥有该权限的用户只能查看<strong id="b10277193715213"><a name="b10277193715213"></a><a name="b10277193715213"></a>专享版</strong>API网关的各类信息。</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.18%" headers="mcps1.2.5.1.3 "><p id="p1537210382547"><a name="p1537210382547"></a><a name="p1537210382547"></a>系统策略</p>
+</td>
+<td class="cellrowborder" valign="top" width="30.25%" headers="mcps1.2.5.1.4 "><p id="p17244141916304"><a name="p17244141916304"></a><a name="p17244141916304"></a>无。</p>
 </td>
 </tr>
 </tbody>
@@ -42,7 +64,7 @@
 
 1.  <a name="zh-cn_topic_0170877287_li10176121316284"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/iam_03_0001.html)
 
-    在IAM控制台创建用户组，并授予API网关服务的权限“APIG Administrator”。
+    在IAM控制台创建用户组，并授予API网关服务的权限“APIG Administrator”或“APIG FullAccess”。
 
 2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)
 
@@ -52,58 +74,4 @@
 
     新创建的用户登录控制台，验证API网关服务的权限。
 
-
-## API网关系统策略说明<a name="section56559289544"></a>
-
-API网关当前只有一个系统策略，名称为“APIG Administrator”。
-
-```
-{
-        "Version": "1.0",
-        "Statement": [
-                {
-                        "Effect": "Allow",
-                        "Action": [
-                                "apig:*:*"
-                        ]
-                }
-        ]
-}
-```
-
-<a name="table33321739133117"></a>
-<table><thead align="left"><tr id="row645212399314"><th class="cellrowborder" colspan="2" valign="top" id="mcps1.1.5.1.1"><p id="p14452153933119"><a name="p14452153933119"></a><a name="p14452153933119"></a>参数</p>
-</th>
-<th class="cellrowborder" valign="top" id="mcps1.1.5.1.2"><p id="p34521839193112"><a name="p34521839193112"></a><a name="p34521839193112"></a>含义</p>
-</th>
-<th class="cellrowborder" valign="top" id="mcps1.1.5.1.3"><p id="p20452173933117"><a name="p20452173933117"></a><a name="p20452173933117"></a>值</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="row7452203973118"><td class="cellrowborder" colspan="2" valign="top" headers="mcps1.1.5.1.1 "><p id="p7452163911319"><a name="p7452163911319"></a><a name="p7452163911319"></a>Version</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.1.5.1.2 "><p id="p8453193903116"><a name="p8453193903116"></a><a name="p8453193903116"></a>策略的版本</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.1.5.1.3 "><p id="p14531039103116"><a name="p14531039103116"></a><a name="p14531039103116"></a>固定为“1.0”</p>
-</td>
-</tr>
-<tr id="row1645315392311"><td class="cellrowborder" rowspan="2" valign="top" width="17.22172217221722%" headers="mcps1.1.5.1.1 "><p id="p5453133973114"><a name="p5453133973114"></a><a name="p5453133973114"></a>Statement</p>
-</td>
-<td class="cellrowborder" valign="top" width="17.121712171217123%" headers="mcps1.1.5.1.1 "><p id="p94531397312"><a name="p94531397312"></a><a name="p94531397312"></a>Effect</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.28282828282828%" headers="mcps1.1.5.1.2 "><p id="p12453339123116"><a name="p12453339123116"></a><a name="p12453339123116"></a>定义Action中所包含的具体操作是否允许执行。</p>
-</td>
-<td class="cellrowborder" valign="top" width="37.37373737373737%" headers="mcps1.1.5.1.3 "><a name="ul14535391313"></a><a name="ul14535391313"></a><ul id="ul14535391313"><li>Allow：允许执行。</li><li>Deny：不允许执行。</li></ul>
-</td>
-</tr>
-<tr id="row9453153910318"><td class="cellrowborder" valign="top" headers="mcps1.1.5.1.1 "><p id="p194532391314"><a name="p194532391314"></a><a name="p194532391314"></a>Action</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.1.5.1.1 "><p id="p1945319396315"><a name="p1945319396315"></a><a name="p1945319396315"></a>定义对API网关的具体操作。</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.1.5.1.2 "><p id="p3453103914318"><a name="p3453103914318"></a><a name="p3453103914318"></a>格式为：服务名:资源类型:操作</p>
-<p id="p8453193916312"><a name="p8453193916312"></a><a name="p8453193916312"></a>"apig:*:*"，其中apig为服务名称；“*”为通配符，表示对所有资源类型可以执行所有操作。</p>
-</td>
-</tr>
-</tbody>
-</table>
 
