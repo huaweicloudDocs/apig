@@ -24,9 +24,6 @@ Swagger是基于OpenAPI规范构建的开源工具，可以帮助您设计、构
 
 5.  单击“开放API \> API管理”，进入到API管理信息页面。
 6.  单击“导入API”，进入“导入API”界面。
-
-    您也可以在“总览”界面中找到“导入API”按钮。
-
 7.  选择如[表1](#table11284181112369)所示参数。
 
     **图 1**  导入API<a name="fig16317174518563"></a>  
@@ -54,8 +51,13 @@ Swagger是基于OpenAPI规范构建的开源工具，可以帮助您设计、构
     </tr>
     <tr id="row7286711183611"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p12286191116360"><a name="p12286191116360"></a><a name="p12286191116360"></a>是否覆盖</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p20286181118363"><a name="p20286181118363"></a><a name="p20286181118363"></a>仅在选择“导入到已有分组”时，需要选择是否覆盖。</p>
-    <p id="p72021538134113"><a name="p72021538134113"></a><a name="p72021538134113"></a>勾选“是否覆盖”后，当导入的API定义与已有的API定义冲突时，导入的API定义会覆盖已有的API定义。</p>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p72021538134113"><a name="p72021538134113"></a><a name="p72021538134113"></a>当导入的API定义与已有的API定义冲突时，导入的API定义会覆盖已有的API定义。</p>
+    <p id="p20286181118363"><a name="p20286181118363"></a><a name="p20286181118363"></a>仅在选择“导入到已有分组”时，需要选择是否覆盖。</p>
+    </td>
+    </tr>
+    <tr id="row1729912415209"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p11299841152019"><a name="p11299841152019"></a><a name="p11299841152019"></a>扩展覆盖</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p9299144112209"><a name="p9299144112209"></a><a name="p9299144112209"></a>当导入API扩展信息（ACL，流控）与已有的API扩展信息冲突时，会覆盖已有API扩展信息。</p>
     </td>
     </tr>
     <tr id="row32862011133615"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p132861115369"><a name="p132861115369"></a><a name="p132861115369"></a>Swagger</p>
@@ -66,7 +68,24 @@ Swagger是基于OpenAPI规范构建的开源工具，可以帮助您设计、构
     </tbody>
     </table>
 
-8.  单击“导入”，导入成功后在API分组中查看已导入的API。
+8.  单击“文件”，选择待导入的API文件。
+
+    支持yaml和json两种文件格式的API导入，界面可预览待导入API内容。
+
+    **图 2**  导入API<a name="fig20918912173113"></a>  
+    ![](figures/导入API-2.png "导入API-2")
+
+9.  （可选）修改待导入API的全局配置。
+
+    您可以修改全局配置，如前后端的请求配置，也可以修改具体的接口配置。
+
+    **图 3**  修改全局配置<a name="fig166201319111317"></a>  
+    ![](figures/修改全局配置.png "修改全局配置")
+
+    **图 4**  修改接口配置<a name="fig16630192214389"></a>  
+    ![](figures/修改接口配置.png "修改接口配置")
+
+10. 单击“快速上线”，完成API导入。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >导入的API不会自动发布到环境，需要您手动发布。  

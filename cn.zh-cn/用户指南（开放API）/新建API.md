@@ -35,64 +35,64 @@ API提供者把API接口配置在API网关中，开放后端能力。
     **表 1**  基本信息
 
     <a name="zh-cn_topic_0080101678_table195413315428"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0080101678_row45523384220"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0080101678_p65563314423"><a name="zh-cn_topic_0080101678_p65563314423"></a><a name="zh-cn_topic_0080101678_p65563314423"></a>信息项</p>
+    <table><thead align="left"><tr id="zh-cn_topic_0080101678_row45523384220"><th class="cellrowborder" valign="top" width="20.02%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0080101678_p65563314423"><a name="zh-cn_topic_0080101678_p65563314423"></a><a name="zh-cn_topic_0080101678_p65563314423"></a>信息项</p>
     </th>
-    <th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0080101678_p356183311427"><a name="zh-cn_topic_0080101678_p356183311427"></a><a name="zh-cn_topic_0080101678_p356183311427"></a>描述</p>
+    <th class="cellrowborder" valign="top" width="79.97999999999999%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0080101678_p356183311427"><a name="zh-cn_topic_0080101678_p356183311427"></a><a name="zh-cn_topic_0080101678_p356183311427"></a>描述</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="zh-cn_topic_0080101678_row1156183364219"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p105616333427"><a name="zh-cn_topic_0080101678_p105616333427"></a><a name="zh-cn_topic_0080101678_p105616333427"></a>API名称</p>
+    <tbody><tr id="zh-cn_topic_0080101678_row1156183364219"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p105616333427"><a name="zh-cn_topic_0080101678_p105616333427"></a><a name="zh-cn_topic_0080101678_p105616333427"></a>API名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1656123374219"><a name="zh-cn_topic_0080101678_p1656123374219"></a><a name="zh-cn_topic_0080101678_p1656123374219"></a>API名称。</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1656123374219"><a name="zh-cn_topic_0080101678_p1656123374219"></a><a name="zh-cn_topic_0080101678_p1656123374219"></a>API名称。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0080101678_row14879114316433"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p12880154304320"><a name="zh-cn_topic_0080101678_p12880154304320"></a><a name="zh-cn_topic_0080101678_p12880154304320"></a>所属分组</p>
+    <tr id="zh-cn_topic_0080101678_row14879114316433"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p12880154304320"><a name="zh-cn_topic_0080101678_p12880154304320"></a><a name="zh-cn_topic_0080101678_p12880154304320"></a>所属分组</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p48801043134312"><a name="zh-cn_topic_0080101678_p48801043134312"></a><a name="zh-cn_topic_0080101678_p48801043134312"></a>API所属分组。</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p48801043134312"><a name="zh-cn_topic_0080101678_p48801043134312"></a><a name="zh-cn_topic_0080101678_p48801043134312"></a>API所属分组。</p>
     <p id="zh-cn_topic_0080101678_p9491203112812"><a name="zh-cn_topic_0080101678_p9491203112812"></a><a name="zh-cn_topic_0080101678_p9491203112812"></a>如果尚未创建API分组，单击“新建分组”，为API新创建一个分组。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0080101678_row198013182315"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p138017188311"><a name="zh-cn_topic_0080101678_p138017188311"></a><a name="zh-cn_topic_0080101678_p138017188311"></a>网关响应</p>
+    <tr id="zh-cn_topic_0080101678_row198013182315"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p138017188311"><a name="zh-cn_topic_0080101678_p138017188311"></a><a name="zh-cn_topic_0080101678_p138017188311"></a>网关响应</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p480141812320"><a name="zh-cn_topic_0080101678_p480141812320"></a><a name="zh-cn_topic_0080101678_p480141812320"></a>网关响应指API网关未能成功处理API请求，从而产生的错误响应。</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p480141812320"><a name="zh-cn_topic_0080101678_p480141812320"></a><a name="zh-cn_topic_0080101678_p480141812320"></a>网关响应指API网关未能成功处理API请求，从而产生的错误响应。</p>
     <p id="zh-cn_topic_0080101678_p143361019152619"><a name="zh-cn_topic_0080101678_p143361019152619"></a><a name="zh-cn_topic_0080101678_p143361019152619"></a>API网关提供默认的网关响应（default）。如果您需要自定义响应状态码或网关响应内容，可在API分组管理中新增网关响应，按照您自己的响应内容，符合JSON格式即可。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0080101678_row247519275166"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p14476127151620"><a name="zh-cn_topic_0080101678_p14476127151620"></a><a name="zh-cn_topic_0080101678_p14476127151620"></a>类型</p>
+    <tr id="zh-cn_topic_0080101678_row247519275166"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p14476127151620"><a name="zh-cn_topic_0080101678_p14476127151620"></a><a name="zh-cn_topic_0080101678_p14476127151620"></a>类型</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1347622781611"><a name="zh-cn_topic_0080101678_p1347622781611"></a><a name="zh-cn_topic_0080101678_p1347622781611"></a>API类型：</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1347622781611"><a name="zh-cn_topic_0080101678_p1347622781611"></a><a name="zh-cn_topic_0080101678_p1347622781611"></a>API类型：</p>
     <a name="zh-cn_topic_0080101678_ul0446338191910"></a><a name="zh-cn_topic_0080101678_ul0446338191910"></a><ul id="zh-cn_topic_0080101678_ul0446338191910"><li>公开：选择“公开”类型时，API支持上架。</li><li>私有：选择“私有”类型时，当该API所在分组上架时，该API不会上架。</li></ul>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0080101678_row8159123418166"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p015933461620"><a name="zh-cn_topic_0080101678_p015933461620"></a><a name="zh-cn_topic_0080101678_p015933461620"></a>安全认证</p>
+    <tr id="zh-cn_topic_0080101678_row8159123418166"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p015933461620"><a name="zh-cn_topic_0080101678_p015933461620"></a><a name="zh-cn_topic_0080101678_p015933461620"></a>安全认证</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1369005482116"><a name="zh-cn_topic_0080101678_p1369005482116"></a><a name="zh-cn_topic_0080101678_p1369005482116"></a>API认证方式：</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1369005482116"><a name="zh-cn_topic_0080101678_p1369005482116"></a><a name="zh-cn_topic_0080101678_p1369005482116"></a>API认证方式：</p>
     <a name="zh-cn_topic_0080101678_ul10691205415213"></a><a name="zh-cn_topic_0080101678_ul10691205415213"></a><ul id="zh-cn_topic_0080101678_ul10691205415213"><li>APP认证：表示由API网关服务负责接口请求的安全认证。</li><li>华为IAM认证：表示借助IAM服务进行安全认证。</li><li>自定义认证：用户有自己的认证系统或服务（如使用OAuth认证），可选择“自定义认证”。</li><li>无认证：表示不需要认证。</li></ul>
     <p id="zh-cn_topic_0080101678_p4159203413168"><a name="zh-cn_topic_0080101678_p4159203413168"></a><a name="zh-cn_topic_0080101678_p4159203413168"></a>各种认证方式下的API调用稍有不同，具体请参考《<a href="https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307010.html" target="_blank" rel="noopener noreferrer">API网关开发指南</a>》。</p>
     <p id="zh-cn_topic_0080101678_p19611248142514"><a name="zh-cn_topic_0080101678_p19611248142514"></a><a name="zh-cn_topic_0080101678_p19611248142514"></a>推荐使用APP认证方式。</p>
-    <div class="notice" id="zh-cn_topic_0080101678_note13699104617916"><a name="zh-cn_topic_0080101678_note13699104617916"></a><a name="zh-cn_topic_0080101678_note13699104617916"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="zh-cn_topic_0080101678_ul77001646498"></a><a name="zh-cn_topic_0080101678_ul77001646498"></a><ul id="zh-cn_topic_0080101678_ul77001646498"><li>认证方式为华为IAM认证时，任何API网关租户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li><li>认证方式为无认证时，任何公网用户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li><li>认证方式为自定义认证时，需要在函数服务中写一段函数，对接用户自己的认证系统或服务。</li></ul>
+    <div class="notice" id="zh-cn_topic_0080101678_note13699104617916"><a name="zh-cn_topic_0080101678_note13699104617916"></a><a name="zh-cn_topic_0080101678_note13699104617916"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="zh-cn_topic_0080101678_ul77001646498"></a><a name="zh-cn_topic_0080101678_ul77001646498"></a><ul id="zh-cn_topic_0080101678_ul77001646498"><li>认证方式为华为IAM认证时，任何API网关租户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li><li>认证方式为无认证时，任何公网用户均可以访问此API，可能存在恶意刷流量，导致过量计费的风险。</li><li>认证方式为自定义认证时，需要在函数服务中写一段函数，对接用户自己的认证系统或服务。如果当前Region没有上线函数服务，则不支持自定义认证。</li></ul>
     </div></div>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0080101678_row48673328315"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p2086720324318"><a name="zh-cn_topic_0080101678_p2086720324318"></a><a name="zh-cn_topic_0080101678_p2086720324318"></a>支持简易认证</p>
+    <tr id="zh-cn_topic_0080101678_row48673328315"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p2086720324318"><a name="zh-cn_topic_0080101678_p2086720324318"></a><a name="zh-cn_topic_0080101678_p2086720324318"></a>支持简易认证</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1769917615481"><a name="zh-cn_topic_0080101678_p1769917615481"></a><a name="zh-cn_topic_0080101678_p1769917615481"></a>简易认证指APP认证方式下调用API时，在HTTP请求头部消息增加一个参数X-Apig-AppCode，而不需要对请求内容签名，API网关也仅校验AppCode，不校验请求签名，从而实现快速响应。</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1769917615481"><a name="zh-cn_topic_0080101678_p1769917615481"></a><a name="zh-cn_topic_0080101678_p1769917615481"></a>简易认证指APP认证方式下调用API时，在HTTP请求头部消息增加一个参数X-Apig-AppCode，而不需要对请求内容签名，API网关也仅校验AppCode，不校验请求签名，从而实现快速响应。</p>
     <p id="zh-cn_topic_0080101678_p8152162414218"><a name="zh-cn_topic_0080101678_p8152162414218"></a><a name="zh-cn_topic_0080101678_p8152162414218"></a>注意仅在共享版API网关具备，且仅支持HTTPS方式调用，不支持HTTP方式。具体使用请参考<a href="apig-lgug-200227001.md">为简易认证添加AppCode</a>。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0080101678_row3902017219"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p179120142119"><a name="zh-cn_topic_0080101678_p179120142119"></a><a name="zh-cn_topic_0080101678_p179120142119"></a>自定义认证</p>
+    <tr id="zh-cn_topic_0080101678_row3902017219"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p179120142119"><a name="zh-cn_topic_0080101678_p179120142119"></a><a name="zh-cn_topic_0080101678_p179120142119"></a>自定义认证</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p4916017212"><a name="zh-cn_topic_0080101678_p4916017212"></a><a name="zh-cn_topic_0080101678_p4916017212"></a>自定义认证需要提前创建，可单击右侧的“新建自定义认证”链接创建。</p>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0080101678_row2113124794715"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p18113247164716"><a name="zh-cn_topic_0080101678_p18113247164716"></a><a name="zh-cn_topic_0080101678_p18113247164716"></a>标签</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p9113747134716"><a name="zh-cn_topic_0080101678_p9113747134716"></a><a name="zh-cn_topic_0080101678_p9113747134716"></a>标签主要用于对API添加分类属性，方便在创建了大量API后，快速过滤和查找。</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p4916017212"><a name="zh-cn_topic_0080101678_p4916017212"></a><a name="zh-cn_topic_0080101678_p4916017212"></a>自定义认证需要提前创建，可单击右侧的“新建自定义认证”链接创建。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0080101678_row45611440141619"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p1156124041619"><a name="zh-cn_topic_0080101678_p1156124041619"></a><a name="zh-cn_topic_0080101678_p1156124041619"></a>描述</p>
+    <tr id="zh-cn_topic_0080101678_row2113124794715"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p18113247164716"><a name="zh-cn_topic_0080101678_p18113247164716"></a><a name="zh-cn_topic_0080101678_p18113247164716"></a>标签</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p25611440141620"><a name="zh-cn_topic_0080101678_p25611440141620"></a><a name="zh-cn_topic_0080101678_p25611440141620"></a>API的描述。</p>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p9113747134716"><a name="zh-cn_topic_0080101678_p9113747134716"></a><a name="zh-cn_topic_0080101678_p9113747134716"></a>标签主要用于对API添加分类属性，方便在创建了大量API后，快速过滤和查找。</p>
+    </td>
+    </tr>
+    <tr id="zh-cn_topic_0080101678_row45611440141619"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p1156124041619"><a name="zh-cn_topic_0080101678_p1156124041619"></a><a name="zh-cn_topic_0080101678_p1156124041619"></a>描述</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p25611440141620"><a name="zh-cn_topic_0080101678_p25611440141620"></a><a name="zh-cn_topic_0080101678_p25611440141620"></a>API的描述。</p>
     </td>
     </tr>
     </tbody>
@@ -190,8 +190,9 @@ API提供者把API接口配置在API网关中，开放后端能力。
         </tr>
         <tr id="zh-cn_topic_0080101678_row1470020017612"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p18700204613"><a name="zh-cn_topic_0080101678_p18700204613"></a><a name="zh-cn_topic_0080101678_p18700204613"></a>参数位置</p>
         </td>
-        <td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p15700401369"><a name="zh-cn_topic_0080101678_p15700401369"></a><a name="zh-cn_topic_0080101678_p15700401369"></a>选择参数在请求中的位置。</p>
-        <p id="zh-cn_topic_0080101678_p67002019617"><a name="zh-cn_topic_0080101678_p67002019617"></a><a name="zh-cn_topic_0080101678_p67002019617"></a>参数位置有如下三种：PATH、HEADER、QUERY</p>
+        <td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p15700401369"><a name="zh-cn_topic_0080101678_p15700401369"></a><a name="zh-cn_topic_0080101678_p15700401369"></a>选择参数在请求中的位置。参数位置有如下三种：PATH、HEADER、QUERY。</p>
+        <div class="note" id="zh-cn_topic_0080101678_note144417461417"><a name="zh-cn_topic_0080101678_note144417461417"></a><a name="zh-cn_topic_0080101678_note144417461417"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="zh-cn_topic_0080101678_p2799144553711"><a name="zh-cn_topic_0080101678_p2799144553711"></a><a name="zh-cn_topic_0080101678_p2799144553711"></a>当您定义了PATH中的参数时，该参数需要在“请求Path”中同步定义。</p>
+        </div></div>
         </td>
         </tr>
         <tr id="zh-cn_topic_0080101678_row19700601611"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p7700170167"><a name="zh-cn_topic_0080101678_p7700170167"></a><a name="zh-cn_topic_0080101678_p7700170167"></a>类型</p>
@@ -209,6 +210,16 @@ API提供者把API接口配置在API网关中，开放后端能力。
         <td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p157023014616"><a name="zh-cn_topic_0080101678_p157023014616"></a><a name="zh-cn_topic_0080101678_p157023014616"></a>“必填”为“否”时，默认值生效。请求中不包含此参数时，API网关自动增加默认值发送给后端服务。</p>
         </td>
         </tr>
+        <tr id="zh-cn_topic_0080101678_row1462419113355"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p76259173515"><a name="zh-cn_topic_0080101678_p76259173515"></a><a name="zh-cn_topic_0080101678_p76259173515"></a>最小长度</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p17625417356"><a name="zh-cn_topic_0080101678_p17625417356"></a><a name="zh-cn_topic_0080101678_p17625417356"></a>参数值得最小长度，仅允许输入数字。</p>
+        </td>
+        </tr>
+        <tr id="zh-cn_topic_0080101678_row197852113512"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p1478511116358"><a name="zh-cn_topic_0080101678_p1478511116358"></a><a name="zh-cn_topic_0080101678_p1478511116358"></a>最大长度</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p1774615555352"><a name="zh-cn_topic_0080101678_p1774615555352"></a><a name="zh-cn_topic_0080101678_p1774615555352"></a>参数值的最大长度，仅允许输入数字。</p>
+        </td>
+        </tr>
         <tr id="zh-cn_topic_0080101678_row147021201266"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0080101678_p170219015612"><a name="zh-cn_topic_0080101678_p170219015612"></a><a name="zh-cn_topic_0080101678_p170219015612"></a>示例</p>
         </td>
         <td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0080101678_p67027016618"><a name="zh-cn_topic_0080101678_p67027016618"></a><a name="zh-cn_topic_0080101678_p67027016618"></a>参数值的填写示例。</p>
@@ -223,6 +234,9 @@ API提供者把API接口配置在API网关中，开放后端能力。
         </table>
 
     3.  单击“确定”，完成入参定义的设置。
+
+        **图 4**  入参添加后示例<a name="zh-cn_topic_0080101678_fig3572155417363"></a>  
+        ![](figures/入参添加后示例.png "入参添加后示例")
 
 3.  当“Method”为“POST”/“PUT”/“PATCH”/“ANY”时，您可以在“请求体内容描述”中增加对于请求体的描述信息。
 4.  单击“下一步”，进入“定义后端服务”页面。
@@ -241,7 +255,7 @@ API网关支持定义多个策略后端，即满足一定条件后转发给指�
 
     后端服务类型分HTTP/HTTPS、FunctionGraph和Mock三种，具体参数描述见[表4](#zh-cn_topic_0080101678_table19365277271)。
 
-    **图 4**  HTTP/HTTPS类型<a name="zh-cn_topic_0080101678_fig620914489351"></a>  
+    **图 5**  HTTP/HTTPS类型<a name="zh-cn_topic_0080101678_fig620914489351"></a>  
     ![](figures/HTTP-HTTPS类型.png "HTTP-HTTPS类型")
 
     **表 4**  定义后端服务
@@ -352,7 +366,7 @@ API网关支持定义多个策略后端，即满足一定条件后转发给指�
     >-   变量名严格区分大小写。  
     >-   如果在API定义中设置变量，那么必须在待发布环境上配置变量名和变量值，否则变量无法赋值，API将无法正常调用。  
 
-    **图 5**  添加自定义认证<a name="zh-cn_topic_0080101678_fig787955717539"></a>  
+    **图 6**  添加自定义认证<a name="zh-cn_topic_0080101678_fig787955717539"></a>  
     ![](figures/添加自定义认证.png "添加自定义认证")
 
 2.  （可选）添加后端策略。
@@ -362,7 +376,7 @@ API网关支持定义多个策略后端，即满足一定条件后转发给指�
     1.  单击“添加策略后端”。
     2.  后端策略增加的参数，具体如[表5](#zh-cn_topic_0080101678_table161651642172215)所示，其他参数说明参见[表4](#zh-cn_topic_0080101678_table19365277271)。
 
-        **图 6**  后端策略新增参数<a name="zh-cn_topic_0080101678_fig13882182964017"></a>  
+        **图 7**  后端策略新增参数<a name="zh-cn_topic_0080101678_fig13882182964017"></a>  
         ![](figures/后端策略新增参数.png "后端策略新增参数")
 
         **表 5**  后端策略参数
@@ -435,9 +449,9 @@ API网关支持定义多个策略后端，即满足一定条件后转发给指�
         -   单击“导入入参定义”，系统自动添加已创建的所有入参参数。
         -   单击“添加后端参数映射”，按照需求添加您所需要的后端参数映射。
 
-    2.  根据后端服务实际的参数名称和参数位置修改映射关系，如[图7](#zh-cn_topic_0080101678_fig138502167331)所示。
+    2.  根据后端服务实际的参数名称和参数位置修改映射关系，如[图8](#zh-cn_topic_0080101678_fig138502167331)所示。
 
-        **图 7**  配置后端服务参数<a name="zh-cn_topic_0080101678_fig138502167331"></a>  
+        **图 8**  配置后端服务参数<a name="zh-cn_topic_0080101678_fig138502167331"></a>  
         ![](figures/配置后端服务参数.png "配置后端服务参数")
 
         1.  参数在“PATH”位置，那么参数名称需要和“后端请求Path”中的名称相同。
@@ -472,7 +486,7 @@ API网关支持定义多个策略后端，即满足一定条件后转发给指�
     1.  在“常量参数”右边单击![](figures/icon-down.png)，显示常量参数列表。
     2.  单击“添加常量参数”，输入如[表7](#zh-cn_topic_0080101678_table1835918141595)所示信息。
 
-        **图 8**  添加常量参数<a name="zh-cn_topic_0080101678_fig49610214320"></a>  
+        **图 9**  添加常量参数<a name="zh-cn_topic_0080101678_fig49610214320"></a>  
         ![](figures/添加常量参数.png "添加常量参数")
 
         **表 7**  常量参数
