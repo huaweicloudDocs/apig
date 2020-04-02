@@ -19,7 +19,8 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </thead>
 <tbody><tr id="row65704871"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p20494310"><a name="p20494310"></a><a name="p20494310"></a>POST</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p569315113273"><a name="p569315113273"></a><a name="p569315113273"></a>/v1/{project_id}/apigw/instances/{instance_id}/api-groups</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p49426402"><a name="p49426402"></a><a name="p49426402"></a></p>
+<p id="p569315113273"><a name="p569315113273"></a><a name="p569315113273"></a>/v1/{project_id}/apigw/instances/{instance_id}/api-groups</p>
 </td>
 </tr>
 </tbody>

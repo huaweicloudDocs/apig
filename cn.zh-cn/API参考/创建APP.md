@@ -74,7 +74,8 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p141151066380"><a name="p141151066380"></a><a name="p141151066380"></a>APP的key</p>
 <p id="p14879124513402"><a name="p14879124513402"></a><a name="p14879124513402"></a>支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。</p>
-<p id="p610473083912"><a name="p610473083912"></a><a name="p610473083912"></a>用户自定义APP的key需要开启配额开关</p>
+<div class="note" id="note8622433183712"><a name="note8622433183712"></a><a name="note8622433183712"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p26225334373"><a name="p26225334373"></a><a name="p26225334373"></a>只支持部分region。</p>
+</div></div>
 </td>
 </tr>
 <tr id="row147181873819"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p571817817386"><a name="p571817817386"></a><a name="p571817817386"></a>app_secret</p>
@@ -85,7 +86,8 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p177191863810"><a name="p177191863810"></a><a name="p177191863810"></a>密钥</p>
 <p id="p69053295477"><a name="p69053295477"></a><a name="p69053295477"></a>支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。</p>
-<p id="p790520296470"><a name="p790520296470"></a><a name="p790520296470"></a>用户自定义APP的密钥需要开启配额开关</p>
+<div class="note" id="note194472467379"><a name="note194472467379"></a><a name="note194472467379"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p154481946103713"><a name="p154481946103713"></a><a name="p154481946103713"></a>只支持部分region。</p>
+</div></div>
 </td>
 </tr>
 </tbody>

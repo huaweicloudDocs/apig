@@ -1,10 +1,8 @@
-# 批量删除流控策略<a name="apig-phapi-190111259"></a>
+# 批量解除API与ACL策略的绑定<a name="apig-phapi-190111262"></a>
 
 ## 功能介绍<a name="section24863152"></a>
 
-批量删除指定的多个流控策略。
-
-删除流控策略时，如果存在流控策略与API绑定关系，则无法删除。
+批量解除API与ACL策略的绑定关系。
 
 ## URI<a name="section22441780"></a>
 
@@ -13,15 +11,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 **表 1**  HTTP/HTTPS请求方法以及URI
 
 <a name="table47776868"></a>
-<table><thead align="left"><tr id="row14972112"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p4781565"><a name="p4781565"></a><a name="p4781565"></a>请求方法</p>
+<table><thead align="left"><tr id="row14972112"><th class="cellrowborder" valign="top" width="34.339999999999996%" id="mcps1.2.3.1.1"><p id="p4781565"><a name="p4781565"></a><a name="p4781565"></a>请求方法</p>
 </th>
-<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p51762503"><a name="p51762503"></a><a name="p51762503"></a>URI</p>
+<th class="cellrowborder" valign="top" width="65.66%" id="mcps1.2.3.1.2"><p id="p51762503"><a name="p51762503"></a><a name="p51762503"></a>URI</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row32013205"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p42932816"><a name="p42932816"></a><a name="p42932816"></a>PUT</p>
+<tbody><tr id="row32013205"><td class="cellrowborder" valign="top" width="34.339999999999996%" headers="mcps1.2.3.1.1 "><p id="p42932816"><a name="p42932816"></a><a name="p42932816"></a>PUT</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p55006047"><a name="p55006047"></a><a name="p55006047"></a>/v1/{project_id}/apigw/instances/{instance_id}/throttles[?action]</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.3.1.2 "><p id="p55006047"><a name="p55006047"></a><a name="p55006047"></a>/v1/{project_id}/apigw/instances/{instance_id}/acl-bindings[?action]</p>
 </td>
 </tr>
 </tbody>
@@ -34,39 +32,39 @@ URI中的参数说明如下表所示。
 <a name="table26304811"></a>
 <table><thead align="left"><tr id="row11931990"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p26967144"><a name="p26967144"></a><a name="p26967144"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="19.56%" id="mcps1.2.5.1.2"><p id="p36855079"><a name="p36855079"></a><a name="p36855079"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="18.02%" id="mcps1.2.5.1.2"><p id="p36855079"><a name="p36855079"></a><a name="p36855079"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="20.02%" id="mcps1.2.5.1.3"><p id="p32471418"><a name="p32471418"></a><a name="p32471418"></a>类型</p>
+<th class="cellrowborder" valign="top" width="19.68%" id="mcps1.2.5.1.3"><p id="p32471418"><a name="p32471418"></a><a name="p32471418"></a>类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="35.42%" id="mcps1.2.5.1.4"><p id="p12939210"><a name="p12939210"></a><a name="p12939210"></a>说明</p>
+<th class="cellrowborder" valign="top" width="37.3%" id="mcps1.2.5.1.4"><p id="p12939210"><a name="p12939210"></a><a name="p12939210"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row21991802509"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p55878963"><a name="p55878963"></a><a name="p55878963"></a>project_id</p>
+<tbody><tr id="row14221165132113"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p55878963"><a name="p55878963"></a><a name="p55878963"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.56%" headers="mcps1.2.5.1.2 "><p id="p29902160"><a name="p29902160"></a><a name="p29902160"></a>是</p>
+<td class="cellrowborder" valign="top" width="18.02%" headers="mcps1.2.5.1.2 "><p id="p29902160"><a name="p29902160"></a><a name="p29902160"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.5.1.3 "><p id="p6155914"><a name="p6155914"></a><a name="p6155914"></a>String</p>
+<td class="cellrowborder" valign="top" width="19.68%" headers="mcps1.2.5.1.3 "><p id="p6155914"><a name="p6155914"></a><a name="p6155914"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="35.42%" headers="mcps1.2.5.1.4 "><p id="p28867016"><a name="p28867016"></a><a name="p28867016"></a>项目ID。可从控制台“我的凭证”中获取region下项目ID，管理员权限可查询。</p>
+<td class="cellrowborder" valign="top" width="37.3%" headers="mcps1.2.5.1.4 "><p id="p28867016"><a name="p28867016"></a><a name="p28867016"></a>项目ID。可从控制台“我的凭证”中获取region下项目ID，管理员权限可查询。</p>
 </td>
 </tr>
-<tr id="row199575914920"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1780913159538"><a name="p1780913159538"></a><a name="p1780913159538"></a>instance_id</p>
+<tr id="row17799194182118"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1780913159538"><a name="p1780913159538"></a><a name="p1780913159538"></a>instance_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.56%" headers="mcps1.2.5.1.2 "><p id="p9809215115310"><a name="p9809215115310"></a><a name="p9809215115310"></a>是</p>
+<td class="cellrowborder" valign="top" width="18.02%" headers="mcps1.2.5.1.2 "><p id="p9809215115310"><a name="p9809215115310"></a><a name="p9809215115310"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.5.1.3 "><p id="p1280914152538"><a name="p1280914152538"></a><a name="p1280914152538"></a>String</p>
+<td class="cellrowborder" valign="top" width="19.68%" headers="mcps1.2.5.1.3 "><p id="p1280914152538"><a name="p1280914152538"></a><a name="p1280914152538"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="35.42%" headers="mcps1.2.5.1.4 "><p id="p1880914157537"><a name="p1880914157537"></a><a name="p1880914157537"></a>实例ID，可从API网关控制台的专享版实例信息中获取。</p>
+<td class="cellrowborder" valign="top" width="37.3%" headers="mcps1.2.5.1.4 "><p id="p1880914157537"><a name="p1880914157537"></a><a name="p1880914157537"></a>实例ID，可从API网关控制台的专享版实例信息中获取。</p>
 </td>
 </tr>
 <tr id="row41443070"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1445503"><a name="p1445503"></a><a name="p1445503"></a>action</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.56%" headers="mcps1.2.5.1.2 "><p id="p49976884"><a name="p49976884"></a><a name="p49976884"></a>是</p>
+<td class="cellrowborder" valign="top" width="18.02%" headers="mcps1.2.5.1.2 "><p id="p49976884"><a name="p49976884"></a><a name="p49976884"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.5.1.3 "><p id="p21595781"><a name="p21595781"></a><a name="p21595781"></a>String</p>
+<td class="cellrowborder" valign="top" width="19.68%" headers="mcps1.2.5.1.3 "><p id="p21595781"><a name="p21595781"></a><a name="p21595781"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="35.42%" headers="mcps1.2.5.1.4 "><p id="p4427868"><a name="p4427868"></a><a name="p4427868"></a>必须为delete</p>
+<td class="cellrowborder" valign="top" width="37.3%" headers="mcps1.2.5.1.4 "><p id="p4427868"><a name="p4427868"></a><a name="p4427868"></a>必须为delete</p>
 </td>
 </tr>
 </tbody>
@@ -87,13 +85,13 @@ URI中的参数说明如下表所示。
 </th>
 </tr>
 </thead>
-<tbody><tr id="row19724176"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p111152374516"><a name="p111152374516"></a><a name="p111152374516"></a>throttles</p>
+<tbody><tr id="row19724176"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p111152374516"><a name="p111152374516"></a><a name="p111152374516"></a>acl_bindings</p>
 </td>
 <td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p24434185"><a name="p24434185"></a><a name="p24434185"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p33011938"><a name="p33011938"></a><a name="p33011938"></a>String Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p56721283"><a name="p56721283"></a><a name="p56721283"></a>需要删除的流控策略ID列表</p>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p56721283"><a name="p56721283"></a><a name="p56721283"></a>需要解除绑定的ACL策略ID列表</p>
 </td>
 </tr>
 </tbody>
@@ -103,7 +101,7 @@ URI中的参数说明如下表所示。
 
 ```
 {
-    "throttles": ["81efcfd94b8747a0b21e8c04144a4e8c","7addcd00cfab433984b1d8bf2fe08aaa"]
+    "acl_bindings": ["81efcfd94b8747a0b21e8c04144a4e8c","7addcd00cfab433984b1d8bf2fe08aaa"]
 }
 ```
 
@@ -124,14 +122,14 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p209815717318"><a name="p209815717318"></a><a name="p209815717318"></a>Number</p>
 </td>
-<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p8980773120"><a name="p8980773120"></a><a name="p8980773120"></a>删除成功的流控策略数量</p>
+<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p8980773120"><a name="p8980773120"></a><a name="p8980773120"></a>成功解除绑定的ACL策略数量</p>
 </td>
 </tr>
 <tr id="row119827123112"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p159814710314"><a name="p159814710314"></a><a name="p159814710314"></a>failure</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p1698871311"><a name="p1698871311"></a><a name="p1698871311"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p109897153112"><a name="p109897153112"></a><a name="p109897153112"></a>删除失败的流控策略及错误信息</p>
+<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p109897153112"><a name="p109897153112"></a><a name="p109897153112"></a>解除绑定失败的ACL策略及错误信息</p>
 </td>
 </tr>
 </tbody>
@@ -148,32 +146,39 @@ URI中的参数说明如下表所示。
 </th>
 </tr>
 </thead>
-<tbody><tr id="row57665621920"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p477175615191"><a name="p477175615191"></a><a name="p477175615191"></a>throttle_id</p>
+<tbody><tr id="row57665621920"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p477175615191"><a name="p477175615191"></a><a name="p477175615191"></a>bind_id</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p179185671915"><a name="p179185671915"></a><a name="p179185671915"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p1379115621913"><a name="p1379115621913"></a><a name="p1379115621913"></a>删除失败的流控策略ID</p>
-</td>
-</tr>
-<tr id="row1217813206516"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p10180620115120"><a name="p10180620115120"></a><a name="p10180620115120"></a>throttle_name</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p91801620165120"><a name="p91801620165120"></a><a name="p91801620165120"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p61801320105112"><a name="p61801320105112"></a><a name="p61801320105112"></a>删除失败的流控策略名称</p>
+<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p1379115621913"><a name="p1379115621913"></a><a name="p1379115621913"></a>解除绑定失败的ACL策略ID</p>
 </td>
 </tr>
 <tr id="row138175661920"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p11458112915203"><a name="p11458112915203"></a><a name="p11458112915203"></a>error_code</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p38145613190"><a name="p38145613190"></a><a name="p38145613190"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p1882175612193"><a name="p1882175612193"></a><a name="p1882175612193"></a>删除失败的错误码</p>
+<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p1882175612193"><a name="p1882175612193"></a><a name="p1882175612193"></a>解除绑定失败的错误码</p>
 </td>
 </tr>
 <tr id="row18262135516207"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p142627557208"><a name="p142627557208"></a><a name="p142627557208"></a>error_msg</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p1426220553205"><a name="p1426220553205"></a><a name="p1426220553205"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p32621855152010"><a name="p32621855152010"></a><a name="p32621855152010"></a>删除失败的错误信息</p>
+<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p32621855152010"><a name="p32621855152010"></a><a name="p32621855152010"></a>解除绑定失败的错误信息</p>
+</td>
+</tr>
+<tr id="row1512815719557"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p121281785513"><a name="p121281785513"></a><a name="p121281785513"></a>api_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p7128876552"><a name="p7128876552"></a><a name="p7128876552"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p612813765512"><a name="p612813765512"></a><a name="p612813765512"></a>解除绑定失败的API的ID</p>
+</td>
+</tr>
+<tr id="row12281493556"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="p922889135517"><a name="p922889135517"></a><a name="p922889135517"></a>api_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.2 "><p id="p1022817905512"><a name="p1022817905512"></a><a name="p1022817905512"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="58.415841584158414%" headers="mcps1.2.4.1.3 "><p id="p182281895557"><a name="p182281895557"></a><a name="p182281895557"></a>解除绑定失败的API的名称</p>
 </td>
 </tr>
 </tbody>
@@ -184,10 +189,11 @@ URI中的参数说明如下表所示。
 ```
 {
 	"failure": [{
-		"throttle_id": "81efcfd94b8747a0b21e8c04144a4e8c",
-                "throttle_name": "throttle1",
-		"error_code": "APIG.3451",
-		"error_msg": "The Throttle Strategy has already binded to APIs"
+		"bind_id": "81efcfd94b8747a0b21e8c04144a4e8c",
+		"error_code": "APIG.3010",
+		"error_msg": "Access control policy binding record not found",
+                "api_id": "81efcfd94b8747a0b21e8c04144a4e8c",
+		"api_name": "api01"
 	}],
 	"success_count": 3
 }
@@ -235,10 +241,5 @@ URI中的参数说明如下表所示。
 </td>
 </tr>
 </tbody>
-</table>
-
-<a name="table60212917"></a>
-<table><thead align="left"></thead>
-<tbody></tbody>
 </table>
 

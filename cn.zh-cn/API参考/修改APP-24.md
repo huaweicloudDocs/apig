@@ -1,4 +1,4 @@
-# 修改APP<a name="apig-zh-api-180713037"></a>
+# 修改APP<a name="apig-phapi-180713037"></a>
 
 ## 功能介绍<a name="section63138047"></a>
 
@@ -19,7 +19,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </thead>
 <tbody><tr id="row62711610"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p46475689"><a name="p46475689"></a><a name="p46475689"></a>PUT</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p6434497"><a name="p6434497"></a><a name="p6434497"></a>/v1.0/apigw/apps/{id}</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p6434497"><a name="p6434497"></a><a name="p6434497"></a>/v1/{project_id}/apigw/instances/{instance_id}/apps/{id}</p>
 </td>
 </tr>
 </tbody>
@@ -40,7 +40,25 @@ URI中的参数说明如下表所示。
 </th>
 </tr>
 </thead>
-<tbody><tr id="row45086654"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p28140387"><a name="p28140387"></a><a name="p28140387"></a>id</p>
+<tbody><tr id="row18537163314383"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p55878963"><a name="p55878963"></a><a name="p55878963"></a>project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p29902160"><a name="p29902160"></a><a name="p29902160"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.308469153084694%" headers="mcps1.2.5.1.3 "><p id="p6155914"><a name="p6155914"></a><a name="p6155914"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="42.85571442855714%" headers="mcps1.2.5.1.4 "><p id="p28867016"><a name="p28867016"></a><a name="p28867016"></a>项目ID。可从控制台“我的凭证”中获取region下项目ID，管理员权限可查询。</p>
+</td>
+</tr>
+<tr id="row1534363315387"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p1780913159538"><a name="p1780913159538"></a><a name="p1780913159538"></a>instance_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p9809215115310"><a name="p9809215115310"></a><a name="p9809215115310"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.308469153084694%" headers="mcps1.2.5.1.3 "><p id="p1280914152538"><a name="p1280914152538"></a><a name="p1280914152538"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="42.85571442855714%" headers="mcps1.2.5.1.4 "><p id="p1880914157537"><a name="p1880914157537"></a><a name="p1880914157537"></a>实例ID，可从API网关控制台的专享版实例信息中获取。</p>
+</td>
+</tr>
+<tr id="row45086654"><td class="cellrowborder" valign="top" width="24.48755124487551%" headers="mcps1.2.5.1.1 "><p id="p28140387"><a name="p28140387"></a><a name="p28140387"></a>id</p>
 </td>
 <td class="cellrowborder" valign="top" width="17.348265173482652%" headers="mcps1.2.5.1.2 "><p id="p64778897"><a name="p64778897"></a><a name="p64778897"></a>是</p>
 </td>
@@ -99,8 +117,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p141151066380"><a name="p141151066380"></a><a name="p141151066380"></a>APP的key</p>
 <p id="p14879124513402"><a name="p14879124513402"></a><a name="p14879124513402"></a>支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。</p>
-<div class="note" id="note8622433183712"><a name="note8622433183712"></a><a name="note8622433183712"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p26225334373"><a name="p26225334373"></a><a name="p26225334373"></a>只支持部分region。</p>
-</div></div>
+<p id="p610473083912"><a name="p610473083912"></a><a name="p610473083912"></a>用户自定义APP的key需要开启配额开关</p>
 </td>
 </tr>
 <tr id="row13951012524"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p571817817386"><a name="p571817817386"></a><a name="p571817817386"></a>app_secret</p>
@@ -111,8 +128,7 @@ URI中的参数说明如下表所示。
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p177191863810"><a name="p177191863810"></a><a name="p177191863810"></a>密钥</p>
 <p id="p69053295477"><a name="p69053295477"></a><a name="p69053295477"></a>支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。</p>
-<div class="note" id="note862799163816"><a name="note862799163816"></a><a name="note862799163816"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p26272923814"><a name="p26272923814"></a><a name="p26272923814"></a>只支持部分region。</p>
-</div></div>
+<p id="p790520296470"><a name="p790520296470"></a><a name="p790520296470"></a>用户自定义APP的密钥需要开启配额开关</p>
 </td>
 </tr>
 </tbody>
