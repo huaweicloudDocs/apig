@@ -147,7 +147,16 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p9313363"><a name="p9313363"></a><a name="p9313363"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p16184930"><a name="p16184930"></a><a name="p16184930"></a>API的认证方式：</p>
-<a name="ul1496884"></a><a name="ul1496884"></a><ul id="ul1496884"><li>NONE：无认证</li><li>APP：APP认证</li><li>IAM：IAM认证AUTHORIZER：自定义认证</li></ul>
+<a name="ul1496884"></a><a name="ul1496884"></a><ul id="ul1496884"><li>NONE：无认证</li><li>APP：APP认证</li><li>IAM：IAM认证</li><li>AUTHORIZER：自定义认证</li></ul>
+</td>
+</tr>
+<tr id="row18385623185314"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p1038662319534"><a name="p1038662319534"></a><a name="p1038662319534"></a>auth_opt</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p16386823125311"><a name="p16386823125311"></a><a name="p16386823125311"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p3386162317532"><a name="p3386162317532"></a><a name="p3386162317532"></a>字典数据类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p1386122375314"><a name="p1386122375314"></a><a name="p1386122375314"></a>认证方式参数</p>
 </td>
 </tr>
 <tr id="row201991410162820"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p18639182918193"><a name="p18639182918193"></a><a name="p18639182918193"></a>authorizer_id</p>
@@ -236,6 +245,15 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <p id="p132518115249"><a name="p132518115249"></a><a name="p132518115249"></a>字符长度不超过20480</p>
 <div class="note" id="note13283119202415"><a name="note13283119202415"></a><a name="note13283119202415"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p23141919202413"><a name="p23141919202413"></a><a name="p23141919202413"></a>中文字符必须为UTF-8或者unicode编码。</p>
 </div></div>
+</td>
+</tr>
+<tr id="row127021456175111"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p1570215615115"><a name="p1570215615115"></a><a name="p1570215615115"></a>response_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p4702135625111"><a name="p4702135625111"></a><a name="p4702135625111"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p2070235615513"><a name="p2070235615513"></a><a name="p2070235615513"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p47021256205111"><a name="p47021256205111"></a><a name="p47021256205111"></a>分组自定义响应ID</p>
 </td>
 </tr>
 <tr id="row61097128"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p49920342"><a name="p49920342"></a><a name="p49920342"></a>backend_api</p>
@@ -1152,11 +1170,40 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
+**表 13**  auth\_opt参数说明
+
+<a name="table3438100125614"></a>
+<table><thead align="left"><tr id="row174381006567"><th class="cellrowborder" valign="top" width="15.15%" id="mcps1.2.5.1.1"><p id="p843813015615"><a name="p843813015615"></a><a name="p843813015615"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="13.13%" id="mcps1.2.5.1.2"><p id="p1643813015569"><a name="p1643813015569"></a><a name="p1643813015569"></a>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="14.14%" id="mcps1.2.5.1.3"><p id="p1243840175615"><a name="p1243840175615"></a><a name="p1243840175615"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="57.58%" id="mcps1.2.5.1.4"><p id="p124384045617"><a name="p124384045617"></a><a name="p124384045617"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row04387035614"><td class="cellrowborder" valign="top" width="15.15%" headers="mcps1.2.5.1.1 "><p id="p14438106562"><a name="p14438106562"></a><a name="p14438106562"></a>app_code_auth_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13%" headers="mcps1.2.5.1.2 "><p id="p743912095610"><a name="p743912095610"></a><a name="p743912095610"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.5.1.3 "><p id="p1043911075619"><a name="p1043911075619"></a><a name="p1043911075619"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.58%" headers="mcps1.2.5.1.4 "><p id="p15928340182414"><a name="p15928340182414"></a><a name="p15928340182414"></a>AppCode简易认证类型，仅在auth_type为APP时生效，默认为DISABLE：</p>
+<a name="ul245955918358"></a><a name="ul245955918358"></a><ul id="ul245955918358"><li>DISABLE：不开启简易认证</li><li>HEADER：开启简易认证且AppCode位置在HEADER</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
 请求消息样例：
 
 ```
 {
   "auth_type": "app",
+  "auth_opt": {
+    "app_code_auth_type": "HEADER"
+  },
   "backend_api": {
     "req_method": "get",
     "req_protocol": "http",
@@ -1205,7 +1252,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 
 ## 响应消息<a name="section46935561"></a>
 
-**表 13**  参数说明
+**表 14**  参数说明
 
 <a name="table13593802"></a>
 <table><thead align="left"><tr id="row45234979"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p40154672"><a name="p40154672"></a><a name="p40154672"></a>参数</p>
@@ -1293,6 +1340,13 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p44519063"><a name="p44519063"></a><a name="p44519063"></a>API认证方式</p>
 </td>
 </tr>
+<tr id="row95538491268"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p45549491969"><a name="p45549491969"></a><a name="p45549491969"></a>auth_opt</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p19554194910611"><a name="p19554194910611"></a><a name="p19554194910611"></a>字段数据类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p155541490617"><a name="p155541490617"></a><a name="p155541490617"></a>API认证方式参数</p>
+</td>
+</tr>
 <tr id="row65127255"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p40816288"><a name="p40816288"></a><a name="p40816288"></a>match_mode</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p17785030"><a name="p17785030"></a><a name="p17785030"></a>String</p>
@@ -1377,6 +1431,13 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p116482113255"><a name="p116482113255"></a><a name="p116482113255"></a>失败返回示例，描述API的异常返回信息</p>
 </td>
 </tr>
+<tr id="row3883172035119"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1018917138509"><a name="p1018917138509"></a><a name="p1018917138509"></a>response_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p518913136501"><a name="p518913136501"></a><a name="p518913136501"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p21891613175018"><a name="p21891613175018"></a><a name="p21891613175018"></a>分组自定义响应ID</p>
+</td>
+</tr>
 <tr id="row51413426"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p3737968"><a name="p3737968"></a><a name="p3737968"></a>backend_api</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p34339995"><a name="p34339995"></a><a name="p34339995"></a>字典数据类型</p>
@@ -1436,7 +1497,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 14**  backend\_api参数说明
+**表 15**  backend\_api参数说明
 
 <a name="table58525317"></a>
 <table><thead align="left"><tr id="row19542026"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p39400239"><a name="p39400239"></a><a name="p39400239"></a>参数</p>
@@ -1541,7 +1602,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 15**  mock\_info参数说明
+**表 16**  mock\_info参数说明
 
 <a name="table60148328"></a>
 <table><thead align="left"><tr id="row10756468"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p65967568"><a name="p65967568"></a><a name="p65967568"></a>参数</p>
@@ -1604,7 +1665,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 16**  func\_info参数说明
+**表 17**  func\_info参数说明
 
 <a name="table5882045"></a>
 <table><thead align="left"><tr id="row61925025"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p49871117"><a name="p49871117"></a><a name="p49871117"></a>参数</p>
@@ -1681,7 +1742,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 17**  req\_params参数说明
+**表 18**  req\_params参数说明
 
 <a name="table197251634194412"></a>
 <table><thead align="left"><tr id="row2075603420446"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p11756234184411"><a name="p11756234184411"></a><a name="p11756234184411"></a>参数</p>
@@ -1807,7 +1868,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 18**  backend\_params参数说明
+**表 19**  backend\_params参数说明
 
 <a name="table9287113513446"></a>
 <table><thead align="left"><tr id="row4302173564419"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p33182355443"><a name="p33182355443"></a><a name="p33182355443"></a>参数</p>
@@ -1870,7 +1931,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 19**  policy\_https参数说明
+**表 20**  policy\_https参数说明
 
 <a name="table1883393417451"></a>
 <table><thead align="left"><tr id="row12893173494517"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p1491393413454"><a name="p1491393413454"></a><a name="p1491393413454"></a>参数</p>
@@ -1968,7 +2029,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 20**  policy\_mocks参数说明
+**表 21**  policy\_mocks参数说明
 
 <a name="table12725183513454"></a>
 <table><thead align="left"><tr id="row15764635144513"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p378211357456"><a name="p378211357456"></a><a name="p378211357456"></a>参数</p>
@@ -2024,7 +2085,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 21**  policy\_functions参数说明
+**表 22**  policy\_functions参数说明
 
 <a name="table11274103664518"></a>
 <table><thead align="left"><tr id="row14323123615458"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p12336163614453"><a name="p12336163614453"></a><a name="p12336163614453"></a>参数</p>
@@ -2101,7 +2162,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
-**表 22**  conditions参数说明
+**表 23**  conditions参数说明
 
 <a name="table54445157"></a>
 <table><thead align="left"><tr id="row01061051953"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p121240513510"><a name="p121240513510"></a><a name="p121240513510"></a>参数</p>
@@ -2164,6 +2225,27 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 </tbody>
 </table>
 
+**表 24**  auth\_opt参数说明
+
+<a name="table3296221173715"></a>
+<table><thead align="left"><tr id="row829715213377"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p17297192173718"><a name="p17297192173718"></a><a name="p17297192173718"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p9297821143718"><a name="p9297821143718"></a><a name="p9297821143718"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p4297152163717"><a name="p4297152163717"></a><a name="p4297152163717"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row4297421123717"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1848964315375"><a name="p1848964315375"></a><a name="p1848964315375"></a>app_code_auth_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p4489164310372"><a name="p4489164310372"></a><a name="p4489164310372"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1948934316376"><a name="p1948934316376"></a><a name="p1948934316376"></a>AppCode简易认证类型</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 响应消息样例：
 
 ```
@@ -2175,6 +2257,9 @@ HTTP/HTTPS请求方法以及URI如下表所示。
   "req_method": "GET",
   "req_uri": "/test/{tenant_id}",
   "auth_type": "APP",
+  "auth_opt": {
+    "app_code_auth_type": "HEADER"
+  },
   "tags": ["APIG-SN-test", "test"],
   "cors": false,
   "match_mode": "NORMAL",
@@ -2268,7 +2353,7 @@ HTTP/HTTPS请求方法以及URI如下表所示。
 
 ## 状态码<a name="section27584683"></a>
 
-**表 23**  返回消息说明
+**表 25**  返回消息说明
 
 <a name="table64322236"></a>
 <table><thead align="left"><tr id="row3387693"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p5967751"><a name="p5967751"></a><a name="p5967751"></a>状态码</p>

@@ -1,4 +1,4 @@
-# API标签管理<a name="ZH-CN_TOPIC_0209265969"></a>
+# API标签管理<a name="apig-phapi-200220028"></a>
 
 -   **[查看标签列表](查看标签列表.md)**  
 
