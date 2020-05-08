@@ -7,5 +7,5 @@ API网关服务提供多种认证方式，API调用者通过不同认证方式�
 
 其中SDK访问提供了基于Java、Go、Python、JavaScript、C\#、PHP、C++、C、Android等多种语言的SDK包。
 
-关于API的调用详情，请参考《[API网关开发指南](https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307002.html)》。
+关于API的调用详情，请参考《[API网关开发指南](https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307002.html)》《API网关开发指南》。
 

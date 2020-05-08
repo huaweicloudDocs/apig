@@ -81,7 +81,7 @@
     </tr>
     <tr id="row12855103617473"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p181415341480"><a name="p181415341480"></a><a name="p181415341480"></a>Body</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p514113346815"><a name="p514113346815"></a><a name="p514113346815"></a>仅在“Method”为“ANY”/“PATCH”/“POST”/“PUT”时，支持修改。</p>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p514113346815"><a name="p514113346815"></a><a name="p514113346815"></a>仅在“Method”为“PATCH”/“POST”/“PUT”时，支持修改。</p>
     </td>
     </tr>
     </tbody>
